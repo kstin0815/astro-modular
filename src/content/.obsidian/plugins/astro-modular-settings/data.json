@@ -87,10 +87,10 @@
       "social": false
     },
     "quickActions": {
-      "enabled": false,
-      "toggleMode": false,
-      "graphView": false,
-      "changeTheme": false
+      "enabled": true,
+      "toggleMode": true,
+      "graphView": true,
+      "changeTheme": true
     }
   },
   "homeOptions": {
@@ -138,18 +138,18 @@
       "enabled": true,
       "provider": "giscus",
       "rawScript": "",
-      "repo": "",
-      "repoId": "",
-      "category": "",
-      "categoryId": "",
-      "mapping": "",
-      "strict": "",
-      "reactions": "",
-      "metadata": "",
-      "inputPosition": "",
-      "theme": "",
-      "lang": "",
-      "loading": ""
+      "repo": "davidvkimball/astro-modular",
+      "repoId": "R_kgDOPllfKw",
+      "category": "General",
+      "categoryId": "DIC_kwDOPllfK84CvUpx",
+      "mapping": "pathname",
+      "strict": "0",
+      "reactions": "1",
+      "metadata": "0",
+      "inputPosition": "bottom",
+      "theme": "preferred_color_scheme",
+      "lang": "en",
+      "loading": "lazy"
     }
   },
   "features": {
@@ -160,16 +160,19 @@
     "graphView": false,
     "postNavigation": false,
     "hideScrollBar": true,
-    "scrollToTop": false,
+    "scrollToTop": true,
     "showSocialIconsInFooter": false,
     "profilePicture": false,
     "comments": true,
     "featureButton": "none",
+    "showPostCardCoverImages": "featured-and-posts",
+    "postCardAspectRatio": "og",
+    "customPostCardAspectRatio": "2.5/1",
     "quickActions": {
-      "enabled": false,
-      "toggleMode": false,
-      "graphView": false,
-      "changeTheme": false
+      "enabled": true,
+      "toggleMode": true,
+      "graphView": true,
+      "changeTheme": true
     }
   },
   "typography": {
@@ -199,18 +202,18 @@
       "enabled": true,
       "provider": "giscus",
       "rawScript": "",
-      "repo": "",
-      "repoId": "",
-      "category": "",
-      "categoryId": "",
-      "mapping": "",
-      "strict": "",
-      "reactions": "",
-      "metadata": "",
-      "inputPosition": "",
-      "theme": "",
-      "lang": "",
-      "loading": ""
+      "repo": "davidvkimball/astro-modular",
+      "repoId": "R_kgDOPllfKw",
+      "category": "General",
+      "categoryId": "DIC_kwDOPllfK84CvUpx",
+      "mapping": "pathname",
+      "strict": "0",
+      "reactions": "1",
+      "metadata": "0",
+      "inputPosition": "bottom",
+      "theme": "preferred_color_scheme",
+      "lang": "en",
+      "loading": "lazy"
     }
   },
   "deployment": {

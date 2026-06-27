@@ -183,7 +183,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "https://astro-modular.kstin0815.workers.dev",
+  site: "https://astro-modular.kstin0815.workers.dev/posts/",
   // [CONFIG:SITE_TITLE]
   title: "漫漫長路",
   // [CONFIG:HOMEPAGE_TITLE]
@@ -236,12 +236,12 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:FOOTER_CONTENT]
     content: `© 2026 {author}. Built with the <a href="https://github.com/davidvkimball/astro-modular" target="_blank">Astro Modular</a> theme.`,
     // [CONFIG:FOOTER_SHOW_SOCIAL_ICONS]
-    showSocialIconsInFooter: true,
+    showSocialIconsInFooter: false,
   },
   //[CONFIG:HIDE_SCROLL_BAR]
   hideScrollBar: true,
   // [CONFIG:SCROLL_TO_TOP]
-  scrollToTop: false,
+  scrollToTop: true,
   // [CONFIG:FEATURE_BUTTON]
   featureButton: "none", // "mode" | "graph" | "theme" | "none"
   deployment: {
@@ -277,13 +277,13 @@ export const siteConfig: SiteConfig = {
     },
     quickActions: {
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_ENABLED]
-      enabled: false,
+      enabled: true,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_TOGGLE_MODE]
-      toggleMode: false,
+      toggleMode: true,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_GRAPH_VIEW]
-      graphView: false,
+      graphView: true,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_CHANGE_THEME]
-      changeTheme: false,
+      changeTheme: true,
     },
   },
 
@@ -308,11 +308,11 @@ export const siteConfig: SiteConfig = {
   // Navigation
   navigation: {
     // [CONFIG:NAVIGATION_SHOW_NAVIGATION]
-    showNavigation: true,
+    showNavigation: false,
     // [CONFIG:NAVIGATION_STYLE]
     style: "minimal", // 'minimal' or 'traditional'
     // [CONFIG:NAVIGATION_SHOW_MOBILE_MENU]
-    showMobileMenu: true,
+    showMobileMenu: false,
     // [CONFIG:NAVIGATION_PAGES]
     pages: [
       { title: "Posts", url: "/posts/" },
@@ -421,29 +421,29 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:POST_OPTIONS_COMMENTS_PROVIDER]
       provider: "giscus",
       // [CONFIG:POST_OPTIONS_COMMENTS_REPO]
-      repo: "",
+      repo: "davidvkimball/astro-modular",
       // [CONFIG:POST_OPTIONS_COMMENTS_REPO_ID]
-      repoId: "",
+      repoId: "R_kgDOPllfKw",
       // [CONFIG:POST_OPTIONS_COMMENTS_CATEGORY]
-      category: "",
+      category: "General",
       // [CONFIG:POST_OPTIONS_COMMENTS_CATEGORY_ID]
-      categoryId: "",
+      categoryId: "DIC_kwDOPllfK84CvUpx",
       // [CONFIG:POST_OPTIONS_COMMENTS_MAPPING]
-      mapping: "",
+      mapping: "pathname",
       // [CONFIG:POST_OPTIONS_COMMENTS_STRICT]
-      strict: "",
+      strict: "0",
       // [CONFIG:POST_OPTIONS_COMMENTS_REACTIONS]
-      reactions: "",
+      reactions: "1",
       // [CONFIG:POST_OPTIONS_COMMENTS_METADATA]
-      metadata: "",
+      metadata: "0",
       // [CONFIG:POST_OPTIONS_COMMENTS_INPUT_POSITION]
-      inputPosition: "",
+      inputPosition: "bottom",
       // [CONFIG:POST_OPTIONS_COMMENTS_THEME]
-      theme: "",
+      theme: "preferred_color_scheme",
       // [CONFIG:POST_OPTIONS_COMMENTS_LANG]
-      lang: "",
+      lang: "en",
       // [CONFIG:POST_OPTIONS_COMMENTS_LOADING]
-      loading: "",
+      loading: "lazy",
     },
   },
 };
