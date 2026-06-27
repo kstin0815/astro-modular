@@ -236,7 +236,7 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:FOOTER_CONTENT]
     content: `© 2026 {author}. Built with the <a href="https://github.com/davidvkimball/astro-modular" target="_blank">Astro Modular</a> theme.`,
     // [CONFIG:FOOTER_SHOW_SOCIAL_ICONS]
-    showSocialIconsInFooter: false,
+    showSocialIconsInFooter: true,
   },
   //[CONFIG:HIDE_SCROLL_BAR]
   hideScrollBar: true,
@@ -390,7 +390,7 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:POST_OPTIONS_WORD_COUNT]
     wordCount: false,
     // [CONFIG:POST_OPTIONS_TAGS]
-    tags: false,
+    tags: true,
     linkedMentions: {
       // [CONFIG:POST_OPTIONS_LINKED_MENTIONS_ENABLED]
       enabled: false,
