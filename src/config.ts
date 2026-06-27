@@ -189,7 +189,7 @@ export const siteConfig: SiteConfig = {
   // [CONFIG:HOMEPAGE_TITLE]
   homepageTitle: "",
   // [CONFIG:SITE_DESCRIPTION]
-  description: "",
+  description: "「第30年晴耕雨讀的悠閒生活。」",
   // [CONFIG:SITE_AUTHOR]
   author: "kstin0815",
   // [CONFIG:SITE_LANGUAGE]
@@ -241,7 +241,7 @@ export const siteConfig: SiteConfig = {
   //[CONFIG:HIDE_SCROLL_BAR]
   hideScrollBar: true,
   // [CONFIG:SCROLL_TO_TOP]
-  scrollToTop: false,
+  scrollToTop: true,
   // [CONFIG:FEATURE_BUTTON]
   featureButton: "none", // "mode" | "graph" | "theme" | "none"
   deployment: {
@@ -277,13 +277,13 @@ export const siteConfig: SiteConfig = {
     },
     quickActions: {
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_ENABLED]
-      enabled: false,
+      enabled: true,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_TOGGLE_MODE]
-      toggleMode: false,
+      toggleMode: true,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_GRAPH_VIEW]
-      graphView: false,
+      graphView: true,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_CHANGE_THEME]
-      changeTheme: false,
+      changeTheme: true,
     },
   },
 

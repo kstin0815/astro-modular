@@ -14,7 +14,7 @@
   "siteInfo": {
     "site": "https://astro-modular.kstin0815.workers.dev/posts/",
     "title": "漫漫長路",
-    "description": "",
+    "description": "「第30年晴耕雨讀的悠閒生活。」",
     "author": "kstin0815",
     "language": "cn",
     "faviconThemeAdaptive": true,
@@ -87,10 +87,10 @@
       "social": true
     },
     "quickActions": {
-      "enabled": false,
-      "toggleMode": false,
-      "graphView": false,
-      "changeTheme": false
+      "enabled": true,
+      "toggleMode": true,
+      "graphView": true,
+      "changeTheme": true
     }
   },
   "homeOptions": {
@@ -160,16 +160,19 @@
     "graphView": false,
     "postNavigation": false,
     "hideScrollBar": true,
-    "scrollToTop": false,
+    "scrollToTop": true,
     "showSocialIconsInFooter": false,
     "profilePicture": false,
     "comments": false,
     "featureButton": "none",
+    "showPostCardCoverImages": "featured-and-posts",
+    "postCardAspectRatio": "og",
+    "customPostCardAspectRatio": "2.5/1",
     "quickActions": {
-      "enabled": false,
-      "toggleMode": false,
-      "graphView": false,
-      "changeTheme": false
+      "enabled": true,
+      "toggleMode": true,
+      "graphView": true,
+      "changeTheme": true
     }
   },
   "typography": {
