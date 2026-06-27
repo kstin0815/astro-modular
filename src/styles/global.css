@@ -1499,6 +1499,7 @@ svg:has(text:contains("mermaid version")) {
     @apply my-6;
   }
 }
+/* 左右對齊 */
 #post-content {
   text-align: justify;
 }
@@ -1506,19 +1507,12 @@ svg:has(text:contains("mermaid version")) {
 .prose a:not(.wikilink) {
   text-decoration: underline !important;
 }
-/* 引文:乾淨細線樣式,不要大方塊 */
+/* 引文 */
 .prose blockquote {
-  background: transparent !important;   /* 拿掉底色 */
-  border-left-width: 3px !important;    /* 左邊細一點的線 */
-  border-radius: 0 !important;          /* 不要圓角方塊感 */
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  padding-left: 1rem !important;        /* 只留左邊一點縮排 */
-  font-size: 0.9em !important;          /* 字略小 */
+  background: transparent;
+  padding-block: 0;
+  font-size: 0.9em;
 }
-
-/* 把引文方塊內文字上下的大空隙收掉 */
 .prose blockquote p {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin: 0;
 }
