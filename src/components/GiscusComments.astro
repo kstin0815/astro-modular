@@ -52,7 +52,7 @@ const CUSDIS_APP_ID = "70ca15eb-b428-4fbe-b4d1-79f46be948b9";
         if (data.from === 'cusdis' && data.event === 'resize') {
           var iframe = document.querySelector('#cusdis_thread iframe');
           if (iframe && data.data) {
-            if (iframe) iframe.style.height = (parseInt(e.data.data, 10) + 32) + 'px';
+            if (iframe) iframe.style.minHeight = (parseInt(e.data.data, 10) + 40) + 'px';
             iframe.style.overflow = 'hidden';
           }
         }
