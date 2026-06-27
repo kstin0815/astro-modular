@@ -1499,6 +1499,7 @@ svg:has(text:contains("mermaid version")) {
     @apply my-6;
   }
 }
+/* 左右對齊 */
 #post-content {
   text-align: justify;
 }
@@ -1506,9 +1507,12 @@ svg:has(text:contains("mermaid version")) {
 .prose a:not(.wikilink) {
   text-decoration: underline !important;
 }
+/* 引文 */
 .prose blockquote {
+  background: transparent;
+  padding-block: 0;
   font-size: 0.9em;
-  padding-top: 0.25rem;     /* 上下內距變小 */
-  padding-bottom: 0.25rem;
-  background: transparent;   /* 拿掉底色,只留左邊那條線 */
+}
+.prose blockquote p {
+  margin: 0;
 }
