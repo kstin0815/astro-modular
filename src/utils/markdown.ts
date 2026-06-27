@@ -289,7 +289,12 @@ export function shouldShowContent(
 export function sortPostsByDate<T extends { data: { date: Date } }>(
   posts: T[]
 ): T[] {
-  return posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+  return posts.sort((a, b) => {
+    const ap = a.data.pinned ? 1 : 0;
+    const bp = b.data.pinned ? 1 : 0;
+    if (ap !== bp) return bp - ap;
+    return b.data.date.getTime() - a.data.date.getTime();
+  });
 }
 
 // Get next and previous content items
