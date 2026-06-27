@@ -1510,7 +1510,9 @@ svg:has(text:contains("mermaid version")) {
 /* 引文 */
 .prose blockquote {
   background: transparent;
-  padding-block: 0;
+  border-left-width: 3px;
+  border-radius: 0;
+  padding: 0 0 0 1rem;
   font-size: 0.9em;
 }
 .prose blockquote p {
