@@ -1,8 +1,8 @@
 ---
-title: 隨筆
+title: ▌置頂：那些還沒有發芽的種子。
 date: 2026-06-28
 description: ""
-tags: []
+tags:
 image: ""
 imageAlt: ""
 imageOG: false
