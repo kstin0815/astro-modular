@@ -1499,3 +1499,6 @@ svg:has(text:contains("mermaid version")) {
     @apply my-6;
   }
 }
+#post-content {
+  text-align: justify;
+}
