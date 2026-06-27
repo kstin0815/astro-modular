@@ -43,22 +43,6 @@ const CUSDIS_APP_ID = "70ca15eb-b428-4fbe-b4d1-79f46be948b9";
 
       observer.observe(thread, { childList: true, subtree: true });
     }
-
-    // 接收 Cusdis iframe 傳來的高度變化，動態撐高 iframe
-    window.addEventListener('message', function (e) {
-      if (!e.data) return;
-      try {
-        var data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
-        if (data.from === 'cusdis' && data.event === 'resize') {
-          var iframe = document.querySelector('#cusdis_thread iframe');
-          if (iframe && data.data) {
-            if (iframe) iframe.style.minHeight = (parseInt(e.data.data, 10) + 300) + 'px';
-            iframe.style.overflow = 'hidden';
-          }
-        }
-      } catch (_) {}
-    });
-
     function renderCusdis() {
       var el = document.getElementById('cusdis_thread');
       if (!el) return;
