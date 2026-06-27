@@ -11,8 +11,6 @@ hideTOC: false
 targetKeyword: ""
 draft: false
 aliases:
-  - 買了一個自己名字的網域
-pinned: false
 ---
 > http://tzulungchang.com/
 
@@ -22,7 +20,7 @@ pinned: false
 
 □
 
-從以前的「無名」、Blogger，再到後來的Medium和方格子，我想要有一個可以長久存放和經營內容的地方已經很久了。但一直到最近，我還是都只在社群平台發表文章。
+從以前的`無名`、`Blogger`，再到後來的`Medium`和`方格子`，我想擁有一個「可以長久存放和經營內容的平台」已經很久了。但儘管直到最近，我都還是只在社群平台發表文章。
 
 ——短的放[臉書](https://www.facebook.com/lunglung0815/)，長的放[知乎](https://www.zhihu.com/people/zhang-zi-long-44)。
 
@@ -42,4 +40,4 @@ pinned: false
 
 在這過程中，我碰到了幾個困難：在部署到Cloudflare時，因為⑴Astro Modular要求較新版的pnpm卻未在文件中指定，導致Cloudflare抓了較舊的版本；並且⑵作者在因應Astro 7.0升級時，在config設定檔新增了一個套件，但忘了在json安裝，導致Cloudflare找不到套件而建置失敗——然後，在Obsidian打開本地文件時，我又因為⑶沒按照指示打開正確的資料夾而沒有成功觸發設定外掛；接著又因為⑷沒有乖乖填內容，而多次在「網址、描述、作者名稱」等地方空白，導致驗證不過關…。
 
-當然，這些問題都是直接交給AI解決——把Cloudflare的build log直接貼給AI，或是把整個儲存庫的config檔貼給它：是的，我甚至只是用的是網頁版，而沒有用Claude Code或是桌面版Claude Cowork等花裡胡哨的工具。就這樣浪費token的全貼全輸出，也就磕磕絆絆的弄完了。還做了幾個客製化的調整：⑴用[Cusdis](https://cusdis.com/)讓訪客可以匿名留言並等待審核；⑵增加了文章置頂功能並刪除了RSS和訂閱按鈕；⑶調整了字體樣式像是左右對齊超連結底線和引文大小等等。最後，就是邊回顧整個對話過程邊打出這篇文章，作為測試和回顧。
+當然，這些問題都是直接交給AI解決——把Cloudflare的build log直接貼給AI，或是把整個儲存庫的config檔貼給它：是的，我甚至只是用的是網頁版，而沒有用Claude Code或是桌面版Claude Cowork等花裡胡哨的工具。就這樣浪費token的全貼全輸出，也就磕磕絆絆的弄完了。還做了幾個客製化的調整：⑴用[Cusdis](https://cusdis.com/)讓訪客可以匿名留言並等待審核；⑵增加了文章置頂功能並刪除了RSS和訂閱按鈕；⑶調整了字體樣式像是左右對齊超連結底線和引文大小等等。最後，就是一邊看對話回顧整個過程一邊打出這篇文章，作為測試和回顧。
