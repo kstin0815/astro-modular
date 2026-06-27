@@ -1520,5 +1520,5 @@ svg:has(text:contains("mermaid version")) {
 }
 /* 留言 */
 #cusdis_thread iframe {
-  min-height: 440px !important;
+  min-height: 360px !important;
 }
