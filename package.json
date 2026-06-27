@@ -2,6 +2,7 @@
   "name": "astro-modular",
   "version": "0.9.3",
   "type": "module",
+  "packageManager": "pnpm@10.29.3",
   "description": "A flexible blog theme designed for Obsidian users.",
   "main": "index.js",
   "scripts": {
