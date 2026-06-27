@@ -1,7 +1,7 @@
 {
   "runWizardOnStartup": true,
-  "currentTemplate": "standard",
-  "currentTheme": "oxygen",
+  "currentTemplate": "minimal",
+  "currentTheme": "charcoal",
   "customThemeFile": "custom",
   "contentOrganization": "file-based",
   "themeColors": {
@@ -12,9 +12,9 @@
     }
   },
   "siteInfo": {
-    "site": "astro-modular.kstin0815.workers.dev",
+    "site": "https://astro-modular.kstin0815.workers.dev/posts/",
     "title": "漫漫長路",
-    "description": "「第30年晴耕雨讀的悠閒生活。」",
+    "description": "",
     "author": "kstin0815",
     "language": "cn",
     "faviconThemeAdaptive": true,
@@ -24,7 +24,7 @@
     "contentWidth": "45rem"
   },
   "tableOfContents": {
-    "enabled": true,
+    "enabled": false,
     "depth": 4
   },
   "footer": {
@@ -58,6 +58,16 @@
         "title": "facebook",
         "url": "https://www.facebook.com/lunglung0815/",
         "icon": "facebook"
+      },
+      {
+        "title": "instagram",
+        "url": "https://www.instagram.com/lunglung0815/",
+        "icon": "instagram"
+      },
+      {
+        "title": "threads",
+        "url": "https://www.threads.com/@lunglung0815",
+        "icon": "threads"
       }
     ]
   },
@@ -77,10 +87,10 @@
       "social": true
     },
     "quickActions": {
-      "enabled": true,
-      "toggleMode": true,
-      "graphView": true,
-      "changeTheme": true
+      "enabled": false,
+      "toggleMode": false,
+      "graphView": false,
+      "changeTheme": false
     }
   },
   "homeOptions": {
@@ -111,11 +121,11 @@
     "wordCount": true,
     "tags": true,
     "linkedMentions": {
-      "enabled": true,
+      "enabled": false,
       "linkedMentionsCompact": false
     },
     "graphView": {
-      "enabled": true,
+      "enabled": false,
       "showInSidebar": true,
       "maxNodes": 100,
       "showOrphanedPosts": true
@@ -144,25 +154,22 @@
   },
   "features": {
     "commandPalette": true,
-    "readingTime": true,
-    "linkedMentions": true,
+    "readingTime": false,
+    "linkedMentions": false,
     "linkedMentionsCompact": false,
-    "graphView": true,
-    "postNavigation": true,
-    "hideScrollBar": false,
-    "scrollToTop": true,
-    "showSocialIconsInFooter": true,
+    "graphView": false,
+    "postNavigation": false,
+    "hideScrollBar": true,
+    "scrollToTop": false,
+    "showSocialIconsInFooter": false,
     "profilePicture": false,
     "comments": false,
-    "featureButton": "mode",
-    "showPostCardCoverImages": "featured-and-posts",
-    "postCardAspectRatio": "og",
-    "customPostCardAspectRatio": "2.5/1",
+    "featureButton": "none",
     "quickActions": {
-      "enabled": true,
-      "toggleMode": true,
-      "graphView": true,
-      "changeTheme": true
+      "enabled": false,
+      "toggleMode": false,
+      "graphView": false,
+      "changeTheme": false
     }
   },
   "typography": {
@@ -224,8 +231,8 @@
     }
   },
   "optionalContentTypes": {
-    "projects": true,
-    "docs": true
+    "projects": false,
+    "docs": false
   },
   "availableThemes": "default",
   "customThemes": "",
