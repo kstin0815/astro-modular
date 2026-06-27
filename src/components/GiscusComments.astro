@@ -3,13 +3,13 @@ import { siteConfig } from '@/config';
 if (!siteConfig.postOptions.comments.enabled) {
   return null;
 }
-const CUSDIS_APP_ID = "70ca15eb-b428-4fbe-b4d1-79f46be948b9";
+const CUSDIS_APP_ID = "你的_APP_ID";
 ---
 <div class="cusdis-comments-container" style="margin-top: 2rem; max-width: 100%;">
   <div
     id="cusdis_thread"
     data-host="https://cusdis.com"
-    data-app-id={CUSDIS_APP_ID}
+    data-app-id={70ca15eb-b428-4fbe-b4d1-79f46be948b9}
   ></div>
 </div>
 
@@ -30,6 +30,15 @@ const CUSDIS_APP_ID = "70ca15eb-b428-4fbe-b4d1-79f46be948b9";
         document.body.appendChild(s);
       }
     }
+
+    // 讓 iframe 跟著留言內容長高,避免內部出現獨立捲軸
+    window.addEventListener('message', function (e) {
+      if (e.data && e.data.from === 'cusdis' && e.data.event === 'resize') {
+        var iframe = document.querySelector('#cusdis_thread iframe');
+        if (iframe) iframe.style.height = e.data.data + 'px';
+      }
+    });
+
     renderCusdis();
     function hookSwup() {
       if (window.swup && window.swup.hooks) {
