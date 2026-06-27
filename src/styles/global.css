@@ -1502,3 +1502,13 @@ svg:has(text:contains("mermaid version")) {
 #post-content {
   text-align: justify;
 }
+/* 內文超連結加底線 */
+.prose a:not(.wikilink) {
+  text-decoration: underline !important;
+}
+.prose blockquote {
+  font-size: 0.9em;
+  padding-top: 0.25rem;     /* 上下內距變小 */
+  padding-bottom: 0.25rem;
+  background: transparent;   /* 拿掉底色,只留左邊那條線 */
+}
