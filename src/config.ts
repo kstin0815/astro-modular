@@ -189,7 +189,7 @@ export const siteConfig: SiteConfig = {
   // [CONFIG:HOMEPAGE_TITLE]
   homepageTitle: "",
   // [CONFIG:SITE_DESCRIPTION]
-  description: "",
+  description: "「第30年晴耕雨讀的悠閒生活。」",
   // [CONFIG:SITE_AUTHOR]
   author: "kstin0815",
   // [CONFIG:SITE_LANGUAGE]
