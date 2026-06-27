@@ -11,6 +11,7 @@ hideTOC: false
 targetKeyword: ""
 draft: false
 aliases:
+  - 買了一個自己名字的網域
 pinned: false
 ---
 > http://tzulungchang.com/
@@ -25,9 +26,9 @@ pinned: false
 
 但不是讓它直接弄好，而是讓AI一步步帶著我做。因為，一來想要順便學點東西，二來是意外發現還挺簡單和有趣的：首先，網站是用[Astro Modular](https://astro.build/themes/details/astro-modular/)架的——Astro Modular是[Astro](https://astro.build/)的一個主題，Astro是一個「以內容為中心的」的現代網頁框架：根據AI給我的說法，一個網站就像一本書，你可以自己一個字一個字刻好手工印拓，也可以寫好草稿就丟給工廠去排版印刷。而像Astro這樣的框架，就是有著自己一套印刷規則的印刷廠，既是生成器也是網頁框架——至於，以「內容為中心」的意思是，它更適合生成「靜態網站」，也就是印好後就不管你了，每個讀者拿到的都是一模模一樣樣的同一本書，而不像動態網站那樣，每個讀者只會拿到暫定本，如果不滿意或在上面寫了些什麼，就會有小精靈千里傳音跑回伺服器，然後伺服器再趕快根據他的反饋，印出符合他條件的那一本書。
 
-而Astro Modular，則是Astro這間印刷廠一個特別的版型，或甚至是一套出版流程：以我的例子來說，我是依照Astro Modular在「[GitHub儲存庫](https://github.com/davidvkimball/astro-modular)」的指示，在Quick Start那邊直接選擇把網站部署到Cloudflare：此時，你需要確保幾件事情——⑴有一個[GitHub](https://github.com/)帳號；⑵有一個[Cloudflare](https://www.cloudflare.com/)帳號；然後，它就會自動在你的GitHub複製一個儲存庫，並透過Cloudflare部署，生成一個可以公開瀏覽的網址。然後，視個人情況，你可能還會需要安裝：⑶分散式版本控制軟體[Git](https://git-scm.com/)，用來把複製在GitHub的儲存庫載下來[^1]；⑷筆記軟體[Obsidian](https://obsidian.md/)，用來編輯載下來的文件也就是網頁後台；⑸JavaScript的執行環境[Node.js](https://nodejs.org/zh-tw/download)和套件管理器pnpm，因為Astro是用JavaScript寫的，如果你要在本地預覽網頁就需要安裝它們——但如果你想直接在GitHub上編輯，不預覽也不用本機編輯，就其實都不用這些。
+而Astro Modular，則是Astro這間印刷廠一個特別的版型，或甚至是一套出版流程：以我的例子來說，我是依照Astro Modular在「[GitHub儲存庫](https://github.com/davidvkimball/astro-modular)」的指示，在Quick Start那邊直接選擇把網站部署到Cloudflare：此時，你需要確保幾件事情——⑴有一個[GitHub](https://github.com/)帳號；⑵有一個[Cloudflare](https://www.cloudflare.com/)帳號；然後，它就會自動在你的GitHub複製一個儲存庫，並透過Cloudflare部署，生成一個可以公開瀏覽的網址。然後，視個人情況，你可能還會需要安裝：⑶分散式版本控制軟體[Git](https://git-scm.com/)，用來把複製在GitHub的儲存庫載下來¹；⑷筆記軟體[Obsidian](https://obsidian.md/)，用來編輯載下來的文件也就是網頁後台；⑸JavaScript的執行環境[Node.js](https://nodejs.org/zh-tw/download)和套件管理器pnpm，因為Astro是用JavaScript寫的，如果你要在本地預覽網頁就需要安裝它們——但如果你想直接在GitHub上編輯，不預覽也不用本機編輯，就其實都不用這些。
 
-[^1]: 雖然，按理來說，應該是「GitHub是用來儲存Git的數據庫」才對，但我們應該可喜不用管那麼多。
+¹ 雖然，按理來說，應該是「GitHub是用來儲存Git的數據庫」才對，但我們應該可喜不用管那麼多。
 
 在這過程中，我碰到了幾個困難：在部署到Cloudflare時，因為⑴Astro Modular要求較新版的pnpm卻未在文件中指定，導致Cloudflare抓了較舊的版本；並且⑵作者在因應Astro 7.0升級時，在config設定檔新增了一個套件，但忘了在json安裝，導致Cloudflare找不到套件而建置失敗——然後，在Obsidian打開本地文件時，我又因為⑶沒有按照指示打開正確的資料夾，沒有成功觸發設定外掛；接著又因為⑷沒有乖乖填內容，而多次在「網址、描述、作者名稱」等地方空白，導致驗證不過關…。
 
