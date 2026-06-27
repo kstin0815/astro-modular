@@ -1,6 +1,6 @@
 {
   "runWizardOnStartup": true,
-  "currentTemplate": "compact",
+  "currentTemplate": "minimal",
   "currentTheme": "charcoal",
   "customThemeFile": "custom",
   "contentOrganization": "file-based",
@@ -24,8 +24,8 @@
     "contentWidth": "45rem"
   },
   "tableOfContents": {
-    "enabled": true,
-    "depth": 2
+    "enabled": false,
+    "depth": 4
   },
   "footer": {
     "enabled": true,
@@ -87,10 +87,10 @@
       "social": true
     },
     "quickActions": {
-      "enabled": true,
-      "toggleMode": true,
+      "enabled": false,
+      "toggleMode": false,
       "graphView": false,
-      "changeTheme": true
+      "changeTheme": false
     }
   },
   "homeOptions": {
@@ -121,8 +121,8 @@
     "wordCount": true,
     "tags": true,
     "linkedMentions": {
-      "enabled": true,
-      "linkedMentionsCompact": true
+      "enabled": false,
+      "linkedMentionsCompact": false
     },
     "graphView": {
       "enabled": false,
@@ -154,22 +154,22 @@
   },
   "features": {
     "commandPalette": true,
-    "readingTime": true,
-    "linkedMentions": true,
-    "linkedMentionsCompact": true,
+    "readingTime": false,
+    "linkedMentions": false,
+    "linkedMentionsCompact": false,
     "graphView": false,
-    "postNavigation": true,
-    "hideScrollBar": false,
-    "scrollToTop": true,
+    "postNavigation": false,
+    "hideScrollBar": true,
+    "scrollToTop": false,
     "showSocialIconsInFooter": false,
     "profilePicture": false,
     "comments": false,
     "featureButton": "none",
     "quickActions": {
-      "enabled": true,
-      "toggleMode": true,
+      "enabled": false,
+      "toggleMode": false,
       "graphView": false,
-      "changeTheme": true
+      "changeTheme": false
     }
   },
   "typography": {
