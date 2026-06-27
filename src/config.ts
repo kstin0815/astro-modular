@@ -241,7 +241,7 @@ export const siteConfig: SiteConfig = {
   //[CONFIG:HIDE_SCROLL_BAR]
   hideScrollBar: true,
   // [CONFIG:SCROLL_TO_TOP]
-  scrollToTop: true,
+  scrollToTop: false,
   // [CONFIG:FEATURE_BUTTON]
   featureButton: "none", // "mode" | "graph" | "theme" | "none"
   deployment: {
@@ -277,7 +277,7 @@ export const siteConfig: SiteConfig = {
     },
     quickActions: {
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_ENABLED]
-      enabled: true,
+      enabled: false,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_TOGGLE_MODE]
       toggleMode: false,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_GRAPH_VIEW]
@@ -421,29 +421,29 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:POST_OPTIONS_COMMENTS_PROVIDER]
       provider: "giscus",
       // [CONFIG:POST_OPTIONS_COMMENTS_REPO]
-      repo: "",
+      repo: "davidvkimball/astro-modular",
       // [CONFIG:POST_OPTIONS_COMMENTS_REPO_ID]
-      repoId: "",
+      repoId: "R_kgDOPllfKw",
       // [CONFIG:POST_OPTIONS_COMMENTS_CATEGORY]
-      category: "",
+      category: "General",
       // [CONFIG:POST_OPTIONS_COMMENTS_CATEGORY_ID]
-      categoryId: "",
+      categoryId: "DIC_kwDOPllfK84CvUpx",
       // [CONFIG:POST_OPTIONS_COMMENTS_MAPPING]
-      mapping: "",
+      mapping: "pathname",
       // [CONFIG:POST_OPTIONS_COMMENTS_STRICT]
-      strict: "",
+      strict: "0",
       // [CONFIG:POST_OPTIONS_COMMENTS_REACTIONS]
-      reactions: "",
+      reactions: "1",
       // [CONFIG:POST_OPTIONS_COMMENTS_METADATA]
-      metadata: "",
+      metadata: "0",
       // [CONFIG:POST_OPTIONS_COMMENTS_INPUT_POSITION]
-      inputPosition: "",
+      inputPosition: "bottom",
       // [CONFIG:POST_OPTIONS_COMMENTS_THEME]
-      theme: "",
+      theme: "preferred_color_scheme",
       // [CONFIG:POST_OPTIONS_COMMENTS_LANG]
-      lang: "",
+      lang: "en",
       // [CONFIG:POST_OPTIONS_COMMENTS_LOADING]
-      loading: "",
+      loading: "lazy",
     },
   },
 };
