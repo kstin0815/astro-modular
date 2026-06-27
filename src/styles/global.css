@@ -1518,3 +1518,7 @@ svg:has(text:contains("mermaid version")) {
 .prose blockquote p {
   margin: 0;
 }
+/* 留言 */
+#cusdis_thread iframe {
+  min-height: 440px !important;
+}
