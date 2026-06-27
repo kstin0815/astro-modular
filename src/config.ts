@@ -222,7 +222,7 @@ export const siteConfig: SiteConfig = {
   },
   layout: {
     // [CONFIG:LAYOUT_CONTENT_WIDTH]
-    contentWidth: "45rem",
+    contentWidth: "40rem",
   },
   tableOfContents: {
     // [CONFIG:TABLE_OF_CONTENTS_ENABLED]
@@ -254,14 +254,14 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:COMMAND_PALETTE_ENABLED]
     enabled: true,
     // [CONFIG:COMMAND_PALETTE_SHORTCUT]
-    shortcut: "ctrl+K",
+    shortcut: "",
     // [CONFIG:COMMAND_PALETTE_PLACEHOLDER]
-    placeholder: "Search posts",
+    placeholder: "Search content",
     search: {
       // [CONFIG:COMMAND_PALETTE_SEARCH_POSTS]
       posts: true,
       // [CONFIG:COMMAND_PALETTE_SEARCH_PAGES]
-      pages: false,
+      pages: true,
       // [CONFIG:COMMAND_PALETTE_SEARCH_PROJECTS]
       projects: false,
       // [CONFIG:COMMAND_PALETTE_SEARCH_DOCS]
@@ -308,11 +308,11 @@ export const siteConfig: SiteConfig = {
   // Navigation
   navigation: {
     // [CONFIG:NAVIGATION_SHOW_NAVIGATION]
-    showNavigation: true,
+    showNavigation: false,
     // [CONFIG:NAVIGATION_STYLE]
-    style: "traditional", // 'minimal' or 'traditional'
+    style: "minimal", // 'minimal' or 'traditional'
     // [CONFIG:NAVIGATION_SHOW_MOBILE_MENU]
-    showMobileMenu: true,
+    showMobileMenu: false,
     // [CONFIG:NAVIGATION_PAGES]
     pages: [
       { title: "Posts", url: "/posts/" },
@@ -351,7 +351,7 @@ export const siteConfig: SiteConfig = {
   homeOptions: {
     featuredPost: {
       // [CONFIG:HOME_OPTIONS_FEATURED_POST_ENABLED]
-      enabled: true, // Show featured post on homepage
+      enabled: false, // Show featured post on homepage
       // [CONFIG:HOME_OPTIONS_FEATURED_POST_TYPE]
       type: "latest", // "latest" or "featured"
       // [CONFIG:HOME_OPTIONS_FEATURED_POST_SLUG]
@@ -377,7 +377,7 @@ export const siteConfig: SiteConfig = {
     },
     blurb: {
       // [CONFIG:HOME_OPTIONS_BLURB_PLACEMENT]
-      placement: "below", // 'above' (at the top), 'below' (after content), or 'none' (disabled)
+      placement: "none", // 'above' (at the top), 'below' (after content), or 'none' (disabled)
     },
   },
 
@@ -388,9 +388,9 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:POST_OPTIONS_READING_TIME]
     readingTime: false,
     // [CONFIG:POST_OPTIONS_WORD_COUNT]
-    wordCount: true,
+    wordCount: false,
     // [CONFIG:POST_OPTIONS_TAGS]
-    tags: true,
+    tags: false,
     linkedMentions: {
       // [CONFIG:POST_OPTIONS_LINKED_MENTIONS_ENABLED]
       enabled: false,
@@ -410,7 +410,7 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:POST_OPTIONS_POST_NAVIGATION]
     postNavigation: false,
     // [CONFIG:POST_OPTIONS_SHOW_POST_CARD_COVER_IMAGES]
-    showPostCardCoverImages: "featured-and-posts", // "all" | "featured" | "home" | "posts" | "featured-and-posts" | "none"
+    showPostCardCoverImages: "none", // "all" | "featured" | "home" | "posts" | "featured-and-posts" | "none"
     // [CONFIG:POST_OPTIONS_POST_CARD_ASPECT_RATIO]
     postCardAspectRatio: "og", // "16:9" | "4:3" | "3:2" | "og" | "square" | "golden" | "custom"
     // [CONFIG:POST_OPTIONS_CUSTOM_POST_CARD_ASPECT_RATIO]
@@ -421,29 +421,29 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:POST_OPTIONS_COMMENTS_PROVIDER]
       provider: "giscus",
       // [CONFIG:POST_OPTIONS_COMMENTS_REPO]
-      repo: "davidvkimball/astro-modular",
+      repo: "",
       // [CONFIG:POST_OPTIONS_COMMENTS_REPO_ID]
-      repoId: "R_kgDOPllfKw",
+      repoId: "",
       // [CONFIG:POST_OPTIONS_COMMENTS_CATEGORY]
-      category: "General",
+      category: "",
       // [CONFIG:POST_OPTIONS_COMMENTS_CATEGORY_ID]
-      categoryId: "DIC_kwDOPllfK84CvUpx",
+      categoryId: "",
       // [CONFIG:POST_OPTIONS_COMMENTS_MAPPING]
-      mapping: "pathname",
+      mapping: "",
       // [CONFIG:POST_OPTIONS_COMMENTS_STRICT]
-      strict: "0",
+      strict: "",
       // [CONFIG:POST_OPTIONS_COMMENTS_REACTIONS]
-      reactions: "1",
+      reactions: "",
       // [CONFIG:POST_OPTIONS_COMMENTS_METADATA]
-      metadata: "0",
+      metadata: "",
       // [CONFIG:POST_OPTIONS_COMMENTS_INPUT_POSITION]
-      inputPosition: "bottom",
+      inputPosition: "",
       // [CONFIG:POST_OPTIONS_COMMENTS_THEME]
-      theme: "preferred_color_scheme",
+      theme: "",
       // [CONFIG:POST_OPTIONS_COMMENTS_LANG]
-      lang: "en",
+      lang: "",
       // [CONFIG:POST_OPTIONS_COMMENTS_LOADING]
-      loading: "lazy",
+      loading: "",
     },
   },
 };
