@@ -183,7 +183,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "astro-modular.kstin0815.workers.dev",
+  site: "https://astro-modular.kstin0815.workers.dev",
   // [CONFIG:SITE_TITLE]
   title: "漫漫長路",
   // [CONFIG:HOMEPAGE_TITLE]
