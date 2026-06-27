@@ -210,6 +210,41 @@
       "ariaLabel": "Show search filter",
       "type": "external",
       "hidden": false
+    },
+    {
+      "id": "external--",
+      "name": "新增筆記",
+      "ariaLabel": "新增筆記",
+      "type": "external",
+      "hidden": false
+    },
+    {
+      "id": "external--;2",
+      "name": "新增資料夾",
+      "ariaLabel": "新增資料夾",
+      "type": "external",
+      "hidden": false
+    },
+    {
+      "id": "external--;3",
+      "name": "排序",
+      "ariaLabel": "排序",
+      "type": "external",
+      "hidden": false
+    },
+    {
+      "id": "external--;4",
+      "name": "自動揭示目前檔案",
+      "ariaLabel": "自動揭示目前檔案",
+      "type": "external",
+      "hidden": false
+    },
+    {
+      "id": "external--;5",
+      "name": "全部展開",
+      "ariaLabel": "全部展開",
+      "type": "external",
+      "hidden": false
     }
   ],
   "nativeExplorerButtonColors": {},
