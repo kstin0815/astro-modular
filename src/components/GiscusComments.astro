@@ -5,7 +5,17 @@ if (!siteConfig.postOptions.comments.enabled) {
 }
 const CUSDIS_APP_ID = "70ca15eb-b428-4fbe-b4d1-79f46be948b9";
 ---
-<div class="cusdis-comments-container" style="margin-top: 2rem; max-width: 100%;">
+
+<style>
+  #cusdis_thread iframe {
+    width: 100% !important;
+    border: none !important;
+    overflow: hidden !important;
+    display: block;
+  }
+</style>
+
+<div class="cusdis-comments-container" style="margin-top: 2rem; max-width: 100%; border-top: 1px solid var(--border-color, #e5e7eb); padding-top: 2rem;">
   <div
     id="cusdis_thread"
     data-host="https://cusdis.com"
@@ -15,31 +25,60 @@ const CUSDIS_APP_ID = "70ca15eb-b428-4fbe-b4d1-79f46be948b9";
 
 <script is:inline>
   (function () {
+    // 當 iframe 被插入 DOM 時，立刻移除它的內部捲軸限制
+    function watchForIframe() {
+      var thread = document.getElementById('cusdis_thread');
+      if (!thread) return;
+
+      var observer = new MutationObserver(function () {
+        var iframe = document.querySelector('#cusdis_thread iframe');
+        if (iframe) {
+          iframe.setAttribute('scrolling', 'no');
+          iframe.style.overflow = 'hidden';
+          iframe.style.width = '100%';
+          iframe.style.minHeight = '200px';
+          observer.disconnect();
+        }
+      });
+
+      observer.observe(thread, { childList: true, subtree: true });
+    }
+
+    // 接收 Cusdis iframe 傳來的高度變化，動態撐高 iframe
+    window.addEventListener('message', function (e) {
+      if (!e.data) return;
+      try {
+        var data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+        if (data.from === 'cusdis' && data.event === 'resize') {
+          var iframe = document.querySelector('#cusdis_thread iframe');
+          if (iframe && data.data) {
+            iframe.style.height = data.data + 'px';
+            iframe.style.overflow = 'hidden';
+          }
+        }
+      } catch (_) {}
+    });
+
     function renderCusdis() {
       var el = document.getElementById('cusdis_thread');
       if (!el) return;
       el.setAttribute('data-page-id', location.pathname);
       el.setAttribute('data-page-url', location.href);
       el.setAttribute('data-page-title', document.title);
+      watchForIframe();
       if (window.CUSDIS) {
         window.CUSDIS.initial();
       } else {
         var s = document.createElement('script');
-        s.async = true; s.defer = true;
+        s.async = true;
+        s.defer = true;
         s.src = 'https://cusdis.com/js/cusdis.es.js';
         document.body.appendChild(s);
       }
     }
 
-    // 讓 iframe 跟著留言內容長高,避免內部出現獨立捲軸
-    window.addEventListener('message', function (e) {
-      if (e.data && e.data.from === 'cusdis' && e.data.event === 'resize') {
-        var iframe = document.querySelector('#cusdis_thread iframe');
-        if (iframe) iframe.style.height = e.data.data + 'px';
-      }
-    });
-
     renderCusdis();
+
     function hookSwup() {
       if (window.swup && window.swup.hooks) {
         window.swup.hooks.on('page:view', renderCusdis);

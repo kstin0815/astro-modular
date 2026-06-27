@@ -23,18 +23,9 @@ draft: false
 
 --
 
-
 然後，用 [Obsidian](https://obsidian.md/) 和 [Astro Modular](https://astro.build/themes/details/astro-modular/)架了一個網站。
-
-
 
 [GitHub](https://github.com/)
 [Cloudflare](https://www.cloudflare.com/)
-
-
-
-
-
-
 
 Cusdis
