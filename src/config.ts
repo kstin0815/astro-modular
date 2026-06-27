@@ -269,21 +269,21 @@ export const siteConfig: SiteConfig = {
     },
     sections: {
       // [CONFIG:COMMAND_PALETTE_SECTIONS_QUICK_ACTIONS]
-      quickActions: true,
+      quickActions: false,
       // [CONFIG:COMMAND_PALETTE_SECTIONS_PAGES]
-      pages: true,
+      pages: false,
       // [CONFIG:COMMAND_PALETTE_SECTIONS_SOCIAL]
-      social: true,
+      social: false,
     },
     quickActions: {
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_ENABLED]
       enabled: true,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_TOGGLE_MODE]
-      toggleMode: true,
+      toggleMode: false,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_GRAPH_VIEW]
-      graphView: true,
+      graphView: false,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_CHANGE_THEME]
-      changeTheme: true,
+      changeTheme: false,
     },
   },
 
@@ -417,7 +417,7 @@ export const siteConfig: SiteConfig = {
     customPostCardAspectRatio: "2.5/1", // Only used when postCardAspectRatio is "custom" (e.g., "2.5/1")
     comments: {
       // [CONFIG:POST_OPTIONS_COMMENTS_ENABLED]
-      enabled: false,
+      enabled: true,
       // [CONFIG:POST_OPTIONS_COMMENTS_PROVIDER]
       provider: "giscus",
       // [CONFIG:POST_OPTIONS_COMMENTS_REPO]

@@ -82,15 +82,15 @@
       "docs": false
     },
     "sections": {
-      "quickActions": true,
-      "pages": true,
-      "social": true
+      "quickActions": false,
+      "pages": false,
+      "social": false
     },
     "quickActions": {
       "enabled": true,
-      "toggleMode": true,
-      "graphView": true,
-      "changeTheme": true
+      "toggleMode": false,
+      "graphView": false,
+      "changeTheme": false
     }
   },
   "homeOptions": {
@@ -135,7 +135,7 @@
     "postCardAspectRatio": "og",
     "customPostCardAspectRatio": "2.5/1",
     "comments": {
-      "enabled": false,
+      "enabled": true,
       "provider": "giscus",
       "rawScript": "",
       "repo": "",
@@ -163,16 +163,16 @@
     "scrollToTop": true,
     "showSocialIconsInFooter": false,
     "profilePicture": false,
-    "comments": false,
+    "comments": true,
     "featureButton": "none",
     "showPostCardCoverImages": "featured-and-posts",
     "postCardAspectRatio": "og",
     "customPostCardAspectRatio": "2.5/1",
     "quickActions": {
       "enabled": true,
-      "toggleMode": true,
-      "graphView": true,
-      "changeTheme": true
+      "toggleMode": false,
+      "graphView": false,
+      "changeTheme": false
     }
   },
   "typography": {
@@ -199,7 +199,7 @@
       "style": "circle"
     },
     "comments": {
-      "enabled": false,
+      "enabled": true,
       "provider": "giscus",
       "rawScript": "",
       "repo": "",
