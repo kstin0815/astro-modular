@@ -183,7 +183,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "https://astro-modular.kstin0815.workers.dev/posts/",
+  site: "https://astro-modular.kstin0815.workers.dev",
   // [CONFIG:SITE_TITLE]
   title: "漫漫長路",
   // [CONFIG:HOMEPAGE_TITLE]
@@ -236,7 +236,7 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:FOOTER_CONTENT]
     content: `© 2026 {author}. Built with the <a href="https://github.com/davidvkimball/astro-modular" target="_blank">Astro Modular</a> theme.`,
     // [CONFIG:FOOTER_SHOW_SOCIAL_ICONS]
-    showSocialIconsInFooter: false,
+    showSocialIconsInFooter: true,
   },
   //[CONFIG:HIDE_SCROLL_BAR]
   hideScrollBar: true,
@@ -308,11 +308,11 @@ export const siteConfig: SiteConfig = {
   // Navigation
   navigation: {
     // [CONFIG:NAVIGATION_SHOW_NAVIGATION]
-    showNavigation: false,
+    showNavigation: true,
     // [CONFIG:NAVIGATION_STYLE]
     style: "minimal", // 'minimal' or 'traditional'
     // [CONFIG:NAVIGATION_SHOW_MOBILE_MENU]
-    showMobileMenu: false,
+    showMobileMenu: true,
     // [CONFIG:NAVIGATION_PAGES]
     pages: [
       { title: "Posts", url: "/posts/" },
