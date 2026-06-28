@@ -57,7 +57,7 @@ aliases:
 
 然後，視個人情況不同，你可能還會需要安裝：⑶分散式版本控制軟體 [Git](https://git-scm.com/) 把複製在 GitHub 的儲存庫存到本機¹、⑷筆記軟體 [Obsidian](https://obsidian.md/) 用來編輯文件，也就是網頁後台、⑸JavaScript 執行環境 [Node.js](https://nodejs.org/zh-tw/download) 和套件管理器 pnpm：因為 Astro 是用 JavaScript 寫的，所以如果你要在本地預覽網頁就需要安裝它們——但如果你想直接在 GitHub 上編輯，不預覽也不用本機編輯，就其實都不用這些。
 
-`¹ 雖然，按理來說，應該是「GitHub 是用來儲存 Git 的數據庫」才對，但我們應該可喜不用管那麼多。`
+`¹ 雖然，按理來說，應該是「GitHub 是用來儲存 Git 的數據庫」才對，但可喜可賀的是我們應該可以不用管那麼多。`
 
 在過程中，我碰到了幾個困難：在透過 Cloudflare 部署時，因為⑴ Astro Modular 要求較新版的 pnpm，但作者並未在文件中指定，導致 Cloudflare 抓了較舊的版本；並且⑵在因應 Astro 7.0 升級時，作者在 config 設定檔新增了一個套件，卻忘了在 json 安裝，導致 Cloudflare 找不到套件而建置失敗——然後，在 Obsidian 打開本地文件時，我又因為⑶沒按照指示打開正確的資料夾而沒有成功觸發設定外掛；接著又因為⑷沒有乖乖填內容，而多次在「網址、描述、作者名稱」等地方空白，導致驗證不過關…。
 
