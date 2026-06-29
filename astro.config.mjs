@@ -83,7 +83,10 @@ export default defineConfig({
     enabled: true
   },
   redirects: (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'build') ? {
-  '/posts/未命名': '/posts/eudaimonia'
+  '/posts/未命名': '/posts/eudaimonia',
+  '/posts/11': '/posts/AI',
+  '/posts/22': '/posts/AI',
+  '/posts/00': '/posts/workflow'
 } : {},
 image: {
     service: {

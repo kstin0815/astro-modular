@@ -12,6 +12,7 @@ hideTOC: false
 targetKeyword: ""
 draft: false
 aliases:
+  - "00"
 ---
 ▌昨天用 AI 搭了一個「個人網站」。260629
 https://www.facebook.com/lunglung0815/posts/27908753328717707

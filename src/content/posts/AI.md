@@ -14,6 +14,7 @@ draft: false
 aliases:
   - 未命名
   - "11"
+  - "22"
 ---
 ▌「被AI奪舍」或被消磨的熱情。260629
 https://www.facebook.com/lunglung0815/posts/27909001038692936
