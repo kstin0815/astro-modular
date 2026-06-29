@@ -2,14 +2,14 @@
 title: 提問箱
 description:
 noIndex: false
-hideTOC: true
+hideTOC: false
 draft: false
 aliases:
 ---
 Tzu-Lung Chang：
 
 > 這裡是留言板，也可以當成提問箱。
-> 我會在收到表單回應後，手動新增留言和我的回應。
+> 我會在收到表單回應後，手動新增留言和回應。
 
 ---
 
