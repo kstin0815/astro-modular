@@ -2,7 +2,8 @@
 title: ▌施工和你需要的一些風格指引。
 date: 2026-06-28
 description: ""
-tags: []
+tags:
+  - seedling
 image: ""
 imageAlt: ""
 imageOG: false
@@ -23,6 +24,16 @@ aliases:
 ▌置頂：那些還未能發芽的種子。
 ▌少年漫與平凡生活的英雄夢想。
 ▌施工和你需要的一些風格指引。
+
+---
+
+▌買了一個「自己名字」的網域。
+
+> http://tzulungchang.com/
+
+買了10年，$109.83USD，用PayPal付的。
+
+——臉書「內容營利」賺的，還剩不少。
 
 ---
 
