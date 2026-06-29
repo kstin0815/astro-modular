@@ -317,7 +317,7 @@ export const siteConfig: SiteConfig = {
     pages: [
       { title: "Posts", url: "/posts/" },
       { title: "About", url: "/about/" },
-      { title: "QA", url: "/posts/qa/" },
+      { title: "QA", url: "/qa/" },
       { title: "GitHub", url: "https://github.com/kstin0815/astro-modular" }
     ],
     // [CONFIG:NAVIGATION_SOCIAL]
