@@ -197,7 +197,7 @@ export const siteConfig: SiteConfig = {
   // [CONFIG:FAVICON_THEME_ADAPTIVE]
   faviconThemeAdaptive: true, // If true, favicon switches between favicon-dark.png and favicon-light.png based on browser's system theme preference. If false, always uses favicon.png
   // [CONFIG:DEFAULT_OG_IMAGE_ALT]
-  defaultOgImageAlt: "Astro Modular logo.", // Alt text for the default Open Graph image, public/open-graph.png
+  defaultOgImageAlt: "LungLungWay logo.", // Alt text for the default Open Graph image, public/open-graph.png
 
   // Global Settings
   // [CONFIG:THEME]
@@ -226,7 +226,7 @@ export const siteConfig: SiteConfig = {
   },
   tableOfContents: {
     // [CONFIG:TABLE_OF_CONTENTS_ENABLED]
-    enabled: false,
+    enabled: true,
     // [CONFIG:TABLE_OF_CONTENTS_DEPTH]
     depth: 4, // Maximum heading depth to include in ToC (2-6, where 2=H2, 3=H3, etc.)
   },
