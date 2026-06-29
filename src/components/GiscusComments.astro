@@ -10,7 +10,6 @@ const CUSDIS_APP_ID = "70ca15eb-b428-4fbe-b4d1-79f46be948b9";
   #cusdis_thread iframe {
     width: 100% !important;
     border: none !important;
-    overflow: hidden !important;
     display: block;
   }
 </style>
@@ -25,27 +24,47 @@ const CUSDIS_APP_ID = "70ca15eb-b428-4fbe-b4d1-79f46be948b9";
 
 <script is:inline>
   (function () {
-    // 當 iframe 被插入 DOM 時，立刻移除它的內部捲軸限制
+    var currentIframe = null;
+
+    // Cusdis 每次回報高度就調整 iframe（會長也會縮）
+    function setHeight(h) {
+      var n = parseInt(h, 10);
+      if (isNaN(n)) return;
+      if (!currentIframe) {
+        currentIframe = document.querySelector('#cusdis_thread iframe');
+      }
+      if (currentIframe) {
+        currentIframe.style.height = (n + 24) + 'px';
+      }
+    }
+
+    // 持續監聽 Cusdis 的訊息：載入、留言、送出都會觸發
+    window.addEventListener('message', function (e) {
+      if (e && e.data && e.data.from === 'cusdis' && e.data.event === 'resize') {
+        setHeight(e.data.data);
+      }
+    });
+
     function watchForIframe() {
       var thread = document.getElementById('cusdis_thread');
       if (!thread) return;
-
       var observer = new MutationObserver(function () {
         var iframe = document.querySelector('#cusdis_thread iframe');
         if (iframe) {
+          currentIframe = iframe;
           iframe.setAttribute('scrolling', 'no');
-          iframe.style.overflow = 'hidden';
           iframe.style.width = '100%';
-          iframe.style.minHeight = '200px';
+          // 不寫死高度，交給上面的 message 監聽動態調整
           observer.disconnect();
         }
       });
-
       observer.observe(thread, { childList: true, subtree: true });
     }
+
     function renderCusdis() {
       var el = document.getElementById('cusdis_thread');
       if (!el) return;
+      currentIframe = null;
       el.setAttribute('data-page-id', location.pathname);
       el.setAttribute('data-page-url', location.href);
       el.setAttribute('data-page-title', document.title);
