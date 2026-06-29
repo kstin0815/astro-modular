@@ -2,7 +2,8 @@
 title: Eudaimonia
 date: 2026-06-28
 description: ""
-tags: []
+tags:
+  - seedling
 image: ""
 imageAlt: ""
 imageOG: false
@@ -11,5 +12,4 @@ hideTOC: false
 targetKeyword: ""
 draft: false
 aliases:
-  - 未命名
 ---

@@ -13,26 +13,6 @@ targetKeyword: ""
 draft: false
 aliases:
 ---
-▌2026淡江建言社課講座：申論的架構。260409
-https://www.facebook.com/lunglung0815/posts/26919985604261156
-
-▌2026第2屆青雲盃：辯題講座與AI協作。260404
-https://www.facebook.com/lunglung0815/posts/26874057732187277
-
-【又讀《橘皮集》：社課規劃與備賽實踐】260228
-https://www.facebook.com/lunglung0815/posts/26496734366586284
-
-▌2026第1屆南說高中職辯論訓練營。260202
-https://www.facebook.com/lunglung0815/posts/26248624441397279
-
-▌我的「華語辯論理論發展史」。251023
-https://www.facebook.com/lunglung0815/posts/25352355807690818
-
-▌2025寫稿課：辯論就是不斷壓縮和解壓縮。250817
-https://www.facebook.com/lunglung0815/posts/24751524497773955
-
-【2021黑島公開課：價值性命題的立論】210610
-https://www.facebook.com/lunglung0815/posts/25352524531007279
 
 ---
 
@@ -402,3 +382,26 @@ https://www.facebook.com/lunglung0815/posts/25352524531007279
 但是從實踐的角度來說，我想這就和「電影翻拍動畫」是相同的，在其中，我們仍然能夠辨認有哪些是「動畫的」手法（例如華卓斯基姐妹的《駭速快手》）即便這明明就是電影（證明了電影也能拍出相同效果）也不妨礙我們繼續如此溝通和交談。
 
 而「溝通和交談」本來就是辯論的首要目標，不是嗎？
+
+---
+
+▌2026淡江建言社課講座：申論的架構。260409
+https://www.facebook.com/lunglung0815/posts/26919985604261156
+
+▌2026第2屆青雲盃：辯題講座與AI協作。260404
+https://www.facebook.com/lunglung0815/posts/26874057732187277
+
+【又讀《橘皮集》：社課規劃與備賽實踐】260228
+https://www.facebook.com/lunglung0815/posts/26496734366586284
+
+▌2026第1屆南說高中職辯論訓練營。260202
+https://www.facebook.com/lunglung0815/posts/26248624441397279
+
+▌我的「華語辯論理論發展史」。251023
+https://www.facebook.com/lunglung0815/posts/25352355807690818
+
+▌2025寫稿課：辯論就是不斷壓縮和解壓縮。250817
+https://www.facebook.com/lunglung0815/posts/24751524497773955
+
+【2021黑島公開課：價值性命題的立論】210610
+https://www.facebook.com/lunglung0815/posts/25352524531007279
