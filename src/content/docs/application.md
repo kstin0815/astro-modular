@@ -1,5 +1,5 @@
 ---
-title: Workflow
+title: Application
 description:
 category: AI
 order: 3
@@ -12,7 +12,9 @@ hideTOC: false
 draft: false
 featured: true
 aliases:
+  - workflow 1
 ---
+
 ## 【讀書筆記：要點、條列式、議論文、做定義】
 
 • 感知、元素、要點、主題句；
