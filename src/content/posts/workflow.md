@@ -1,9 +1,8 @@
 ---
-title: ▌與AI協作和使用AI的工作流程。
+title: workflow
 date: 2026-06-29
 description: ""
 tags:
-  - seedling
 image: ""
 imageAlt: ""
 imageOG: false
@@ -12,8 +11,9 @@ hideTOC: false
 targetKeyword: ""
 draft: false
 aliases:
-  - "00"
 ---
+
+
 
 ## ▌昨天用 AI 搭了一個「個人網站」。260628
 

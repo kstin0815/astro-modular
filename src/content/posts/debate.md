@@ -1,9 +1,8 @@
 ---
-title: debate
+title: Debate
 date: 2026-06-28
 description: ""
 tags:
-  - seedling
 image: ""
 imageAlt: ""
 imageOG: false
@@ -13,6 +12,7 @@ targetKeyword: ""
 draft: false
 aliases:
 ---
+
 
 ## 【讀書筆記：要點、條列式、議論文、做定義】
 

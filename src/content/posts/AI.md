@@ -3,7 +3,6 @@ title: ▌AI只是映照出我們自身的鏡子。
 date: 2026-06-29
 description: ""
 tags:
-  - seedling
 image: ""
 imageAlt: ""
 imageOG: false

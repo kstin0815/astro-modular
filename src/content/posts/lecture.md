@@ -1,9 +1,8 @@
 ---
-title: ▌「講課紀錄」：在行動中萌芽。
+title: Lecture
 date: 2026-06-29
 description: ""
 tags:
-  - budding
 image: ""
 imageAlt: ""
 imageOG: false
@@ -13,6 +12,8 @@ targetKeyword: ""
 draft: false
 aliases:
 ---
+
+
 
 ## ▌2026淡江建言社課：申論的架構。
 

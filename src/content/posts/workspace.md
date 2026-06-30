@@ -1,9 +1,8 @@
 ---
-title: ▌施工和你需要的一些風格指引。
+title: Workspace
 date: 2026-06-28
 description: ""
 tags:
-  - seedling
 image: ""
 imageAlt: ""
 imageOG: false
@@ -13,18 +12,13 @@ targetKeyword: ""
 draft: false
 aliases:
 ---
+
 ▌•
 ①②③④⑤⑥⑦⑧⑨⑩
 ⑴⑵⑶⑷⑸⑹⑺⑻⑼⑽
 ⒈⒉⒊⒋⒌⒍⒎⒏⒐⒑
 
 > 在「原始碼模式」改 title 才不會改到檔名。
-
-▌置頂：那些還未能發芽的種子。
-▌少年漫與平凡生活的英雄夢想。
-▌施工和你需要的一些風格指引。
-▌AI只是映照出我們自身的鏡子。
-▌「講課紀錄」：在行動中萌芽。
 
 ---
 

@@ -1,9 +1,8 @@
 ---
-title: ▌置頂：那些還未能發芽的種子。
+title: uncategorized
 date: 2026-06-28
 description: ""
 tags:
-  - seedling
 image: ""
 imageAlt: ""
 imageOG: false
@@ -14,6 +13,7 @@ draft: false
 aliases:
 pinned: true
 ---
+
 
 ## ▌最近對「網路不反映現實」感到越來越困擾。
 
@@ -81,7 +81,9 @@ pinned: true
 
 ---
 
-## 「選擇善良其實是選擇願意承擔風險。」
+## ▌選擇善良其實是選擇願意承擔風險。
+
+「選擇善良其實是選擇願意承擔風險。」
 
 在豆瓣評論看到一句話，覺得很有意思。因為善與惡的選擇，從來不是「為什麼他這麼好的人也會遭逢不幸？」而是「就是因為他是好人所以才會遭遇不幸。」
 
@@ -106,5 +108,5 @@ https://www.facebook.com/lunglung0815/posts/27830279189898455
 ▌提高 EQ 只是爽到別人嗎？260308
 https://www.facebook.com/lunglung0815/posts/26572328739026846
 
-「選擇善良其實是選擇願意承擔風險。」251231
+▌選擇善良其實是選擇願意承擔風險。251231
 https://www.facebook.com/lunglung0815/posts/25960066900253036

@@ -3,7 +3,6 @@ title: ▌少年漫與平凡生活的英雄夢想。
 date: 2026-06-28
 description: ""
 tags:
-  - budding
 image: ""
 imageAlt: ""
 imageOG: false
