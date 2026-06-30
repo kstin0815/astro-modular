@@ -185,7 +185,7 @@ export const siteConfig: SiteConfig = {
   // [CONFIG:SITE_URL]
   site: "https://tzulungchang.com",
   // [CONFIG:SITE_TITLE]
-  title: "The Lung Lung Way 漫漫長路",
+  title: "漫漫長路 lunglung0815",
   // [CONFIG:HOMEPAGE_TITLE]
   homepageTitle: "",
   // [CONFIG:SITE_DESCRIPTION]
