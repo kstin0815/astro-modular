@@ -12,7 +12,6 @@ hideTOC: false
 draft: false
 featured: true
 aliases:
-  - methodology
 ---
 ## 授課
 

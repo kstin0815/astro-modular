@@ -1,19 +1,18 @@
 ---
-title: AI
-date: 2026-06-29
-description: ""
-tags:
-image: ""
-imageAlt: ""
-imageOG: false
+title: Reflection
+description: AI的發展與反思
+category: AI
+order: 2
+version:
+lastModified: 2026-06-30
+image:
+imageAlt:
 hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
 draft: false
+featured: true
 aliases:
 ---
-
-
 ## ▌「被AI奪舍」或被消磨的熱情。
 
 這兩年，越來越多「被AI奪舍」的說法：關於自己喜歡的創作者，開始依賴AI，然後變得完全不像他們自己的鬼故事——也許是文字，也許是影片，甚至是繪圖。

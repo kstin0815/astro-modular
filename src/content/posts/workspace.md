@@ -12,20 +12,20 @@ targetKeyword: ""
 draft: false
 aliases:
 ---
-[Paul Graham](https://www.paulgraham.com/)
-[Steph Ango](https://stephango.com/)
-
-[Derek Sivers](https://sive.rs/)
-[Shaan Puri](https://www.shaanpuri.com/)
-
----
-
 ▌•
 ①②③④⑤⑥⑦⑧⑨⑩
 ⑴⑵⑶⑷⑸⑹⑺⑻⑼⑽
 ⒈⒉⒊⒋⒌⒍⒎⒏⒐⒑
 
 > 在「原始碼模式」改 title 才不會改到檔名。
+
+---
+
+[Paul Graham](https://www.paulgraham.com/)
+[Steph Ango](https://stephango.com/)
+
+[Derek Sivers](https://sive.rs/)
+[Shaan Puri](https://www.shaanpuri.com/)
 
 ---
 

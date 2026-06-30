@@ -1,21 +1,18 @@
 ---
 title: Workflow
-date: 2026-06-29
-description: ""
-tags:
-image: ""
-imageAlt: ""
-imageOG: false
+description: AI輔助和工作流
+category: AI
+order: 1
+version:
+lastModified: 2026-06-30
+image:
+imageAlt:
 hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
 draft: false
+featured: true
 aliases:
 ---
-
-
-
-
 ## ▌昨天用 AI 搭了一個「個人網站」。260628
 
 從以前的`無名`、Blogger，再到後來的 Medium 和`方格子`，我想擁有一個「可以長久存放和經營內容的平台」其實已經很久了。但儘管直到最近，我都還是只在社群平台發表文章。

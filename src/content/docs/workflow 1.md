@@ -1,19 +1,18 @@
 ---
-title: Debate
-date: 2026-06-28
-description: ""
-tags:
-image: ""
-imageAlt: ""
-imageOG: false
+title: Workflow
+description:
+category: AI
+order: 3
+version:
+lastModified: 2026-06-30
+image:
+imageAlt:
 hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
 draft: false
+featured: true
 aliases:
 ---
-
-
 ## 【讀書筆記：要點、條列式、議論文、做定義】
 
 • 感知、元素、要點、主題句；
