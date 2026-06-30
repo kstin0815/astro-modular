@@ -146,32 +146,14 @@
 # Generated redirects from content aliases
 
 [[redirects]]
-  from = "/posts/未命名"
-  to = "/posts/AI"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/posts/11"
-  to = "/posts/AI"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/posts/22"
-  to = "/posts/AI"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/posts/未命名"
-  to = "/posts/eudaimonia"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/posts/00"
-  to = "/posts/workflow"
+  to = "/posts/zhihu"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/docs/astro-modular-configuration"
+  to = "/docs/configuration"
   status = 301
   force = true
 

@@ -12,7 +12,6 @@ hideTOC: false
 draft: false
 featured: true
 aliases:
-  - api-reference
 ---
 This document provides a complete reference for the Astro Modular theme APIs, utilities, and configuration options. 
 
