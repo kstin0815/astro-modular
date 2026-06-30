@@ -1,5 +1,5 @@
 ---
-title: ▌少年漫與平凡生活的英雄夢想。
+title: Manga
 date: 2026-06-28
 description: ""
 tags:
@@ -12,6 +12,7 @@ targetKeyword: ""
 draft: false
 aliases:
 ---
+
 
 ## 「那可是我的整個人生世界觀基礎建立和奠定的年紀啊！」
 

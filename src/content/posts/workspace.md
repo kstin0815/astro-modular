@@ -12,6 +12,13 @@ targetKeyword: ""
 draft: false
 aliases:
 ---
+[Paul Graham](https://www.paulgraham.com/)
+[Steph Ango](https://stephango.com/)
+
+[Derek Sivers](https://sive.rs/)
+[Shaan Puri](https://www.shaanpuri.com/)
+
+---
 
 ▌•
 ①②③④⑤⑥⑦⑧⑨⑩
