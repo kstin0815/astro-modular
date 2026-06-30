@@ -1,5 +1,5 @@
 ---
-title: workflow
+title: Workflow
 date: 2026-06-29
 description: ""
 tags:
@@ -12,6 +12,7 @@ targetKeyword: ""
 draft: false
 aliases:
 ---
+
 
 
 

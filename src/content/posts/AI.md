@@ -1,5 +1,5 @@
 ---
-title: ▌AI只是映照出我們自身的鏡子。
+title: AI
 date: 2026-06-29
 description: ""
 tags:
@@ -12,6 +12,7 @@ targetKeyword: ""
 draft: false
 aliases:
 ---
+
 
 ## ▌「被AI奪舍」或被消磨的熱情。
 

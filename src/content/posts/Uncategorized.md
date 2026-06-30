@@ -1,5 +1,5 @@
 ---
-title: uncategorized
+title: Uncategorized
 date: 2026-06-28
 description: ""
 tags:
@@ -13,6 +13,7 @@ draft: false
 aliases:
 pinned: true
 ---
+
 
 
 ## ▌最近對「網路不反映現實」感到越來越困擾。
