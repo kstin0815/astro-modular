@@ -14,33 +14,8 @@ draft: false
 aliases:
   - "00"
 ---
-▌昨天用 AI 搭了一個「個人網站」。260629
-https://www.facebook.com/lunglung0815/posts/27908753328717707
 
-▌每一本書都是一個等待被支解吞噬的架構。260605
-https://www.facebook.com/lunglung0815/posts/27617238604535849
-
-▌最近把跟 AI 協作的框架做了一個大升級。260224
-https://www.facebook.com/lunglung0815/posts/26459135733679481
-
-【AI知識庫管理：Claude Code vs Desktop】260224
-https://www.facebook.com/lunglung0815/posts/26457358860523835
-
-▌七個模板：AI協作筆記。260106
-https://www.facebook.com/lunglung0815/posts/26011560548437004
-
-▌紀錄一下用AI整理筆記的流程。251222
-https://www.facebook.com/lunglung0815/posts/25895347226725004
-
-▌壓縮與智力的展現。250325
-https://www.facebook.com/lunglung0815/posts/9878870012132648
-
-「怎麼用AI提升寫作效率？」250211
-https://www.facebook.com/lunglung0815/posts/9615793015107017
-
----
-
-▌昨天用 AI 搭了一個「個人網站」。260628
+## ▌昨天用 AI 搭了一個「個人網站」。260628
 
 從以前的`無名`、Blogger，再到後來的 Medium 和`方格子`，我想擁有一個「可以長久存放和經營內容的平台」其實已經很久了。但儘管直到最近，我都還是只在社群平台發表文章。
 
@@ -88,7 +63,7 @@ https://www.facebook.com/lunglung0815/posts/9615793015107017
 
 ---
 
-▌每一本書都是一個等待被支解吞噬的架構。
+## ▌每一本書都是一個等待被支解吞噬的架構。
 
 「AI會減損認知能力嗎？」
 
@@ -108,7 +83,7 @@ https://www.facebook.com/lunglung0815/posts/9615793015107017
 
 ---
 
-▌最近把跟 AI 協作的框架做了一個大升級。
+## ▌最近把跟 AI 協作的框架做了一個大升級。
 
 我最早的 AI 用法很簡單，就是讀書和做筆記。不是請它幫我做筆記，而是讓它讀我的筆記。具體來說，是這樣的：⑴我會把所有相關主題的資料都讀一遍，如果是英文就先丟進免費的 Google AI Studio 請它用 SCQA 摘要全文；⑵然後，我會打一篇落落長的想到哪寫到哪的筆記，再把這個筆記丟給 AI 請它做反向大綱；⑶看著這個我在寫的時候毫無意識的大綱，我再認真沉下氣來好好思考怎麼整理出一個完整的體系架構——就這樣不斷「打碎輸入、重組輸出、擴展再壓縮、再解壓縮」把知識內容反覆錘鍊打磨直到只剩下薄薄一張 A4 紙和上面的簡單樹狀圖和條列式。
 
@@ -134,7 +109,7 @@ https://www.facebook.com/lunglung0815/posts/9615793015107017
 
 ---
 
-【AI知識庫管理：Claude Code vs Desktop】
+## 【AI知識庫管理：Claude Code vs Desktop】
 
 AI用久，真的有時會讓人想到帶學弟妹——討論不做筆記，每次都要重新上演：「我是誰？我在哪？我們現在要幹嘛！」
 
@@ -189,7 +164,7 @@ https://github.com/YishenTu/claudian
 
 ---
 
-▌七個模板：AI協作筆記。
+## ▌七個模板：AI協作筆記。
 
 • SCQA：背景-衝突-問題-解決。
 • 新認識、新觀點、新行動。
@@ -221,7 +196,7 @@ https://github.com/YishenTu/claudian
 
 ---
 
-▌紀錄一下用AI整理筆記的流程。
+## ▌紀錄一下用AI整理筆記的流程。
 
 首先，是閱讀。我以前就喜歡在從頭到尾通讀之前，先看目錄和略讀。因為閱讀速度夠快，所以基本十來分鐘就能掌握大致內容，然後決定要不要仔細看，還是只挑重點段落來看。但英文就沒有辦法了，所以我會用三個階段的指令用AI輔助閱讀：全文和章節摘要，特定章節和段落的詳細摘要。
 
@@ -251,7 +226,7 @@ https://github.com/YishenTu/claudian
 
 ---
 
-▌壓縮與智力的展現。
+## ▌壓縮與智力的展現。
 
 通用人工智慧先驅 Marcus Hutter 曾說：良好的壓縮與智能密切相關。因而把「無損壓縮率」作為了衡量智慧高低的硬性指標。又或者，就像塔雷伯說的，你應該要能在讀完一本書之後用一句話總結然後再從這句話反推出整本書。
 
@@ -309,7 +284,7 @@ https://github.com/YishenTu/claudian
 
 ---
 
-▌紀錄一下用AI整理筆記的流程。
+## ▌紀錄一下用AI整理筆記的流程。
 
 首先，是閱讀。我以前就喜歡在從頭到尾通讀之前，先看目錄和略讀。因為閱讀速度夠快，所以基本十來分鐘就能掌握大致內容，然後決定要不要仔細看，還是只挑重點段落來看。但英文就沒有辦法了，所以我會用三個階段的指令用AI輔助閱讀：全文和章節摘要，特定章節和段落的詳細摘要。
 
@@ -339,7 +314,7 @@ https://github.com/YishenTu/claudian
 
 ---
 
-「怎麼用AI提升寫作效率？」
+## 「怎麼用AI提升寫作效率？」
 
 ▌一、讓AI當編輯，我寫它改。
 
@@ -376,3 +351,29 @@ Kimi 還有 Gemini 都有夠呆…，
 
 以及我相信網路上的大多數人都比AI還笨；
 如果連AI都看不懂，很明顯他們也不會懂。
+
+---
+
+▌昨天用 AI 搭了一個「個人網站」。260629
+https://www.facebook.com/lunglung0815/posts/27908753328717707
+
+▌每一本書都是一個等待被支解吞噬的架構。260605
+https://www.facebook.com/lunglung0815/posts/27617238604535849
+
+▌最近把跟 AI 協作的框架做了一個大升級。260224
+https://www.facebook.com/lunglung0815/posts/26459135733679481
+
+【AI知識庫管理：Claude Code vs Desktop】260224
+https://www.facebook.com/lunglung0815/posts/26457358860523835
+
+▌七個模板：AI協作筆記。260106
+https://www.facebook.com/lunglung0815/posts/26011560548437004
+
+▌紀錄一下用AI整理筆記的流程。251222
+https://www.facebook.com/lunglung0815/posts/25895347226725004
+
+▌壓縮與智力的展現。250325
+https://www.facebook.com/lunglung0815/posts/9878870012132648
+
+「怎麼用AI提升寫作效率？」250211
+https://www.facebook.com/lunglung0815/posts/9615793015107017

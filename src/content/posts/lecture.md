@@ -13,6 +13,7 @@ targetKeyword: ""
 draft: false
 aliases:
 ---
+
 ## ▌2026淡江建言社課：申論的架構。
 
 ⒈以何帆的〈如何讓文字表達更清晰？〉為例說明何謂「架構」：以「用簡單的白話文把一件小事說清楚」作為回答，並逐一說明每一個關鍵詞（⑴簡單的白話文、⑵一件小事、⑶說清楚）和「說清楚」的三個標準：①段落有主題句、②主題句即段落之間有邏輯聯繫、③主題句之後即段落內的句子之間要有邏輯聯繫。
@@ -402,3 +403,11 @@ https://www.facebook.com/lunglung0815/posts/24751524497773955
 
 【2021黑島公開課：價值性命題的立論】210610
 https://www.facebook.com/lunglung0815/posts/25352524531007279
+
+---
+
+## 20210611黑島辯論公開課【政策辯論の價值辯論】
+<iframe src="https://drive.google.com/file/d/1LctYKbGOpBMFLay4dr4xZ6sPlADuKRRI/preview" allow="autoplay" allowfullscreen style="width:100%; aspect-ratio:16/9; border:none;" ></iframe>
+
+## 20230226維洛納實戰辯訓營【立論設計與戰局策略】
+<iframe src="https://drive.google.com/file/d/1vXGefFR9rRF3n0yphJRVglI8RFGxXzQz/preview" allow="autoplay" allowfullscreen style="width:100%; aspect-ratio:16/9; border:none;" ></iframe>
