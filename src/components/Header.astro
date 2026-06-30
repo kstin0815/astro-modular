@@ -35,19 +35,26 @@ const paletteIcon = allSectionsDisabled ? 'search' : 'command';
     <div class="flex items-center justify-between h-16">
       <!-- Logo / Site Title / Profile Picture -->
       <div class="flex items-center">
-        <a href="/" class="hover:opacity-75 transition-opacity">
-          {showProfilePicture ? (
-            <img
-              src={profilePicture.image}
-              alt={profilePicture.alt}
-              class={getHeaderProfilePictureClasses(profilePicture.style)}
-            />
-          ) : (
-            <span class="font-semibold text-primary-900 dark:text-primary-50">
-              {siteConfig.title}
+        <div class="flex flex-col leading-tight">
+          <a href="/" class="hover:opacity-75 transition-opacity">
+            {showProfilePicture ? (
+              <img
+                src={profilePicture.image}
+                alt={profilePicture.alt}
+                class={getHeaderProfilePictureClasses(profilePicture.style)}
+              />
+            ) : (
+              <span class="font-semibold text-primary-900 dark:text-primary-50">
+                {siteConfig.title}
+              </span>
+            )}
+          </a>
+          {siteConfig.description && (
+            <span class="mt-0.5 text-xs font-normal text-primary-500 dark:text-primary-400">
+              {siteConfig.description}
             </span>
           )}
-        </a>
+        </div>
       </div>
 
       <!-- Center area with smart navigation -->
