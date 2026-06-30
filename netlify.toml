@@ -152,12 +152,6 @@
   force = true
 
 [[redirects]]
-  from = "/docs/astro-modular-configuration"
-  to = "/docs/configuration"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/*"
   to = "/404"
   status = 404

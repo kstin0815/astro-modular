@@ -83,8 +83,7 @@ export default defineConfig({
     enabled: true
   },
   redirects: (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'build') ? {
-  '/posts/00': '/posts/zhihu',
-  '/docs/astro-modular-configuration': '/docs/configuration'
+  '/posts/00': '/posts/zhihu'
 } : {},
 image: {
     service: {
