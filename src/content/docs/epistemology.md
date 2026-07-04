@@ -4,7 +4,7 @@ description: "What: 知識和證成"
 category: Debate
 order: 2
 version:
-lastModified: 2026-06-30
+lastModified: 2026-07-04
 image:
 imageAlt:
 hideCoverImage: false
@@ -667,7 +667,7 @@ https://www.facebook.com/lunglung0815/posts/26325268723732850
 ▌概念與類比：證明和反駁與分類即證明。260310
 https://www.facebook.com/lunglung0815/posts/26599034633022923
 
-▌切分與類比：當沉默的礦石開始歌唱。2603121
+▌切分與類比：當沉默的礦石開始歌唱。260312
 https://www.facebook.com/lunglung0815/posts/26621550607437992
 
 ▌一個「命題」到底是怎麼被獲得支持的？260623

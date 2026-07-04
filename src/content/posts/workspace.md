@@ -77,7 +77,7 @@ aliases:
 ---
 
 <div style="white-space: pre; line-height: 1.03;">
-【方案2b：━┃┏┗】
+【方案2b：━┃┫┏┗】
 　
 　　　　　┏行動
 清晰━┳━┫角色
