@@ -4,7 +4,7 @@ description: "What: 知識和證成"
 category: Debate
 order: 2
 version:
-lastModified: 2026-07-04
+lastModified: 2026-07-05
 image:
 imageAlt:
 hideCoverImage: false
@@ -1210,13 +1210,13 @@ George Lakoff（著），何文忠（譯）（2015），《我們賴以生存的
 ---
 ## 2018-2022
 
-▌定義，是萬惡之源。180414
+▌新希望：定義，是萬惡之源。180414
 https://zhuanlan.zhihu.com/p/35668080
 
-▌類推，是萬法歸宗。181218
+▌新希望：類推，是萬法歸宗。181218
 https://zhuanlan.zhihu.com/p/52574983
 
-▌隱喻，是萬象森羅。190827
+▌新希望：隱喻，是萬象森羅。190827
 https://zhuanlan.zhihu.com/p/80049224
 
 ▌辯論，是萬里獨行。211126

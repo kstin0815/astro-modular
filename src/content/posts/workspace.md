@@ -21,12 +21,11 @@ aliases:
 
 [^1]: ▌「探索」的前方:小竅門 vs 笨功夫?
 https://fb.com/lunglung0815/posts/27865561329703574
-    
-    ▌寫作,或辯論作為空想實驗。
-    https://fb.com/lunglung0815/posts/26097805069812551
-    
-    ▌切分與類比:當沉默的礦石開始歌唱。
-    https://fb.com/lunglung0815/posts/26621550607437992
+	
+	▌寫作,或辯論作為空想實驗。
+	https://fb.com/lunglung0815/posts/26097805069812551
+	▌切分與類比:當沉默的礦石開始歌唱。
+	https://fb.com/lunglung0815/posts/26621550607437992
 
 ---
 
