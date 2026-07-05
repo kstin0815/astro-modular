@@ -1,0 +1,212 @@
+---
+// RefNoteCard.astro
+// 腳註懸浮參考卡:文章中的腳註標記(GFM footnote)在滑鼠懸停/點擊時,
+// 浮現卡片顯示該腳註的內容——用來放「這個概念相關的筆記清單」(標題+連結)。
+// 用法:在 DocumentationLayout.astro 或 BaseLayout.astro 的 body 內加上 <RefNoteCard />
+---
+
+<div id="rn-card" class="rn-card" role="tooltip" aria-hidden="true">
+  <div class="rn-card-body"></div>
+</div>
+
+<style is:global>
+  /* ── 腳註標記外觀:把數字換成符號、做成小徽章 ── */
+  .prose sup a[data-footnote-ref],
+  #post-content sup a[data-footnote-ref] {
+    text-decoration: none !important;
+    font-size: 0.78em;
+    padding: 0 0.28em;
+    margin: 0 0.1em;
+    border-radius: 4px;
+    background: rgba(120, 120, 200, 0.12);
+    opacity: 0.85;
+    transition: opacity 0.15s, background 0.15s;
+  }
+  .prose sup a[data-footnote-ref]:hover,
+  #post-content sup a[data-footnote-ref]:hover {
+    opacity: 1;
+    background: rgba(120, 120, 200, 0.22);
+  }
+
+  /* ── 卡片 ── */
+  .rn-card {
+    position: fixed;
+    z-index: 9999;
+    width: min(400px, calc(100vw - 24px));
+    max-height: 320px;
+    overflow: hidden;
+    display: none;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #ffffff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+    font-size: 0.84rem;
+    line-height: 1.7;
+  }
+  .rn-card.rn-visible { display: block; }
+
+  .rn-card-body {
+    padding: 0.7rem 0.95rem;
+    max-height: 320px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .rn-card-body > :first-child { margin-top: 0; }
+  .rn-card-body > :last-child { margin-bottom: 0; }
+  .rn-card-body p { margin: 0.3em 0; }
+  .rn-card-body a {
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(120, 120, 200, 0.35);
+  }
+  .rn-card-body a:hover { border-bottom-color: currentColor; }
+  /* 卡片裡的返回箭頭(GFM 自動生成)不需要顯示 */
+  .rn-card-body a[data-footnote-backref] { display: none; }
+
+  .dark .rn-card {
+    background: #1e2430;
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    color: #d5dae3;
+  }
+
+  /* ── 頁尾腳註區:預設保留(卡片的後備);想隱藏就取消下面註解 ── */
+  /*
+  .prose section[data-footnotes],
+  #post-content section[data-footnotes] { display: none; }
+  */
+</style>
+
+<script>
+  (() => {
+    if ((window as any).__rnInit) return;
+    (window as any).__rnInit = true;
+
+    // 標記顯示的符號;設為 null 則保留原本的數字編號
+    const MARKER_TEXT: string | null = "◈";
+
+    const card = () => document.getElementById("rn-card") as HTMLElement;
+    let showTimer: number | undefined;
+    let hideTimer: number | undefined;
+    let currentRef: HTMLAnchorElement | null = null;
+    const isCoarse = window.matchMedia("(pointer: coarse)").matches;
+
+    function restyleMarkers() {
+      if (MARKER_TEXT === null) return;
+      document
+        .querySelectorAll<HTMLAnchorElement>("a[data-footnote-ref]")
+        .forEach((a) => {
+          if (a.dataset.rnStyled) return;
+          a.dataset.rnStyled = "1";
+          a.textContent = MARKER_TEXT;
+        });
+    }
+
+    // 由標記找到對應的腳註內容節點(GFM: href="#user-content-fn-xxx")
+    function footnoteBody(ref: HTMLAnchorElement): Element | null {
+      const id = decodeURIComponent((ref.getAttribute("href") || "").replace(/^#/, ""));
+      if (!id) return null;
+      return document.getElementById(id);
+    }
+
+    function position(anchorRect: DOMRect) {
+      const c = card();
+      const gap = 8;
+      c.style.visibility = "hidden";
+      c.classList.add("rn-visible");
+      const cw = c.offsetWidth;
+      const ch = c.offsetHeight;
+      let x = Math.min(Math.max(anchorRect.left - 12, 12), window.innerWidth - cw - 12);
+      let y = anchorRect.bottom + gap;
+      if (y + ch > window.innerHeight - 12) y = anchorRect.top - ch - gap;
+      if (y < 12) y = 12;
+      c.style.left = `${x}px`;
+      c.style.top = `${y}px`;
+      c.style.visibility = "";
+    }
+
+    function show(ref: HTMLAnchorElement) {
+      const src = footnoteBody(ref);
+      if (!src) return;
+      currentRef = ref;
+      const body = card().querySelector(".rn-card-body") as HTMLElement;
+      body.innerHTML = "";
+      // 複製腳註內容進卡片,外部連結一律新分頁開啟
+      Array.from(src.childNodes).forEach((n) => body.appendChild(n.cloneNode(true)));
+      body.querySelectorAll<HTMLAnchorElement>("a[href^='http']").forEach((a) => {
+        a.target = "_blank";
+        a.rel = "noopener";
+      });
+      position(ref.getBoundingClientRect());
+    }
+
+    function hide() {
+      currentRef = null;
+      card().classList.remove("rn-visible");
+    }
+
+    // ── 桌面:懸停開卡,移入卡片內不關閉 ──
+    document.addEventListener("mouseover", (e) => {
+      if (isCoarse) return;
+      const t = e.target as Element;
+      const ref = t.closest("a[data-footnote-ref]") as HTMLAnchorElement | null;
+      if (ref) {
+        clearTimeout(hideTimer);
+        clearTimeout(showTimer);
+        showTimer = window.setTimeout(() => show(ref), 180);
+      } else if (t.closest("#rn-card")) {
+        clearTimeout(hideTimer);
+      }
+    });
+
+    document.addEventListener("mouseout", (e) => {
+      if (isCoarse) return;
+      const from = (e.target as Element).closest("a[data-footnote-ref], #rn-card");
+      const to = (e.relatedTarget as Element | null)?.closest?.(
+        "a[data-footnote-ref], #rn-card"
+      );
+      if (from && from !== to) {
+        clearTimeout(showTimer);
+        clearTimeout(hideTimer);
+        hideTimer = window.setTimeout(hide, 260);
+      }
+    });
+
+    // ── 點擊行為:標記一律開卡(不跳到頁尾);點卡片外關閉 ──
+    document.addEventListener(
+      "click",
+      (e) => {
+        const t = e.target as Element;
+        const ref = t.closest("a[data-footnote-ref]") as HTMLAnchorElement | null;
+        if (ref) {
+          e.preventDefault();
+          e.stopPropagation();
+          if (currentRef === ref && card().classList.contains("rn-visible")) {
+            hide(); // 再點一次同一標記:關閉
+          } else {
+            show(ref);
+          }
+        } else if (!t.closest("#rn-card")) {
+          hide();
+        }
+      },
+      true
+    );
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") hide();
+    });
+
+    // ── 初始化與 Swup 換頁 ──
+    function init() {
+      restyleMarkers();
+      hide();
+    }
+    document.addEventListener("DOMContentLoaded", init);
+    ["swup:contentReplaced", "swup:page:view", "astro:page-load"].forEach((ev) =>
+      document.addEventListener(ev, init)
+    );
+    window.addEventListener("scroll", () => { if (!isCoarse && !card().matches(":hover")) hide(); }, { passive: true });
+    init();
+  })();
+</script>
