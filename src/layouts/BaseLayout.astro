@@ -10,6 +10,7 @@ import ScrollToTop from '@/components/ScrollToTop.astro';
 import Lightbox from '@/components/Lightbox.astro';
 import ImageGalleryManager from '@/components/ImageGalleryManager.astro';
 import CategoryFilter from '@/components/CategoryFilter.astro';
+import RefNoteCard from '@/components/RefNoteCard.astro';
 import '@/styles/global.css';
 
 // Import local fonts if configured
@@ -2173,6 +2174,9 @@ for (const [path, mod] of Object.entries(customThemeModules)) {
 
   <!-- Graph Modal (global) -->
   <GraphModal />
+
+  <!-- Ref Note Cards (global) -->
+  <RefNoteCard />
 
   <!-- Additional body scripts -->
   <slot name="scripts" />
