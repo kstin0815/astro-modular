@@ -32,7 +32,8 @@
   .rn-card {
     position: fixed;
     z-index: 9999;
-    width: min(400px, calc(100vw - 24px));
+    width: max-content;
+    max-width: min(440px, calc(100vw - 24px));
     max-height: 320px;
     overflow: hidden;
     display: none;
@@ -49,14 +50,23 @@
     padding: 0.7rem 0.95rem;
     max-height: 320px;
     overflow-y: auto;
+    overflow-x: hidden;
     overscroll-behavior: contain;
   }
   .rn-card-body > :first-child { margin-top: 0; }
   .rn-card-body > :last-child { margin-bottom: 0; }
-  .rn-card-body p { margin: 0.3em 0; }
+  .rn-card-body p {
+    margin: 0.3em 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
   .rn-card-body a {
     display: inline-block;
+    max-width: 100%;
     text-decoration: none;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: normal;
     border-bottom: 1px solid rgba(120, 120, 200, 0.35);
   }
   .rn-card-body a:hover { border-bottom-color: currentColor; }
@@ -82,8 +92,8 @@
     if ((window as any).__rnInit) return;
     (window as any).__rnInit = true;
 
-    // 標記顯示的符號;設為 null 則保留原本的數字編號
-    const MARKER_TEXT: string | null = "◈";
+    // 標記顯示的符號;設為 null 保留原本的數字編號(目前預設保留)
+    const MARKER_TEXT: string | null = null;
 
     const card = () => document.getElementById("rn-card") as HTMLElement;
     let showTimer: number | undefined;
