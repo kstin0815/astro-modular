@@ -4,7 +4,7 @@ description: "What: 知識和證成"
 category: Debate
 order: 2
 version:
-lastModified: 2026-07-05
+lastModified: 2026-07-07
 image:
 imageAlt:
 hideCoverImage: false
@@ -311,7 +311,7 @@ aliases:
 
 ## ▌觀點的生成：概念命名或社會學的理論化。
 
-⒈美國經濟社會學家Richard Swedberg在《The Art of social theory》中，將社會學理論的「理論化」分成四個步驟：(1)觀察、(2)命名、(3)類比、(4)解釋。其中，「命名」包含概念和類型學，而「類比」和「解釋」則分別包含隱喻和模式、實驗和反事實。
+⒈瑞典經濟社會學家Richard Swedberg在《The Art of social theory》中，將社會學理論的「理論化」分成四個步驟：(1)觀察、(2)命名、(3)類比、(4)解釋。其中，「命名」包含概念和類型學，而「類比」和「解釋」則分別包含隱喻和模式、實驗和反事實。
 
 ⒉儘管Swedberg認為「概念」可以被描述、被定義，也可以藉由韋伯的理想類型被理解，但他更多討論的還是定義——就如標籤理論和符號互動論的代表人物Howard S. Becker在《Tricks of the Trade》所強調的：「概念是被定義的。」
 
