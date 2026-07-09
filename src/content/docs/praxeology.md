@@ -938,6 +938,220 @@ https://www.facebook.com/lunglung0815/posts/25352524531007279
 
 ## 歷史
 
+▌一種史觀：台灣華語辯論史及其可能。
+
+「如果穿越回1630年，你人會在哪裡？」
+
+——是荷蘭東印度公司治下的熱蘭遮城？還是明崇禎末年的洛陽？或是剛結束戰亂不久的日本德川幕府的江戶城？
+
+我一直覺得這是一個很好的，也很有意思能用來「檢驗台灣主體意識」的問題。就像另一個著名問題：『一位父親和兒子發生車禍，父親當場死亡，兒子被送往醫院急診。但主治醫師看到男孩卻說：「我不能給他開刀，這是我兒子！」這怎麼可能呢？』
+
+當然，另一個檢驗「台灣主體」意識的好問題，可能是：「台灣在哪裡？」是現今台南安平地區的大員？還是清代台灣府的整個島嶼？或是還尚未成立的台灣國的整個「台澎金馬」疆域？以及，你是台灣人，你是哪裡人？
+
+對於相信台灣人是中國人的，他穿越回1630年很可能會回到洛陽，而不是熱蘭遮城，而即便是相信自己不是中國人的，也很可能即便不會穿越到江戶城，也不認為自己會穿越到馬祖金門。
+
+所以，很有意思啊。所謂「台灣的」歷史與疆域與邊陲：你有什麼樣的史觀和認同，決定了你會「以誰為中心」而穿越到哪一個地方。
+
+--
+
+但這篇要講的不是台灣主體意識，而是「多源而多元的台灣法律史」觀點。這是台大王泰升老師提出的，一種研究台灣法律史的觀點。
+
+具體來說，相較於單源而單元的歷史觀點，例如認為自己會穿越回明末，而將中華民國視為正統，而上溯明清以至秦漢而認為傳統中國和近代西方影響是現今台灣中華民國主要的法律與制度來源——王泰升老師的觀點則認為，以過去和現在曾在台灣居住和統治的居民與政權所共同交匯而成的「多源而多元的」制度與傳統才是我們研究和看待台灣法律的歷史與現在所應持有的觀點。
+
+再更具體地說，所謂「多源」大致有三到四個源頭：中國、原住民族、日本、西方。但僅說明源頭並不足以顯示其中的複雜——因為所謂「源頭」本身也並非一成不變，甚至還會互相受影響，而具體來說有：⑴傳統和受近代西方法影響的中國法、⑵各族群不同的原住民法、⑶受近代西方法影響的日本法、⑷傳統羅馬法和近代西方法。
+
+而依據歷史時期區分：在史前至1630年代，是原住民族的各族群自治，在此之後，是荷西殖民與漢人移民和後來的鄭氏王朝所各自帶來的法律傳統：傳統中國法和以羅馬法和習慣結合的近現代西方法。然後，是清帝國的傳統中國法獨大，一直到1895年日本帝國與國民政府先後將各自受到近代西方法影響與各自法律傳統結合的法律體系帶入台灣。
+
+於是「多源」而且「多元」：不只是，複數獨立治權存在的時期，例如直到日本和國民政府時期才完全被納入統治的原住民族，即便在單一政權內部，也有受到不同法律傳統和源頭而被影響的對本來源頭的修正與折衷。以現今台灣中華民國法律而言，最知名的「多元」案例應屬原住民族的狩獵權以及漢人的祭祀公業。
+
+--
+
+但這篇要講的也不是法律史，而是「這種多源而多元的台灣法律史觀點」並應用到我一直在想的華語辯論發展史：以「單源頭」的觀點來看，「華語辯論」當然可以上溯到先秦諸子百家，或以《說文解字》解析「辯論」的字義，這在現今台灣市面上僅有的兩本辯論教科書《縱橫辯論》和《認識辯論》中都是如此處理的。
+
+只是，也就像所有當代活動，即便要以中國為正統在實際展開時，還是都很快地轉向了西方的傳統：希臘時期的智者學派或詭辯家，然後是當代的英美政策辯論。儘管，所謂修辭學傳統和當代辯論的連結其實遠比許多人所想的還要薄弱，例如，在「牛津通識讀本」負責撰寫修辭學一書的 Richard Toye，就分享過自己在課堂上詢問學生有無撰寫辯論講稿的經驗，而獲得辯論隊同學輕蔑的答覆：「有，但我只使用常規論證，沒有用任何修辭技巧。」以及，神經科學和文學研究者 Angus Fletcher 在《文学发明》的尾聲不無哀傷地指出，所謂「智者學派」其實分成：⑴文學智者、⑵修辭學家、⑶哲學家。而後兩者儘管針鋒相對，卻合謀埋葬了前者。
+
+但說遠了，說回「台灣華語辯論發展史」。
+
+以「法律史」為借鏡，儘管中國有傳統中國法和受近代西方法影響的近代中國法，而西方法也分成受羅馬法影響的傳統西方法和近代西方法，但就像剛剛的討論，在辯論上，不管是先秦諸子百家，還是希臘羅馬的修辭學傳統，對於近代辯論其實都沒有多大影響。而受近代西方法影響的日本法，在辯論上，在戰前日本也並沒有自己的辯論傳統，而事實上只剩下兩個源頭，以及各自的多次的「切片式」的移植。
+
+⒈美國
+
+⑴傳統式：1914美國→1921中國→1949台灣；
+⑵奧瑞岡：1945美國→1972台灣；
+⑶正統化：1961美國→1988台灣；
+
+⒉中國
+
+⑴價值辯：1968新加坡→中國→2001台灣；
+⑵原典派：2001台灣→2011中國→2016台灣；
+⑶新國辯：2013-2019台灣→2020-2026中國；
+
+第一次，美國移植，是北京清華大學學生翻譯美國近代辯論教材引入及其後的國民政府撤退遷台；第二次是美國第七艦隊官兵示範賽和台大國際事務學會再次翻譯引進美國辯論教材；第三次是世新大學游梓翔和溫偉群，又一次將美國前沿辯論教材和理念翻譯引進台灣。而與此同時有幾個需要注意的時間點：⑴奧瑞岡式質詢規則在美國被正式接受的時間點、⑵核心議題典範被提出和確立的時間點、⑶比較優勢辯案被普遍接受的時間點。
+
+然後，是新加坡電視辯論和價值辯論，衝擊台灣過往繼受美國的政策辯論傳統，以及東吳大學和上海政法學院交流逆向輸出回中國大陸，而又在當地留學生至美國取經後不滿台灣理論的停滯和訛變，自行發展出的回歸原典運動，在新國辯後兩岸交流時期產生影響——而或許可以被視為台灣對美國第四次教材和理念的翻譯引進或更新，而也當然，同樣必須要注意這個更新的時間點和美國當地辯論社群發展的落差：⑷根屬性的功能和意義的理解之變化。
+
+--
+
+這樣「多源」所導致的，也同樣是「多元的內涵」：對「根屬性」的本土理解，對裁判典範的寬容以致虛無和唯損益比論的發展，對於中國和台灣／政策辯和價值辯的意識形態與理念之爭。
+
+然而，這個「史觀」也依舊有其問題：儘管已經力求多源和多元，這所謂「多源而多元的台灣華語辯論史」也僅僅只是華語辯論史，甚至僅僅是華語學生辯論史——在華語辯論之外，台灣還有職場青商與英語辯論的發展，前者是在正統化改革時期，就與校園分道揚鑣；後者則是打從一開始就以「學英語」的強力誘因在校園和補習班中受到家長與教師的支持且不只美國政策辯也還有議會辯論的蹤跡。甚至，在其他學門，也有大會盃、大法盃、法庭辯論，甚至是物理辯論。而在大學校園各自學習的課堂上也有老師們各自發起的辯論活動。
+
+而或許，所謂「多元」即是歷史的不可能。
+
+<svg viewBox="0 56 1120 692" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC','Noto Sans CJK TC','PingFang TC','Microsoft JhengHei','Hiragino Sans',sans-serif">
+  <defs>
+    <marker id="ah-us"  viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E6DB4"/></marker>
+    <marker id="ah-sg"  viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52A23F"/></marker>
+    <marker id="ah-cnv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#CB5A2C"/></marker>
+    <marker id="ah-cnp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9E2E44"/></marker>
+    <marker id="ah-tw"  viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#256B78"/></marker>
+    <marker id="ah-mau" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8E5A9E"/></marker>
+    <marker id="ah-mut" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9a9a9a"/></marker>
+  </defs>
+
+  <rect x="0" y="0" width="1120" height="785" fill="#FCFCFB"/>
+
+  <!-- Vertical region dividers -->
+  <g stroke="#c2c2c2" stroke-width="1.2">
+    <line x1="322" y1="100" x2="322" y2="736"/>
+    <line x1="488" y1="100" x2="488" y2="736"/>
+    <line x1="795" y1="100" x2="795" y2="736"/>
+  </g>
+
+  <!-- Faint year gridlines -->
+  <g stroke="#ededea" stroke-width="1">
+    <line x1="140" y1="128" x2="1090" y2="128"/>
+    <line x1="140" y1="176" x2="1090" y2="176"/>
+    <line x1="140" y1="258" x2="1090" y2="258"/>
+    <line x1="140" y1="320" x2="1090" y2="320"/>
+    <line x1="140" y1="360" x2="1090" y2="360"/>
+    <line x1="140" y1="408" x2="1090" y2="408"/>
+    <line x1="140" y1="448" x2="1090" y2="448"/>
+    <line x1="140" y1="500" x2="1090" y2="500"/>
+    <line x1="140" y1="575" x2="1090" y2="575"/>
+    <line x1="140" y1="615" x2="1090" y2="615"/>
+    <line x1="140" y1="660" x2="1090" y2="660"/>
+  </g>
+
+  <!-- Year labels -->
+  <g font-size="12" fill="#8a8a8a" text-anchor="end">
+    <text x="132" y="132">1895</text>
+    <text x="132" y="180">1921</text>
+    <text x="132" y="262">1949</text>
+    <text x="132" y="324">1968</text>
+    <text x="132" y="364">1972</text>
+    <text x="132" y="412">1988</text>
+    <text x="132" y="452">1993</text>
+    <text x="132" y="504">2001</text>
+    <text x="132" y="579">2011</text>
+    <text x="132" y="619">2013</text>
+    <text x="132" y="664">2020</text>
+  </g>
+
+  <!-- ===== TAIWAN STACKED ERA BANDS ===== -->
+  <g>
+    <rect x="879" y="258" width="130" height="102" fill="#8E5A9E"/>
+    <rect x="879" y="360" width="130" height="48"  fill="#5AA5C0"/>
+    <rect x="879" y="408" width="130" height="40"  fill="#3E8FA0"/>
+    <rect x="879" y="448" width="130" height="167" fill="#2E7E8A"/>
+    <rect x="879" y="615" width="130" height="119" fill="#216A70"/>
+    <g stroke="#ffffff" stroke-width="1.2" opacity="0.85">
+      <line x1="879" y1="360" x2="1009" y2="360"/>
+      <line x1="879" y1="408" x2="1009" y2="408"/>
+      <line x1="879" y1="448" x2="1009" y2="448"/>
+      <line x1="879" y1="615" x2="1009" y2="615"/>
+    </g>
+    <g font-size="15" font-weight="700" fill="#fff" text-anchor="middle">
+      <text x="944" y="314">傳統式</text>
+      <text x="944" y="390">引進期</text>
+      <text x="944" y="433">正統化</text>
+      <text x="944" y="537">本土化</text>
+      <text x="944" y="680">進行式</text>
+    </g>
+    <path d="M1013,362 L1019,362 L1019,732 L1013,732" stroke="#6a6a6a" stroke-width="1.2" fill="none"/>
+    <text x="1031" y="547" font-size="12.5" fill="#6a6a6a" text-anchor="middle" transform="rotate(90 1031 547)">奧瑞岡</text>
+  </g>
+
+  <!-- Column headers -->
+  <g font-size="14.5" font-weight="700" fill="#fff">
+    <rect x="200" y="70" width="70" height="26" rx="6" fill="#2E6DB4"/><text x="235" y="88" text-anchor="middle">美國</text>
+    <rect x="368" y="70" width="84" height="26" rx="6" fill="#52A23F"/><text x="410" y="88" text-anchor="middle">新加坡</text>
+    <rect x="602" y="70" width="70" height="26" rx="6" fill="#B85A3A"/><text x="637" y="88" text-anchor="middle">中國</text>
+    <rect x="909" y="70" width="70" height="26" rx="6" fill="#256B78"/><text x="944" y="88" text-anchor="middle">台灣</text>
+  </g>
+  <!-- China three-strand sub-labels (top, centered, 民初辯論 in middle) -->
+  <g font-size="12.5" font-weight="700">
+    <text x="565" y="112" text-anchor="middle" fill="#CB5A2C">價值辯</text>
+    <text x="637" y="112" text-anchor="middle" fill="#A8791F">民初辯論</text>
+    <text x="710" y="112" text-anchor="middle" fill="#9E2E44">政策辯</text>
+  </g>
+
+  <!-- ===== SPINES ===== -->
+  <line x1="235" y1="141" x2="235" y2="708" stroke="#2E6DB4" stroke-width="3.5" stroke-linecap="round" opacity="0.9"/>
+  <line x1="410" y1="320" x2="410" y2="448" stroke="#52A23F" stroke-width="3.5" stroke-linecap="round" opacity="0.9"/>
+  <line x1="565" y1="448" x2="565" y2="708" stroke="#CB5A2C" stroke-width="3.5" stroke-linecap="round" opacity="0.9"/>
+  <line x1="710" y1="540" x2="710" y2="708" stroke="#9E2E44" stroke-width="3.5" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- ===== TRANSMISSION ARROWS ===== -->
+  <!-- 1921 US -> 民初 [翻譯] -->
+  <line x1="235" y1="176" x2="595" y2="176" stroke="#2E6DB4" stroke-width="2.4" marker-end="url(#ah-us)"/>
+  <!-- 遷台 : 民初 down then right -> 傳統式 (aligned to 1949) -->
+  <path d="M637,189 L637,258 L877,258" fill="none" stroke="#8E5A9E" stroke-width="2.4" marker-end="url(#ah-mau)"/>
+  <!-- 消失 stub (continues down like SG 匯流) -->
+  <line x1="637" y1="258" x2="637" y2="298" stroke="#9a9a9a" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#ah-mut)"/>
+  <text x="637" y="314" text-anchor="middle" font-size="12" fill="#9a9a9a">消失</text>
+  <!-- 1972 US -> 引進期 [示範賽＋翻譯] -->
+  <line x1="235" y1="360" x2="877" y2="360" stroke="#2E6DB4" stroke-width="2.4" marker-end="url(#ah-us)"/>
+  <!-- 1988 US -> 正統化 [翻譯] -->
+  <line x1="235" y1="408" x2="877" y2="408" stroke="#2E6DB4" stroke-width="2.4" marker-end="url(#ah-us)"/>
+  <!-- 1993 SG -> CNV [國辯] -->
+  <line x1="410" y1="448" x2="531" y2="448" stroke="#52A23F" stroke-width="2.4" marker-end="url(#ah-sg)"/>
+  <!-- SG 匯流 stub -->
+  <line x1="410" y1="448" x2="410" y2="488" stroke="#9a9a9a" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#ah-mut)"/>
+  <text x="410" y="504" text-anchor="middle" font-size="12" fill="#9a9a9a">匯流</text>
+  <!-- 2001 CNV -> TW 本土化 [劍宗] -->
+  <line x1="565" y1="500" x2="877" y2="500" stroke="#CB5A2C" stroke-width="2.4" marker-end="url(#ah-cnv)"/>
+  <!-- 政策辯 TW -> CNP (船過去) -->
+  <line x1="879" y1="540" x2="746" y2="540" stroke="#256B78" stroke-width="2.4" marker-end="url(#ah-tw)"/>
+  <!-- 翻譯 US -> CNP -->
+  <line x1="235" y1="575" x2="707" y2="575" stroke="#2E6DB4" stroke-width="2.4" marker-end="url(#ah-us)"/>
+  <!-- 新國辯 CNV <-> TW (above 原典) -->
+  <line x1="565" y1="615" x2="877" y2="615" stroke="#CB5A2C" stroke-width="2.4" marker-start="url(#ah-cnv)" marker-end="url(#ah-cnv)"/>
+  <!-- 原典 CNP -> TW (below 新國辯) -->
+  <line x1="710" y1="645" x2="877" y2="645" stroke="#9E2E44" stroke-width="2.4" marker-end="url(#ah-cnp)"/>
+
+  <!-- ===== TRANSMISSION LABEL PILLS ===== -->
+  <g font-size="12" font-weight="600">
+    <g><rect x="380" y="165" width="44" height="22" rx="5" fill="#fff" stroke="#2E6DB4"/><text x="402" y="180" text-anchor="middle" fill="#2E6DB4">翻譯</text></g>
+    <g><rect x="735" y="247" width="44" height="22" rx="5" fill="#fff" stroke="#8E5A9E"/><text x="757" y="262" text-anchor="middle" fill="#8E5A9E">遷台</text></g>
+    <g><rect x="816" y="529" width="44" height="22" rx="5" fill="#fff" stroke="#256B78"/><text x="838" y="544" text-anchor="middle" fill="#256B78">交流</text></g>
+    <g><rect x="641" y="349" width="118" height="22" rx="5" fill="#fff" stroke="#2E6DB4"/><text x="700" y="364" text-anchor="middle" fill="#2E6DB4">示範賽＋翻譯</text></g>
+    <g><rect x="683" y="397" width="44" height="22" rx="5" fill="#fff" stroke="#2E6DB4"/><text x="705" y="412" text-anchor="middle" fill="#2E6DB4">翻譯</text></g>
+    <g><rect x="436" y="437" width="44" height="22" rx="5" fill="#fff" stroke="#52A23F"/><text x="458" y="452" text-anchor="middle" fill="#52A23F">國辯</text></g>
+    <g><rect x="723" y="489" width="44" height="22" rx="5" fill="#fff" stroke="#CB5A2C"/><text x="745" y="504" text-anchor="middle" fill="#CB5A2C">劍宗</text></g>
+    <g><rect x="428" y="564" width="44" height="22" rx="5" fill="#fff" stroke="#2E6DB4"/><text x="450" y="579" text-anchor="middle" fill="#2E6DB4">翻譯</text></g>
+    <g><rect x="725" y="604" width="54" height="22" rx="5" fill="#fff" stroke="#CB5A2C"/><text x="752" y="619" text-anchor="middle" fill="#CB5A2C">新國辯</text></g>
+    <g><rect x="790" y="634" width="44" height="22" rx="5" fill="#fff" stroke="#9E2E44"/><text x="812" y="649" text-anchor="middle" fill="#9E2E44">原典</text></g>
+  </g>
+
+  <!-- ===== NODES (pills) ===== -->
+  <g font-size="14" font-weight="700" fill="#fff" text-anchor="middle">
+    <rect x="196" y="115" width="78" height="26" rx="13" fill="#2E6DB4"/><text x="235" y="133">現代辯論</text>
+    <rect x="598" y="163" width="78" height="26" rx="13" fill="#A8791F"/><text x="637" y="181">民初辯論</text>
+    <rect x="371" y="307" width="78" height="26" rx="13" fill="#52A23F"/><text x="410" y="325">電視辯論</text>
+    <!-- China mid nodes (births) -->
+    <rect x="533" y="435" width="64" height="26" rx="13" fill="#CB5A2C"/><text x="565" y="453">價值辯</text>
+    <rect x="678" y="527" width="64" height="26" rx="13" fill="#9E2E44"/><text x="710" y="545">政策辯</text>
+    <!-- bottom "現況" row : 並列 -->
+    <rect x="188" y="708" width="94" height="26" rx="13" fill="#2E6DB4"/><text x="235" y="726">美國政策辯</text>
+    <rect x="533" y="708" width="64" height="26" rx="13" fill="#CB5A2C"/><text x="565" y="726">價值辯</text>
+    <rect x="678" y="708" width="64" height="26" rx="13" fill="#9E2E44"/><text x="710" y="726">政策辯</text>
+  </g>
+
+</svg>
+
+---
+
 ### 【整理筆記：台灣政策辯論的理念發展】
 
 > 試著把之前的筆記，用更集中，或者說「構有問題意識」的方式整理。然後呈現一個更清晰的背景和衝突脈絡：SCQA／或就只是ABT。
@@ -2004,63 +2218,6 @@ https://zhuanlan.zhihu.com/p/94381803
 　　　　　　　┃　┃不完整：2+1單向分支
 　　　　　　　┃　┗單層級：堆疊or階段
 　　　　　　　┗三：文氏圖/三要素兩轉折
-
---
-
-因果┳削弱┳不充分／不必然
-┃　┃　　┗不必要┳論點：不唯一
-┃　┃　　　　　　┃政策：能替代
-┃　┃　　　　　　┗判準：歸謬or拉平
-┃　┃
-┃　┗擊倒┳ABT＝有A沒X也沒B!?
-┃　　　　┗對立成因┳有弊害or反效果
-┃　　　　　　　　　┗┳倒果為因
-┃　　　　　　　　　　┃共同原因
-┃　　　　　　　　　　┗調節效果
-┃
-定義┳┳光譜or階段(2+1塌縮)or自反堆疊
-　　┃┃MECE：故事-隱喻-命名＋否定選言
-　　┃┗2×2矩陣：魚與熊掌、三要素兩轉折
-　　┃
-　　┗┳落點┳切割：怪物排除or例外排除
-　　　┃　　┗受身：怪物調整or引理合併
-　　　┃概念┳概念對比＋猜想落空
-　　　┃　　┗舉輕明重＋預設反駁
-　　　┗條件┳ABT＝X是必要條件。
-　　　　　　┗歸謬反證＝B沒X的結果。
-
-[反面定義/延伸需求/例外證明]
-[利弊互現-相反相對-辯證思考]
-
---
-
-［概念對比＋猜想落空］『事有必至，理有固然。惟天下之靜者，乃能見微而知著。月暈而風，礎潤而雨，人人知之。人事之推移，理勢之相因，其疏闊而難知，變化而不可測者，孰與天地陰陽之事，而賢者有不知，其故何也？好惡亂其中，而利害奪其外也！』
-
-［舉輕明重＋預設反駁］『信義行於君子，而刑戮施於小人。刑入於死者，乃罪大惡極，此又小人之尤甚者也。寧以義死，不苟幸生，而視死如歸，此又君子之尤難者也。方唐太宗之六年，錄大辟囚三百餘人，縱使還家，約其自歸以就死，是君子之難能，期小人之尤者以必能也。其囚及期，而卒自歸無後者，是君子之所難，而小人之所易也，此豈近於人情哉？』
-
-［ABT］『世有伯樂，然後有千里馬。千里馬常有，而伯樂不常有。故雖有名馬，衹辱於奴隸人之手，駢死於槽櫪之間，不以千里稱也。馬之千里者，一食或盡粟一石，食馬者，不知其能千里而食也。是馬也，雖有千里之能，食不飽，力不足，才美不外見，且欲與常馬等不可得，安求其能千里也？』
-
-［歸謬反證］『世皆稱孟嘗君能得士，士以故歸之，而卒賴其力，以脫於虎豹之秦。嗟乎！孟嘗君特雞鳴狗盜之雄耳，豈足以言得士？不然，擅齊之強，得一士焉，宜可以南面而制秦，尚何取雞鳴狗盜之力哉？夫雞鳴狗盜之出其門，此士之所以不至也。』
-
---
-
-• 克拉克，精简写作，后浪。
-
-在前面几章中，你已经学习了短文写作中几个特别有用的手法。你学会了如何使你的句子和段落保持平衡或不平衡，学会了在写作中调整节奏，学会切中重点。你知道两个语言要素或故事要素就可以将世界一分为二，而三个元素又能将它再次融合。不论文章是二元结构还是三元结构，你都可以用平行结构让它更具可读性、更令人印象深刻。你甚至可以改写文章的最后几个字来给读者一个惊喜。而“软硬词”的选择和节奏的变换可以让文章富有变化。
-
-• Bloom, A. Finding Your Comic Genius.
-
-So, it has a perfect balloon pop: it’s cerebral, emotional, nostalgic, extremely visual,and ends on a funny-sounding word. Wow. Also, there couldn’t have been a better choice of drawing than Leonardo da Vinci’s painting of The Last Supper. It’s iconic, relevant to Christmas and, since there are thirteen people seated at the table, it clearly would have taken Rich a lot of time to create.
-
---
-
-• Graham, P. Charisma / Power. 2017.
-
-People who are powerful but uncharismatic will tend to be disliked. Their power makes them a target for criticism that they don't have the charisma to disarm. That was Hillary Clinton's problem. It also tends to be a problem for any CEO who is more of a builder than a schmoozer. And yet the builder-type CEO is (like Hillary) probably the best person for the job.
-
-• Graham, P. The Shape of the Essay Field. 2025.
-
-An essay has to tell people something they don't already know. But there are three different reasons people might not know something, and they yield three very different kinds of essays. One reason people won't know something is if it's not important to know. That doesn't mean it will make a bad essay. For example, you might write a good essay about a particular model of car. Readers would learn something from it. It would add to their picture of the world. For a handful of readers it might even spur some kind of epiphany. But unless this is a very unusual car it's not critical for everyone to know about it. If something isn't important to know, there's no answer to the question of why people don't know it. Not knowing random facts is the default. But if you're going to write about things that are important to know, you have to ask why your readers don't already know them. Is it because they're inexperienced, or because they're obtuse? So the three reasons readers might not already know what you tell them are (a) that it's not important, (b) that they're obtuse, or (c) that they're inexperienced. The reason I did this breakdown was to get at the following fact, which might have seemed controversial if I'd led with it, but should be obvious now. If you're writing for smart people about important things, you're writing for the young.
 
 ---
 
