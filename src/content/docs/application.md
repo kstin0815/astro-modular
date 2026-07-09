@@ -100,6 +100,7 @@ aliases:
 　　　　　　　┃　┃不完整：2+1單向分支
 　　　　　　　┃　┗單層級：堆疊or階段
 　　　　　　　┗三：文氏圖/三要素兩轉折
+
 --
 
 因果┳削弱┳不充分／不必然
@@ -216,6 +217,7 @@ Explaining stuff is a skill. When training skills, people usually think about Th
 　　　　　　｜⑵經典敘事＝有意外且有影響　
 　　　　　　｜⑶歸謬反證＝沒結果推翻前提
 　　　　　　＋⑷預設反駁＝有意外但沒影響
+
 --
 
 ［概念對比＋懸念解答］
@@ -447,6 +449,7 @@ The most valuable insights are both general and surprising. F = ma for example. 
 　　　＋－＋動機：SCQA
 　　　　　｜連貫：何帆三招
 　　　　　＋銜接：自我設問
+
 --
 
 【動機：具體和意外】
@@ -484,6 +487,7 @@ The most valuable insights are both general and surprising. F = ma for example. 
 　　　　｜　　　└呂白：1221、1213、否定法、擴字法
 　　　　｜
 　　　　＋懸念：問題+猜想+落空
+
 --
 
 【論證：分類即證明】
