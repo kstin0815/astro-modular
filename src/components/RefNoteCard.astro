@@ -114,9 +114,24 @@
 
     // 由標記找到對應的腳註內容節點(GFM: href="#user-content-fn-xxx")
     function footnoteBody(ref: HTMLAnchorElement): Element | null {
-      const id = decodeURIComponent((ref.getAttribute("href") || "").replace(/^#/, ""));
-      if (!id) return null;
-      return document.getElementById(id);
+      const raw = (ref.getAttribute("href") || "").replace(/^#/, "");
+      if (!raw) return null;
+      // 非 ASCII 標籤(如中文 [^辯論的場景])的腳註 id 可能是 percent-encoded,
+      // 也可能是解碼後的原字;不同渲染流程結果不一,所以兩種都試。
+      const candidates = [raw];
+      try {
+        const decoded = decodeURIComponent(raw);
+        if (decoded !== raw) candidates.push(decoded);
+      } catch {}
+      try {
+        const encoded = encodeURIComponent(decodeURIComponent(raw));
+        if (!candidates.includes(encoded)) candidates.push(encoded);
+      } catch {}
+      for (const id of candidates) {
+        const el = document.getElementById(id);
+        if (el) return el;
+      }
+      return null;
     }
 
     function position(anchorRect: DOMRect) {
