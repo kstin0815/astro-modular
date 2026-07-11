@@ -1,8 +1,8 @@
 ---
-title: Handouts
+title: Handout
 date: 2026-07-05
 description: ""
-tags: []
+tags:
 image: ""
 imageAlt: ""
 imageOG: false
@@ -12,6 +12,7 @@ targetKeyword: ""
 draft: false
 aliases:
 ---
+
 ⒈緒論
 
 ⑴辯論的場景與定義
