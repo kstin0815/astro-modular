@@ -263,23 +263,23 @@ https://fb.com/lunglung0815/posts/24751524497773955
 
 →加權：座標、弱勢、均衡
 
-②價值性
+②效益
 
-• 目標or手段
-• 獨立or依賴
-• 兼顧or排他
+• 程度：影響範圍（Magnitude）
+　└Number of People Affected
+• 性質：難以挽回（Impact Framework）
+　└Degree of Harm Inflicted
+• 持續：影響深遠（Systemic）
 
-③效益
+③加權
 
-• 風險
-• 量：影響範圍
-• 質：難以挽回
-• 系統：影響深遠
-
-④加權
-
-• 時間框架（time frame）
-• 急迫性（urgency）
+• 風險（Probability）
+• 急迫（Timeframe）
+• 獨立 vs 依賴（Independent vs. Dependent）
+　└兼顧 or 排他=彈性
+• 優先考量（Prior Consideration）
+　└手段 or 目的
+• 不可承受（Most Grievous Error）
 • 最後一搏（try or die）
 
 ⑷框架的設計
