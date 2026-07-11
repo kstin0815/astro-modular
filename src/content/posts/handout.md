@@ -275,12 +275,12 @@ https://fb.com/lunglung0815/posts/24751524497773955
 
 • 風險（Probability）
 • 急迫（Timeframe）
-• 獨立 vs 依賴（Independent vs. Dependent）
-　└兼顧 or 排他=彈性
 • 優先考量（Prior Consideration）
 　└手段 or 目的
+• 獨立 vs 依賴（Independent vs. Dependent）
+　└兼顧 or 排他=彈性
 • 不可承受（Most Grievous Error）
-• 最後一搏（try or die）
+• 最後一搏（Try or Die）
 
 ⑷框架的設計
 
