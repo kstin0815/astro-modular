@@ -46,6 +46,18 @@ export function rehypeNormalizeAnchors() {
         }
         
         if (!href) return;
+
+        // Skip GFM footnote links (both the ref `#user-content-fn-…` and the
+        // backref `#user-content-fnref-…`). Their ids may contain non-ASCII
+        // labels (e.g. Chinese `[^辯論的場景]`) that slug normalization would
+        // strip, breaking the anchor target and the hover popup.
+        if (
+          href.startsWith('#user-content-fn') ||
+          node.properties?.dataFootnoteRef != null ||
+          node.properties?.dataFootnoteBackref != null
+        ) {
+          return;
+        }
         
         // Handle same-page anchor links (href starts with #)
         if (href.startsWith('#') && href.length > 1) {
@@ -110,4 +122,3 @@ export function rehypeNormalizeAnchors() {
     });
   };
 }
-
