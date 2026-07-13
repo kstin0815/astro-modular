@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>戰場地圖</title>
+<style>
+:root{--pro:#2b6cb0;--proL:#dbeafe;--proD:#93c5fd;--con:#c05621;--conL:#fde8dc;--conD:#fbbf8f;--ink:#1f2a37;--line:#cbd5e1;--grn:#2f855a;--red:#c0392b;--bg:#f7f8fa}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;color:var(--ink);background:var(--bg)}
+header{padding:12px 22px;background:#fff;border-bottom:2px solid var(--line)}
+header h1{font-size:19px;margin:0;letter-spacing:1px}
+main{max-width:1280px;margin:0 auto;padding:16px 22px 60px}
+button{font-family:inherit;font-size:14px;padding:7px 14px;border:1.5px solid var(--ink);border-radius:8px;background:#fff;cursor:pointer}
+button:hover{background:#eef2f7}
+button.mini{font-size:12.5px;padding:3px 10px;border-radius:6px}
+button.on{background:var(--ink);color:#fff}
+.bar{display:flex;gap:10px;margin:0 0 14px;align-items:center;flex-wrap:wrap}
+.mode{font-size:14px;font-weight:700;border:2px solid var(--ink);border-radius:8px;padding:7px 12px;background:#fff}
+.palette{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:10px}
+.pal{background:#fff;border:2px solid var(--line);border-radius:10px;padding:9px}
+.pal h3{margin:0 0 6px;font-size:15px;display:flex;align-items:center;gap:8px}
+.pal.pro h3{color:var(--pro)}.pal.con h3{color:var(--con)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;min-height:34px}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:7px;font-size:13.5px;font-weight:700;cursor:grab;border:2px solid;user-select:none;background:#fff}
+.chip.pro{border-color:var(--pro);background:var(--proL)}
+.chip.con{border-color:var(--con);background:var(--conL)}
+.chip .cat{width:11px;height:11px;border-radius:3px;display:inline-block;flex:none}
+.chip .sc{font-size:11.5px;color:#475569;font-weight:400}
+#ed{background:#fff;border:2px solid var(--ink);border-radius:10px;padding:10px 12px;margin-bottom:14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:14px}
+#ed input{font-family:inherit;font-size:14px;padding:5px 8px;border:1.5px solid var(--line);border-radius:6px;width:120px}
+#ed input[type=number]{width:64px}
+#stack{background:#fff;border:2px solid var(--ink);border-radius:10px;overflow:hidden}
+.row{display:flex;align-items:center;gap:8px;padding:4px 10px;background:#fff}
+.row.ins{box-shadow:inset 0 5px 0 var(--grn)}
+.row.lift{opacity:.35;outline:2px dashed var(--grn)}
+.row.bad .track{outline:3px solid var(--red)}
+.row.over .track{outline:3px dashed var(--grn)}
+.handle{width:24px;text-align:center;font-size:17px;color:#94a3b8;cursor:grab;flex:none}
+.rlab{width:104px;flex:none;font-size:13.5px;display:flex;align-items:center;gap:6px}
+.rlab .cat{width:12px;height:12px;border-radius:3px;display:inline-block}
+.track{position:relative;flex:1;border:1.5px solid var(--ink);border-radius:5px;overflow:hidden}
+.blue{position:absolute;left:0;top:0;bottom:0;background:var(--proD)}
+.orange{position:absolute;right:0;top:0;bottom:0;background:var(--conD)}
+.inchips{position:absolute;top:4px;bottom:4px;display:flex;flex-direction:column;flex-wrap:wrap;gap:4px;align-content:flex-start;padding:2px 7px;overflow:hidden}
+.inchips.pro{left:0}.inchips.con{right:0;align-items:flex-end;align-content:flex-end}
+.inchips .chip{padding:1px 7px;font-size:12.5px;cursor:pointer}
+.rctl{flex:none}
+.rctl button{font-size:12.5px;padding:4px 10px;border-radius:6px}
+.row.flat .blue{background:#cfd4da}
+.row.flat .orange{background:#e2e5e9}
+.row.flat .track{border-color:#9aa3ad}
+.row.flat .inchips .chip{opacity:.45}
+.vdiv{height:10px;cursor:ns-resize;background:linear-gradient(#fff 3px,var(--line) 3px,var(--line) 7px,#fff 7px)}
+.totals{margin-top:16px;background:#fff;border:2px solid var(--ink);border-radius:10px;padding:12px}
+.tbar{height:28px;border:1.5px solid var(--ink);border-radius:6px;overflow:hidden;display:flex;margin:8px 0}
+.tbar .b{background:var(--proD)}.tbar .o{background:var(--conD)}
+.verdict{font-size:16px;font-weight:800}
+@media(max-width:760px){.palette{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><h1>戰場地圖</h1></header>
+<main>
+  <div class="bar">
+    <span class="mode">模式Ａ（分數自動換寬度）</span>
+    <button id="addRow">＋新增列</button>
+    <button id="evenH">取消加權</button>
+    <button id="resetAll">全部重置</button>
+  </div>
+  <div class="palette">
+    <div class="pal pro"><h3>正方論點 <button class="mini" data-add="pro">新增正方</button></h3><div class="chips" id="palPro"></div></div>
+    <div class="pal con"><h3>反方論點 <button class="mini" data-add="con">新增反方</button></h3><div class="chips" id="palCon"></div></div>
+  </div>
+  <div id="ed">
+    <b id="edTitle" style="min-width:64px">編輯論點</b>
+    <span id="edBody" style="visibility:hidden">
+    類別 <input id="edCat">
+    名稱 <input id="edName">
+    分數 <button id="scDn" class="mini">−</button> <b id="edScore" style="min-width:20px;display:inline-block;text-align:center">2</b> <button id="scUp" class="mini">＋</button>
+    <button id="edSave">儲存</button>
+    <button id="edDel" style="visibility:hidden">刪除</button>
+    </span>
+  </div>
+  <div id="stack"></div>
+  <div class="totals">
+    <div>總面積（僅計未壓扁的列；藍＝正方、橘＝反方）</div>
+    <div class="tbar"><div class="b" id="tb"></div><div class="o" id="to"></div></div>
+    <div class="verdict" id="verdict"></div>
+  </div>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const COLORS=['#eab308','#10b981','#6366f1','#ec4899','#14b8a6','#f97316','#8b5cf6','#64748b'];
+let CATC={'經濟':'#eab308','健康':'#10b981','程序':'#6366f1','自由':'#ec4899'};
+function catColor(c){if(!CATC[c])CATC[c]=COLORS[Object.keys(CATC).length%COLORS.length];return CATC[c]}
+let uid=10;
+let PIECES=[
+ {id:'X1',side:'pro',label:'經濟成長',cat:'經濟',score:3},
+ {id:'X2',side:'pro',label:'觀光收益',cat:'經濟',score:2},
+ {id:'X3',side:'pro',label:'國民健康',cat:'健康',score:4},
+ {id:'X4',side:'pro',label:'程序正義',cat:'程序',score:2},
+ {id:'Y1',side:'con',label:'財政負擔',cat:'經濟',score:3},
+ {id:'Y2',side:'con',label:'醫療排擠',cat:'健康',score:2},
+ {id:'Y3',side:'con',label:'自由限縮',cat:'自由',score:3},
+];
+const H0=120, HMIN=52;
+let rows,placed,rid=0;
+function mkRow(){return{id:'r'+(++rid),cat:null,h:H0,state:'normal'}}
+function resetBoard(){rows=[mkRow(),mkRow()];placed={};PIECES.forEach(p=>placed[p.id]=null);render()}
+function piecesIn(r,side){return PIECES.filter(p=>placed[p.id]===r.id&&(!side||p.side===side))}
+function fracOf(r){const sp=piecesIn(r,'pro').reduce((a,p)=>a+p.score,0),sc=piecesIn(r,'con').reduce((a,p)=>a+p.score,0);return sp+sc===0?.5:sp/(sp+sc)}
+function unassign(p){const r=rows.find(x=>x.id===placed[p.id]);placed[p.id]=null;if(r&&piecesIn(r).length===0)r.cat=null}
+/* ---------- render ---------- */
+function chipHTML(p){return `<span class="chip ${p.side}" draggable="true" data-p="${p.id}"><span class="cat" style="background:${catColor(p.cat)}"></span>${p.label}<span class="sc">${p.score}</span></span>`}
+function render(){
+  $('#palPro').innerHTML=PIECES.filter(p=>p.side==='pro'&&!placed[p.id]).map(chipHTML).join('');
+  $('#palCon').innerHTML=PIECES.filter(p=>p.side==='con'&&!placed[p.id]).map(chipHTML).join('');
+  const S=$('#stack');S.innerHTML='';
+  rows.forEach((r,i)=>{
+    const f=fracOf(r);
+    const el=document.createElement('div');
+    el.className='row'+(r.state==='tie'?' flat':'');el.dataset.r=r.id;
+    el.innerHTML=`
+      <div class="handle" draggable="true">⠿</div>
+      <div class="rlab"><b>列 ${i+1}</b>${r.cat?`<span class="cat" style="background:${catColor(r.cat)}"></span>${r.cat}`:''}</div>
+      <div class="track" style="height:${r.h}px">
+        <div class="blue" style="width:${(f*100).toFixed(1)}%"></div>
+        <div class="orange" style="width:${((1-f)*100).toFixed(1)}%"></div>
+        <div class="inchips pro">${piecesIn(r,'pro').map(chipHTML).join('')}</div>
+        <div class="inchips con">${piecesIn(r,'con').map(chipHTML).join('')}</div>
+      </div>
+      <div class="rctl"><button data-a="tie" class="${r.state==='tie'?'on':''}">打平</button></div>`;
+    S.appendChild(el);
+    const track=el.querySelector('.track');
+    track.ondragover=e=>{if(dragPiece){e.preventDefault();el.classList.add('over')}};
+    track.ondragleave=()=>el.classList.remove('over');
+    track.ondrop=e=>{e.preventDefault();el.classList.remove('over');
+      const p=PIECES.find(x=>x.id===dragPiece);
+      if(p){
+        if(r.cat&&r.cat!==p.cat){el.classList.add('bad');setTimeout(()=>el.classList.remove('bad'),600)}
+        else{unassign(p);placed[p.id]=r.id;if(!r.cat)r.cat=p.cat;render();if(edit&&edit.id===p.id)openEd(edit)}
+      }
+      endDrag();
+    };
+    const hd=el.querySelector('.handle');
+    hd.ondragstart=e=>{dragRow=r.id;suppress=true;el.classList.add('lift');
+      e.dataTransfer.setData('text/plain','row');e.dataTransfer.setDragImage(el,30,el.offsetHeight/2)};
+    el.ondragover=e=>{if(dragRow&&dragRow!==r.id){e.preventDefault();el.classList.add('ins')}};
+    el.ondragleave=()=>el.classList.remove('ins');
+    el.ondrop=e=>{el.classList.remove('ins');
+      if(dragRow&&dragRow!==r.id){e.preventDefault();
+        const from=rows.findIndex(x=>x.id===dragRow),to=rows.findIndex(x=>x.id===r.id);
+        const[m]=rows.splice(from,1);rows.splice(to,0,m);render();
+      }
+      endDrag();
+    };
+    el.querySelector('[data-a=tie]').onclick=()=>{r.state=r.state==='tie'?'normal':'tie';render()};
+    if(i<rows.length-1){
+      const nxt=rows[i+1];
+      const strip=document.createElement('div');strip.className='vdiv';S.appendChild(strip);
+      strip.onpointerdown=e=>{e.preventDefault();strip.setPointerCapture(e.pointerId);
+        const y0=e.clientY,h1=r.h,h2=nxt.h,sum=h1+h2;
+        strip.onpointermove=ev=>{
+          r.h=Math.max(HMIN,Math.min(sum-HMIN,h1+(ev.clientY-y0)));nxt.h=sum-r.h;
+          track.style.height=r.h+'px';
+          const nx=strip.nextElementSibling;if(nx)nx.querySelector('.track').style.height=nxt.h+'px';
+          totals();
+        };
+        strip.onpointerup=()=>{strip.onpointermove=null;render()};
+      };
+    }
+  });
+  totals();
+}
+function totals(){
+  let b=0,o=0;
+  rows.forEach(r=>{if(r.state!=='normal')return;const f=fracOf(r);b+=f*r.h;o+=(1-f)*r.h});
+  const t=b+o,pb=t?b/t*100:50;
+  $('#tb').style.width=pb+'%';$('#to').style.width=(100-pb)+'%';
+  $('#verdict').textContent=t===0?'—':`藍 ${Math.round(b)} ： 橘 ${Math.round(o)} —— ${b>o?'正方勝':b<o?'反方勝':'平手'}`;
+}
+/* ---------- drag lifecycle ---------- */
+let dragPiece=null,dragRow=null,suppress=false;
+function endDrag(){dragPiece=null;dragRow=null;
+  setTimeout(()=>suppress=false,80);
+  document.querySelectorAll('.ins,.over,.lift').forEach(x=>x.classList.remove('ins','over','lift'));
+}
+document.addEventListener('dragstart',e=>{const c=e.target.closest('.chip');if(c){dragPiece=c.dataset.p;suppress=true}});
+document.addEventListener('dragend',endDrag);
+document.querySelectorAll('.pal').forEach(pal=>{
+  pal.ondragover=e=>{if(dragPiece)e.preventDefault()};
+  pal.ondrop=e=>{e.preventDefault();const p=PIECES.find(x=>x.id===dragPiece);if(p){unassign(p);render();if(edit&&edit.id===p.id)openEd(edit)}endDrag()};
+});
+/* ---------- click：論點區＝編輯；戰場內＝單擊歸位、雙擊編輯 ---------- */
+let clickTimer=null;
+document.addEventListener('click',e=>{
+  if(suppress)return;
+  const c=e.target.closest('.chip');
+  if(!c){
+    if(edit&&!e.target.closest('#ed')&&!e.target.closest('[data-add]'))closeEd();
+    return;
+  }
+  const p=PIECES.find(x=>x.id===c.dataset.p);if(!p)return;
+  if(!placed[p.id]){openEd({id:p.id});return}
+  if(clickTimer){clearTimeout(clickTimer);clickTimer=null;unassign(p);render();closeEd();return}
+  clickTimer=setTimeout(()=>{clickTimer=null;openEd({id:p.id})},280);
+});
+/* ---------- editor ---------- */
+let edit=null;
+function openEd(t){edit=t;$('#edBody').style.visibility='visible';
+  const p=t.id?PIECES.find(x=>x.id===t.id):null;
+  const inField=!!(p&&placed[p.id]);
+  $('#edTitle').textContent=p?'編輯論點':(t.side==='pro'?'新增正方':'新增反方');
+  $('#edCat').value=p?p.cat:'';$('#edName').value=p?p.label:'';$('#edScore').textContent=p?p.score:2;
+  $('#edCat').disabled=inField;$('#edName').disabled=inField;$('#edScore').disabled=false;
+  $('#edDel').style.visibility=p?'visible':'hidden';
+  $('#scUp').focus();
+}
+function closeEd(){edit=null;$('#edTitle').textContent='編輯論點';
+  $('#edCat').value='';$('#edName').value='';$('#edScore').textContent=2;
+  $('#edDel').style.visibility='hidden';
+  $('#edBody').style.visibility='hidden';}
+document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>openEd({side:b.dataset.add}));
+$('#edSave').onclick=()=>{
+  if(!edit)return;
+  const cat=$('#edCat').value.trim(),name=$('#edName').value.trim(),sc=Math.max(1,Math.min(4,+$('#edScore').textContent||1));
+  if(!name||!cat)return;
+  catColor(cat);
+  if(edit.id){const p=PIECES.find(x=>x.id===edit.id);
+    if(placed[p.id]&&p.cat!==cat)unassign(p);
+    p.cat=cat;p.label=name;p.score=sc;
+  }else{PIECES.push({id:'P'+(++uid),side:edit.side,label:name,cat,score:sc});placed['P'+uid]=null;
+    edit={id:'P'+uid};$('#edTitle').textContent='編輯論點';$('#edDel').style.visibility='visible';}
+  render();
+};
+function bump(d){const v=Math.max(1,Math.min(4,(+$('#edScore').textContent||1)+d));
+  $('#edScore').textContent=v;
+  if(edit&&edit.id){const p=PIECES.find(x=>x.id===edit.id);if(p){p.score=v;render()}}
+}
+$('#scUp').onclick=()=>bump(1);
+$('#scDn').onclick=()=>bump(-1);
+$('#edDel').onclick=()=>{if(!edit||!edit.id)return;
+  const p=PIECES.find(x=>x.id===edit.id);unassign(p);PIECES=PIECES.filter(x=>x!==p);
+  closeEd();render();
+};
+/* ---------- global ---------- */
+$('#addRow').onclick=()=>{rows.push(mkRow());render()};
+$('#evenH').onclick=()=>{const t=rows.reduce((a,r)=>a+r.h,0);rows.forEach(r=>r.h=t/rows.length);render()};
+$('#resetAll').onclick=resetBoard;
+resetBoard();
+</script>
+</body>
+</html>
