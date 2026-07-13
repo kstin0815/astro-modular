@@ -4,7 +4,7 @@ description: AI協作過程回顧
 category: AI
 order: 3
 version:
-lastModified: 2026-07-10
+lastModified: 2026-07-14
 image:
 imageAlt:
 hideCoverImage: false
@@ -14,6 +14,120 @@ featured: true
 aliases:
   - workflow 1
 ---
+
+## 【腦/心/眼：清單×對比×轉折×反轉×類比】
+
+┏修正┳偏／落點＝否定選言：MECE＋場景
+┃　　┃　［不合題、未全稱、非本質］
+┃　　┣混／概念＝對比┳性質：概念對比＋猜想落空
+┃　　┃　　　　　　　┗規模：舉輕明重＋預設反駁
+┃　　┗缺／條件＝敘事┳ABT：有A沒X也沒B→不充分
+┃　　　　　　　　　　┗歸謬反證：真A應B卻沒B!?
+┃　［反面定義、例外證明、情感用詞、對立成因］
+┗置換┳換框／標準：類比、延伸需求、時間場景個人
+　　　┗權衡／因果：利弊互現(相反相對or辯證思考)
+
+我想了一下，覺得這還是太複雜了。有沒有可能我們更簡單一點，像是：看到覺得討論太偏頗不管是定義未全稱還是舉例以偏概全總之就都是用MECE舉出其他類型並搭配具體場景說明；而如果是想要強調或釐清某個特定概念的特定內涵就是用概念對比找出相似卻不同或不同卻相似的概念予以對比反襯，如果重點不在概念不同而是關注差異並打算舉輕明重就用明確不同但程度差異遠大於人們以為的對比——而其實也可以理解成性質對比和規模對比，但總之是有特定概念要澄清，而舉出相對的在概念需要釐清或程度上要被提醒的概念加以比較；相反的，如果是針對條件而不想要找出相對概念，就能從敘事著手以ABT或歸謬反證，從句法上的角度來說其實就是對稱句和事理句，而也是理所當然因為前兩者就是休謨所說相似關係的對照而後者則是因果關係的阻礙成功和預期落空並加以解釋。然後ABT和歸謬反證都自然有場景和情境，概念對比和舉輕明重沒有，而可能需要主動用場景加以對比凸顯概念的差異——但也有另一種作法是直接類比，不從概念的切分著手而是直接以類比引入一個既成的理解框架，然後取代原本的理解：相對的，切分則是藉由釐清定義，對舊的理解進行確切修正。並且除此之外還有另一種非從定義而是從因果切入的對比起手式是利弊互現的魚與熊掌不可兼得的相反相對和如人飲水冷暖自知的辯證思考。
+
+--
+
+【給AI的指示與回饋和素材】
+
+請閱讀以下說明，學習「以駁代論」的立論流程：
+
+第一步，不質疑對手的因果論證，而是從「質」和「量」質疑落差：要不，從根本上對方論證的對象不符合定義而指鹿為馬根本不合題；要不，即便合題但對方的論證在程度範圍上並未全稱命題或論證強度要求而也還是沒有完成論證——對於前者，最常見的做法除了「直接指出落差」之外，是以「2×2矩陣」對比正確的和錯誤的定義，然後指出對手定義條件的缺失；對於後者，最常見的做法則是以「MECE」列出概念指涉的範圍，然後指出對手遺漏了哪些類型。
+
+而如果，沒辦法直接在定義上，單向的使對手論證無法抵達終點，我們就必須回到因果層以「削弱（不必然or不唯一）、拉平、反轉」硬打攻防拆解對手論證，或是雙向的打出「雙方各自滿足部份條件」的僵局進行缺失性比較各說各話——然後，能宣稱各自的案例都沒有代表性而不重要（沒有代表性有兩種可能：一是統計意義的沒有代表性的以偏概全而無法證成普遍因果關係，二是不屬於核心定義而不具備討論和認知上的重要性；前者屬於「硬打攻防」的削弱部份，後者才是回到定義）——此時，就需要進入「誰的定義」（滿足了不同條件的）更加本質，亦即哪個條件才是定義的核心？
+
+第三步，把問題從事實接近價值，因為「誰的定義更貼近本質」其實是不可能在事實層爭出輸贏，而必須進到價值層討論言說的意義：為了做到這件事情，在情感上我們必須找到衝擊點和錯開受力點，並進一步深挖情緒感受；而在形式上，我們必須以連結和類比錯開一步以反常合道驚艷觀眾——而有的時候做不到這兩者，我們可能回去以言說指引行動，或將言說視為行動，然後往後延伸定義背後的價值和意義。
+
+更進一步，我們還能把這一套用在自己身上：想像對手可能如何指出我們論證的落差，然後以Lakatos《證明與反駁》的流程處理：怪物排除、例外排除、怪物調整、引理合併——第一層的怪物排除，即是用定義切割拆解命題字詞指出落差，而例外則是概念本質層的以偏概全而因此沒有代表性和不重要；但如果發現無論如何都無法擺脫，我們將會進入怪物調整和引理合併，而有機會挖掘找出題目背後更有價值可以討論而卻被隱藏的關鍵。
+
+而反過來，在表達時，已經藉由構思，完成「以駁代論」的流程，而想要以精簡的短文表達，我們可以在最開始的時候就以「概念對比」的方式，指出我方證確定義和對方錯誤定義「很像，但卻不同」的地方，以釐清或澄清的態度偷渡我們的定義；或是，更進一步用「舉輕明重」的方式找一個類似對方定義和案例，但對其論證要求更輕微，而依舊落空的例子，來說明即便承認對方的論證結論也依舊無法滿足應有的論證門檻和要求——以及在指出條件缺失的時候，也可以用「敘事轉折」的ABT，指出如果只滿足對方的條件而缺失關鍵條件Ｘ時會發生什麼事情；或對方未滿足條件並不明顯，或該條件的必要性其實沒那麼普遍直觀時，以「歸謬反證」將滿足條件應有的結果提出來，而指出對方論證怎麼只停留在Ａ點，而沒能達到Ｂ點？在這裡，還有兩組常見的，可以搭配使用的技巧：第一組是幫切分製造出彩效果，例如用「反面定義」和「例外證明」讓觀眾感受我們的定義更加觸及被忽略本質——福爾摩斯的狗沒有叫是兼具兩者，但有時光是反面切入，不從正面定義而是反面排除也能意外出彩；或是在歸謬和轉折時以「延伸需求」指出對方論證所貼合的標準或結論只是手段而非真正目標，然後甚至能指出對手在因果論證本末倒置甚至適得其反，或至少讓我們在僵局時找到一個簡單的比較出路。第二組是「利弊互現」以幫助我們更好的在因果層達成僵局：可以是「相反相對」說明都可取而卻對立的價值總是伴隨發生魚與熊掌難以兼得，也可以是「辯證思考」指出同一件事情如人飲水冷暖自知，有時我們以為的好處也許恰恰是它的壞處。然後，切分與出彩各任選一，再連結類比和深挖而給出鮮明的意象和情緒：nostalgic、emotional、visual。
+
+--
+
+起手式要熟悉是個正確但放錯重點的詮釋。「cerebral、emotional、visual」其實可以簡化成：腦、心、眼——雖然，我們這套寫作流程，是以「以駁代論」展開，但真要說核心原則其實是「腦、心、眼」，因為辯論或許是心法，但它們才是寫作真正的律法。這也影響到輸出結構：cerebral，其實是反常合道：要有常識、要有轉折、還要合乎道理。所以，現在說「共識起手、轉折立異」並沒有錯，但問題是接下來不是切分展現——四式不只是起手，而就是同時肩負了起手與轉折，而切分的結構式用來給予「合乎道理」基礎的基石：至於為什麼？在「分類即證明」和否定選言等文章我有詳細說明——在這裡，加入 visual 是強化抽象概念為具體場景和比喻讓讀者有畫面感而更好理解或甚至直觀被衝擊。受力點和衝擊點，前者確實可選但只是「澄清的句式」可有可無，但不要擔起多餘的論證責任要在心裡既得；而衝擊點深挖，其實應該在選擇 visual 時一起考慮，並且，相對於「切分」是分離概念，深挖的時候除了情境選擇往往也會用到類比——不一定是要大幅跨界的類比，因為事實上世界上沒有兩個相同的事物和情境，所有比較類同都必然是一種類比，在這裡選擇類比是基於切分之上，綜合考慮 emotional 而也同時達成反常合道的效果。
+
+所以，總的來說，「以駁代論」是以切割定義為出發的辯論技術，然後我們結合了「腦、心、眼」寫作表達律法，已完成短文寫作。「以駁代論」的基礎是對戰場的三層劃分和 Lakatos 的四步處理法以及對手定義出問題的三種類型，然後以類型搭配不同切分結構而再包裝以四式起手，還有兩組配件——綜上共同達成 cerebral 的反常合道，然後從受力點與衝擊點選擇 visual 和 emotional 以意象呈現切分，或以類比加強合道。
+
+--
+
+⒈因果：打攻防
+　⑴口說無憑
+　⑵硬打攻防／削弱、拉平、反轉
+　⑶各說各話＝缺失比較＝以偏概全1：不普遍
+
+⒉定義：切戰場
+　⑴指鹿為馬：不合題→拆解(落差)
+　• 以偏概全2：不全稱
+　⑵捨本逐末1：不重要／沒代表性→切分(條件)
+
+⒊標準：做比較
+　⑴捨本逐末2：從事實切進價值／言說行動
+　• 受力點：澄清立場不單多餘的論證責任
+　⑵反常合道→連結(類比)
+　⑶衝擊點：切換角色→深挖
+
+--
+
+因果┳削弱┳不充分／不必然
+┃　┃　　┗不必要┳論點：不唯一
+┃　┃　　　　　　┃政策：能替代
+┃　┃　　　　　　┗判準：歸謬or拉平
+┃　┃
+┃　┗擊倒┳ABT＝有A沒X也沒B!?
+┃　　　　┗對立成因┳有弊害or反效果
+┃　　　　　　　　　┗┳倒果為因
+┃　　　　　　　　　　┃共同原因
+┃　　　　　　　　　　┗調節效果
+┃
+定義┳┳切割：怪物排除or例外排除
+　　┃┗受身：怪物調整or引理合併
+　　┃
+　　┗┳落點┳MECE：故事-隱喻-命名＋否定選言
+　　　┃　　┗光譜or階段(2+1塌縮)or自反堆疊
+　　　┃概念┳質：概念對比＋猜想落空
+　　　┃　　┃量：舉輕明重＋預設反駁
+　　　┃　　┗2×2矩陣：三要素兩轉折
+　　　┗條件┳ABT＝X是必要條件。
+　　　　　　┗歸謬反證＝B沒X的結果。
+
+[反面定義/延伸需求/例外證明]
+[利弊互現-相反相對-辯證思考]
+
+--
+
+［概念對比］『事有必至，理有固然。惟天下之靜者，乃能見微而知著。月暈而風，礎潤而雨，人人知之。人事之推移，理勢之相因，其疏闊而難知，變化而不可測者，孰與天地陰陽之事，而賢者有不知，其故何也？好惡亂其中，而利害奪其外也！』
+
+［舉輕明重］『信義行於君子，而刑戮施於小人。刑入於死者，乃罪大惡極，此又小人之尤甚者也。寧以義死，不苟幸生，而視死如歸，此又君子之尤難者也。方唐太宗之六年，錄大辟囚三百餘人，縱使還家，約其自歸以就死，是君子之難能，期小人之尤者以必能也。其囚及期，而卒自歸無後者，是君子之所難，而小人之所易也，此豈近於人情哉？』
+
+［ABT］『世有伯樂，然後有千里馬。千里馬常有，而伯樂不常有。故雖有名馬，衹辱於奴隸人之手，駢死於槽櫪之間，不以千里稱也。馬之千里者，一食或盡粟一石，食馬者，不知其能千里而食也。是馬也，雖有千里之能，食不飽，力不足，才美不外見，且欲與常馬等不可得，安求其能千里也？』
+
+［歸謬反證］『世皆稱孟嘗君能得士，士以故歸之，而卒賴其力，以脫於虎豹之秦。嗟乎！孟嘗君特雞鳴狗盜之雄耳，豈足以言得士？不然，擅齊之強，得一士焉，宜可以南面而制秦，尚何取雞鳴狗盜之力哉？夫雞鳴狗盜之出其門，此士之所以不至也。』
+
+--
+
+• 克拉克，精简写作，后浪。
+
+在前面几章中，你已经学习了短文写作中几个特别有用的手法。你学会了如何使你的句子和段落保持平衡或不平衡，学会了在写作中调整节奏，学会切中重点。你知道两个语言要素或故事要素就可以将世界一分为二，而三个元素又能将它再次融合。不论文章是二元结构还是三元结构，你都可以用平行结构让它更具可读性、更令人印象深刻。你甚至可以改写文章的最后几个字来给读者一个惊喜。而“软硬词”的选择和节奏的变换可以让文章富有变化。
+
+• Bloom, A. Finding Your Comic Genius.
+
+So, it has a perfect balloon pop: it’s cerebral, emotional, nostalgic, extremely visual,and ends on a funny-sounding word. Wow. Also, there couldn’t have been a better choice of drawing than Leonardo da Vinci’s painting of The Last Supper. It’s iconic, relevant to Christmas and, since there are thirteen people seated at the table, it clearly would have taken Rich a lot of time to create.
+
+--
+
+• Graham, P. Charisma / Power. 2017.
+
+People who are powerful but uncharismatic will tend to be disliked. Their power makes them a target for criticism that they don't have the charisma to disarm. That was Hillary Clinton's problem. It also tends to be a problem for any CEO who is more of a builder than a schmoozer. And yet the builder-type CEO is (like Hillary) probably the best person for the job.
+
+• Graham, P. The Shape of the Essay Field. 2025.
+
+An essay has to tell people something they don't already know. But there are three different reasons people might not know something, and they yield three very different kinds of essays. One reason people won't know something is if it's not important to know. That doesn't mean it will make a bad essay. For example, you might write a good essay about a particular model of car. Readers would learn something from it. It would add to their picture of the world. For a handful of readers it might even spur some kind of epiphany. But unless this is a very unusual car it's not critical for everyone to know about it. If something isn't important to know, there's no answer to the question of why people don't know it. Not knowing random facts is the default. But if you're going to write about things that are important to know, you have to ask why your readers don't already know them. Is it because they're inexperienced, or because they're obtuse? So the three reasons readers might not already know what you tell them are (a) that it's not important, (b) that they're obtuse, or (c) that they're inexperienced. The reason I did this breakdown was to get at the following fact, which might have seemed controversial if I'd led with it, but should be obvious now. If you're writing for smart people about important things, you're writing for the young.
+
+---
+
 ## ▌在注意力經濟時代和AI討論拆書和學辯論。
 
 =title：The Sirens' Call=
@@ -134,6 +248,9 @@ aliases:
 ──還有隨時的延伸、闡釋、細化、舉例。
 
 ---
+
+【腦/心/眼：清單×對比×轉折×反轉×類比】260710
+https://www.facebook.com/lunglung0815/posts/28031444119781960
 
 ▌在注意力經濟時代和AI討論拆書和學辯論。260618
 https://www.facebook.com/lunglung0815/posts/27783348681258173
