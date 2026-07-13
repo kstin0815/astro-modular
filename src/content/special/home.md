@@ -2,5 +2,5 @@
 title: Welcome
 description:
 ---
-「飲水思源。」
+https://tzulungchang.com/argument_mapping.html
 

@@ -1843,3 +1843,4 @@ aliases:
 <polygon points="315.0,396.0 304.0,398.0 313.0,385.0" fill="#181310" stroke="#181310" stroke-width="0.6"/>
 </g></svg>
 
+「飲水思源。」
