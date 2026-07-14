@@ -1,5 +1,5 @@
 ---
-title: JCI
+title: 2026 青商會 奧瑞岡式辯論進階講習會
 description: ""
 hideTOC: false
 ---

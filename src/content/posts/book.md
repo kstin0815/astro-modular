@@ -12,120 +12,448 @@ targetKeyword: ""
 draft: false
 aliases:
 ---
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1064 862" style="width:100%; height:auto;">
-<style>
-.card { fill:#fff; stroke:#111; stroke-width:1.5; }
-.pro  { fill:#e6e6e6; }            /* 正方 */
-.con  { fill:#c2c2c2; }            /* 反方 */
-.bar  { fill:none; stroke:#111; stroke-width:1.5; }
-.sep  { stroke:#bbb; stroke-width:1; }
-.btn  { fill:#fff; stroke:#111; stroke-width:1.5; }
-.inp  { fill:#f2f2f2; stroke:#999; stroke-width:1; }
-.pill { fill:#fff; stroke:#111; stroke-width:1.5; }
-.pt   { fill:#111; font-size:15px; dominant-baseline:central; }
-.t    { fill:#111; font-size:16px; dominant-baseline:central; }
-.tb   { fill:#111; font-size:16px; font-weight:700; dominant-baseline:central; }
-.tc   { fill:#111; font-size:14px; text-anchor:middle; dominant-baseline:central; }
-.tg   { fill:#777; font-size:15px; dominant-baseline:central; }
-.cn   { fill:none; stroke:#111; stroke-width:1.5; }
-</style>
-<defs>
-<clipPath id="r1"><rect x="160" y="212" width="856" height="216" rx="6"/></clipPath>
-<clipPath id="r2"><rect x="160" y="452" width="856" height="96"  rx="6"/></clipPath>
-<clipPath id="r3"><rect x="160" y="572" width="856" height="120" rx="6"/></clipPath>
-<clipPath id="rt"><rect x="44"  y="768" width="976" height="28"  rx="6"/></clipPath>
-</defs>
-<!-- ===== 正方／反方論點 ===== -->
-<rect class="card" x="24" y="20" width="432" height="88" rx="8"/>
-<text class="tb" x="54" y="46">正方論點</text>
-<rect class="btn" x="134" y="33" width="88" height="26" rx="6"/>
-<text class="tc" x="178" y="46">新增正方</text>
-<rect class="pill" x="54"  y="68" width="116" height="28" rx="14"/>
-<circle cx="68"  cy="82" r="4.5" fill="#333"/><text class="pt" x="80"  y="82">１他人健康</text>
-<rect class="pill" x="182" y="68" width="116" height="28" rx="14"/>
-<circle cx="196" cy="82" r="4.5" fill="#333"/><text class="pt" x="208" y="82">２健保負擔</text>
-<rect class="pill" x="310" y="68" width="116" height="28" rx="14"/>
-<circle cx="324" cy="82" r="4.5" fill="#bbb" stroke="#777"/><text class="pt" x="336" y="82">３氣味干擾</text>
-<rect class="card" x="480" y="20" width="560" height="88" rx="8"/>
-<text class="tb" x="510" y="46">反方論點</text>
-<rect class="btn" x="590" y="33" width="88" height="26" rx="6"/>
-<text class="tc" x="634" y="46">新增反方</text>
-<rect class="pill" x="510" y="68" width="116" height="28" rx="14"/>
-<circle cx="524" cy="82" r="4.5" fill="#333"/><text class="pt" x="536" y="82">Ａ私人場所</text>
-<rect class="pill" x="638" y="68" width="116" height="28" rx="14"/>
-<circle cx="652" cy="82" r="4.5" fill="#888"/><text class="pt" x="664" y="82">Ｂ零售業者</text>
-<rect class="pill" x="766" y="68" width="116" height="28" rx="14"/>
-<circle cx="780" cy="82" r="4.5" fill="#888"/><text class="pt" x="792" y="82">Ｃ娛樂場所</text>
-<rect class="pill" x="894" y="68" width="116" height="28" rx="14"/>
-<circle cx="908" cy="82" r="4.5" fill="#bbb" stroke="#777"/><text class="pt" x="920" y="82">Ｄ行為自由</text>
-<!-- ===== 編輯論點 ===== -->
-<rect class="card" x="24" y="124" width="1016" height="52" rx="8"/>
-<text class="tb" x="44"  y="150">編輯論點</text>
-<text class="t"  x="128" y="150">類別</text>
-<rect class="inp" x="168" y="135" width="120" height="30" rx="6"/>
-<text class="tg"  x="180" y="150">權利</text>
-<text class="t"  x="304" y="150">名稱</text>
-<rect class="inp" x="344" y="135" width="140" height="30" rx="6"/>
-<text class="tg"  x="356" y="150">氣味干擾</text>
-<text class="t"  x="504" y="150">分數</text>
-<rect class="btn" x="548" y="135" width="32" height="30" rx="6"/><text class="tc" x="564" y="150">－</text>
-<text class="tb"  x="590" y="150">2</text>
-<rect class="btn" x="610" y="135" width="32" height="30" rx="6"/><text class="tc" x="626" y="150">＋</text>
-<rect class="btn" x="660" y="134" width="72" height="32" rx="6"/><text class="tc" x="696" y="150">儲存</text>
-<rect class="btn" x="744" y="134" width="72" height="32" rx="6"/><text class="tc" x="780" y="150">刪除</text>
-<!-- ===== 三列（外框＋分隔線） ===== -->
-<rect class="card" x="24" y="192" width="1016" height="520" rx="8"/>
-<line class="sep" x1="24" y1="440" x2="1040" y2="440"/>
-<line class="sep" x1="24" y1="560" x2="1040" y2="560"/>
-<!-- 列１ 健康（高 216；正方 712） -->
-<g clip-path="url(#r1)">
-<rect class="pro" x="160" y="212" width="712" height="216"/>
-<rect class="con" x="872" y="212" width="144" height="216"/>
-</g>
-<rect class="bar" x="160" y="212" width="856" height="216" rx="6"/>
-<line class="bar" x1="872" y1="212" x2="872" y2="428"/>
-<text class="tb" x="40" y="320">列１</text><circle cx="82" cy="320" r="5" fill="#333"/><text class="t" x="94" y="320">健康</text>
-<rect class="pill" x="172" y="224" width="116" height="28" rx="14"/>
-<circle cx="186" cy="238" r="4.5" fill="#333"/><text class="pt" x="198" y="238">１他人健康</text>
-<rect class="pill" x="172" y="260" width="116" height="28" rx="14"/>
-<circle cx="186" cy="274" r="4.5" fill="#333"/><text class="pt" x="198" y="274">２健保負擔</text>
-<rect class="pill" x="888" y="224" width="116" height="28" rx="14"/>
-<circle cx="902" cy="238" r="4.5" fill="#333"/><text class="pt" x="914" y="238">Ａ私人場所</text>
-<!-- 列２ 經濟（高 96；反方 776 最寬） -->
-<g clip-path="url(#r2)">
-<rect class="pro" x="160" y="452" width="80"  height="96"/>
-<rect class="con" x="240" y="452" width="776" height="96"/>
-</g>
-<rect class="bar" x="160" y="452" width="856" height="96" rx="6"/>
-<line class="bar" x1="240" y1="452" x2="240" y2="548"/>
-<text class="tb" x="40" y="500">列２</text><circle cx="82" cy="500" r="5" fill="#888"/><text class="t" x="94" y="500">經濟</text>
-<rect class="pill" x="888" y="464" width="116" height="28" rx="14"/>
-<circle cx="902" cy="478" r="4.5" fill="#888"/><text class="pt" x="914" y="478">Ｂ零售業者</text>
-<rect class="pill" x="888" y="500" width="116" height="28" rx="14"/>
-<circle cx="902" cy="514" r="4.5" fill="#888"/><text class="pt" x="914" y="514">Ｃ娛樂場所</text>
-<!-- 上下雙向箭頭：跨過列１與列２（加權比較） -->
-<path class="cn" d="M580 396 V484 M570 406 L580 396 L590 406 M570 474 L580 484 L590 474"/>
-<!-- 列３ 權利（高 120；反方 536） -->
-<g clip-path="url(#r3)">
-<rect class="pro" x="160" y="572" width="320" height="120"/>
-<rect class="con" x="480" y="572" width="536" height="120"/>
-</g>
-<rect class="bar" x="160" y="572" width="856" height="120" rx="6"/>
-<line class="bar" x1="480" y1="572" x2="480" y2="692"/>
-<text class="tb" x="40" y="632">列３</text><circle cx="82" cy="632" r="5" fill="#bbb" stroke="#777"/><text class="t" x="94" y="632">權利</text>
-<rect class="pill" x="172" y="584" width="116" height="28" rx="14"/>
-<circle cx="186" cy="598" r="4.5" fill="#bbb" stroke="#777"/><text class="pt" x="198" y="598">３氣味干擾</text>
-<rect class="pill" x="888" y="584" width="116" height="28" rx="14"/>
-<circle cx="902" cy="598" r="4.5" fill="#bbb" stroke="#777"/><text class="pt" x="914" y="598">Ｄ行為自由</text>
-<path class="cn" d="M400 640 H560 M410 632 L400 640 L410 648 M550 632 L560 640 L550 648"/>
-<!-- ===== 總面積 ===== -->
-<rect class="card" x="24" y="728" width="1016" height="110" rx="8"/>
-<text class="t" x="44" y="752">總面積（僅計未壓扁的列；深＝正方、淺＝反方）</text>
-<g clip-path="url(#rt)">
-<rect class="pro" x="44"  y="768" width="528" height="28"/>
-<rect class="con" x="572" y="768" width="448" height="28"/>
-</g>
-<rect class="bar" x="44" y="768" width="976" height="28" rx="6"/>
-<line class="bar" x1="572" y1="768" x2="572" y2="796"/>
-<text class="tb" x="44" y="818">正方 199,872 ：反方 169,920 —— 正方勝</text>
-</svg>
+
+⒈緒論
+
+⑴辯論的場景與定義
+
+「向第三方證明你比對方更有道理[^辯論的場景]」
+
+• 第三方：權力在他方
+• 有道理：他想聽道理
+• 比對方：只跟對手比
+
+[^辯論的場景]: ▌2022黑島隊內培訓：立論課。221004
+https://zhuanlan.zhihu.com/p/570530256
+	▌辯論絮語：辯論，是什麼？220103
+	https://zhuanlan.zhihu.com/p/452710377
+
+⑵辯論的知識與意義
+
+①知識[^知識]
+
+• 關於「辯論本身」的知識
+• 關於「辯論的對象」的知識
+• 關於「辯論所能提供」的知識
+
+[^知識]: ▌關於「辯論」的知識。251015
+https://fb.com/lunglung0815/posts/25279702631622803
+
+②言說[^言說]
+
+• 信念：所說＝所指
+• 指涉：所語≠所涉
+• 言說：言說＝行動
+
+[^言說]: ▌讀書筆記：信念倫理與知識運氣。260204
+https://fb.com/lunglung0815/posts/26264482523144804
+	「好，咱們廢話不多說，直接進入辯題。」
+	https://fb.com/lunglung0815/posts/26249271194665937
+
+③形象
+
+• 內容：說「對」的技術
+• 表達：「說對」的技術
+• 場外：說「對的技術」
+
+⒉公理
+⑴類推：辯論沒有公理[^類比是辯論比賽的靈魂]
+
+• 定義：範疇即類比
+• 因果：因果即歸責
+• 價值：涵攝皆類推
+
+[^類比是辯論比賽的靈魂]: ▌新希望：隱喻，是萬象森羅。190827
+https://zhuanlan.zhihu.com/p/80049224
+
+⑵證成：勝負是限定的[^證成]
+
+①證成的困境
+
+• 無限倒退
+• 循環論證
+• 武斷中止
+
+②證成的範式
+
+「共同接受的判準」
+
+③舉證和推定
+
+[^證成]: ▌關於「辯論」的知識。251015
+https://fb.com/lunglung0815/posts/25279702631622803
+	▌為什麼要區分「論點」和「判準」？260210
+	https://fb.com/lunglung0815/posts/26325268723732850
+
+⑶比較：勝負是相對的[^立論框架]
+
+• 論證標的：切戰場＝要證明什麼？
+• 論證門檻：打攻防＝到什麼程度？
+• 論證責任：搶推定＝由誰來證明？
+
+[^立論框架]: ▌2022黑島隊內培訓：立論課。221004
+https://zhuanlan.zhihu.com/p/570530256
+	【2023維洛納：立論設計＆戰局策略】230226
+	https://fb.com/lunglung0815/posts/9651862774833374
+
+⑷修辭：形式大於內容
+
+• 焦點與背景
+• 意外與解釋
+
+⑸媒介：辯論的有限性
+
+①時間
+
+• 準備時間有限
+• 表達時間有限
+
+②口語[^口語]
+
+• 不能暫停／標籤
+• 不能回頭／架構
+
+[^口語]: ▌2025寫稿課：辯論就是不斷壓縮和解壓縮。250817
+https://fb.com/lunglung0815/posts/24751524497773955
+
+③認知
+
+• 學識：對事實的理解有限
+• 心證：對價值的認知有限
+
+---
+
+⒊論證
+
+⑴論證的構成
+
+①論點與判準
+
+• 論點：Ａ會造成Ｂ
+• 判準：造成Ｂ者好
+
+②合題與舉證
+
+• 論證成立vs合題
+• 整體與個別推定
+
+⑵合題/定義
+
+①類型
+
+• 條件定義
+• 操作定義
+• 反面定義
+• 原型定義
+
+② 建立
+
+• 枚舉外延、歸納條件
+
+③ 檢驗
+
+• 反例檢驗
+• 增減條件、控制變量、改變情境
+
+④切割
+
+• 概念：概念對比
+• 條件：ABT／歸謬反證
+• 落點：切割or受身
+• 切分：MECE、2×2矩陣
+
+⑤防守
+
+[切割]
+• 怪物排除：否認反例
+• 例外排除：承認例外
+
+[受身]
+• 怪物調整：調整概念
+• 引理合併：修改條件
+
+⑶舉證/資料
+
+①來源
+
+• 斷言
+• 常識
+• 權威
+• 資料
+
+→申論：推論、資料、數據、小結
+
+②檢驗
+
+• 操作定義
+• 測量尺度
+• 抽樣方法
+• 實驗設計
+• 統計推論
+
+⑷論點/因果
+
+①建立
+
+• 交代機制：根屬
+• 排除替代：專屬
+• 估算效果：目標×理論×執行
+
+②削弱
+
+• 不充分／不必然
+• 不必要／不唯一
+
+┌非政策的「沒A有B」只是削弱
+└「有A必沒B」近乎不可能證成
+
+③擊倒
+
+• 能替代：政策の不唯一
+• 有弊害
+• 反效果
+• 對立成因
+
+⑸判準/標準
+
+①建立
+
+• 心證共識
+• 需解一致
+
+③攻擊
+
+• 歸謬拉平
+• 辯證思考
+• 延伸需求
+
+→判準1 vs 判準2
+
+---
+⒋比較
+
+⑴攻防的層次
+
+①目標
+
+• 論證×結構×程度
+
+②結果
+
+• 擊倒
+• 削弱
+• 打平
+
+⑵推定與舉證
+
+①推定來源
+②舉證責任
+③推定移轉
+
+⑶攻防的結果
+
+①損益九比
+
+• 明確：我有論證，你沒有（點）
+• 中性：我有標準，你沒有（點）
+• 通分：可以共量，我更多（線）
+• 專屬：不可共量，但我多（線）
+• 外掛：我能解決，你不行（線）
+• 彈性：我能兼顧，你不行（線）
+
+→加權：座標、弱勢、均衡
+
+②效益
+
+• 程度：影響範圍（Magnitude）
+　└Number of People Affected
+• 性質：難以挽回（Impact Framework）
+　└Degree of Harm Inflicted
+• 持續：影響深遠（Systemic）
+
+③加權
+
+• 風險（Probability）
+• 急迫（Timeframe）
+• 優先考量（Prior Consideration）
+　└手段 or 目的
+• 獨立 vs 依賴（Independent vs. Dependent）
+　└兼顧 or 排他=彈性
+• 不可承受（Most Grievous Error）
+• 最後一搏（Try or Die）
+
+⑷框架的設計
+
+①認知
+
+• 定義：切定義、切立場
+• 標準：受力點、衝擊點
+
+②受身
+
+• 定義：限定保留、上推下切
+• 因果：共同原因、對立成因、另一結果、改變連接詞
+• 標準：利弊互現、時空背景、角色身分、延伸需求
+
+[利弊互現：相反相對、辯證思考]
+
+③表達
+
+• 亮點布局：通分排序
+• 認知減負：拉平受身（面）
+• 反常合道
+
+[先後正反、情感用詞、隱喻換框]
+
+---
+
+⒌執行
+⑴辯案
+
+①正方架構
+
+• 上位、現況、需要
+• 價值、制度、解決
+
+②反方策略
+
+• 純粹反對
+• 維持現狀
+• 小幅修正
+• 相抗計畫
+
+⑵申論
+
+①論點單元
+
+• 推論、資料、數據、小結
+
+②論點鋪排
+
+• 清單
+• 2+1分支
+• 舉輕明重
+• 預設反駁
+
+⑶質詢
+
+①確認
+
+• 確認論點、確認舉證責任
+• 確認前提並分別檢驗
+• 歸納：編號、標籤、通分
+
+②拆解
+
+• 同意但反轉、否認or削弱、切割
+• 標明主張、展開解釋、說明影響
+
+⑷答辯
+
+• 收割前提共識
+• 判斷攻擊效力
+• 切割受身棄守
+• 反詰對方態度
+
+---
+
+⒍表達
+
+⑴架構
+
+①何謂架構
+
+• 何帆三招
+
+②為何架構
+
+• 清晰：雙向的理解
+• 洞察：形式逼內容
+• 框架：分類與排序
+
+③如何架構
+
+• 前提條件面向
+• 壓縮與解壓縮
+
+⑵敘事
+
+• ABT：立論vs反駁
+
+⑶語言
+
+①命名
+
+• 條件定義
+• 概念對比
+• 操作定義
+• 例外證明
+
+②金句
+
+• 1221式
+• 1213式
+• 否定法
+• 擴字法
+
+③具象
+
+• 陌生化：類比、推極端、換情境
+• 場景化：衝突、細節、私人話語
+
+⑷渲染
+
+• 價值衝突：得了便宜還賣乖
+• 角色挑戰：行動召喚並捲入
+
+---
+
+⒎賽制
+
+⑴政策與價值
+
+①政策
+
+• 證成：核心議題
+• 合題：可選難爭
+• 推定：現況推定
+
+②價值
+
+• 證成：論點判準
+• 合題：不可選定
+• 推定：未知結構
+
+③典範
+
+• 核心議題
+• 政策制定
+• 唯損益比
+
+⑵常見的套路
+
+①比較型辯題
+
+• 硬打攻防：還是因為錢！
+• 缺失比較：禮與食孰重？
+• 捨本逐末：大學生選美。
+• 價值可取：王何必曰利！
+
+(a) 以奇趣為宗：反常合道。
+(b) 找尋衝擊點：切換角色。
+(c) 錯開受力點：區隔戰場。
+(d) 事實切價值：時空角色。
+(e) ［價值訴求→行為指引］
+
+②事實型辯題
+
+• 因果：以偏概全
+• 定義：指鹿為馬
+• 標準：捨本逐末
+• 言說本身的意義
+
+(a) 行為指引
+(b) 清晰命名
+(c) 發聲宣告
+
+---
