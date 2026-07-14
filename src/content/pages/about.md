@@ -6,6 +6,8 @@ hideTOC: false
 draft: false
 aliases:
 ---
+「飲水思源。」
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 339" width="337" height="339">
 <g transform="scale(0.8425)" stroke-linejoin="round" shape-rendering="geometricPrecision">
 <polygon points="396.0,70.0 399.0,36.5 399.0,72.9" fill="#fffefd" stroke="#fffefd" stroke-width="0.6"/>
@@ -1842,5 +1844,3 @@ aliases:
 <polygon points="304.0,398.0 302.0,396.0 313.0,385.0" fill="#0f0e0c" stroke="#0f0e0c" stroke-width="0.6"/>
 <polygon points="315.0,396.0 304.0,398.0 313.0,385.0" fill="#181310" stroke="#181310" stroke-width="0.6"/>
 </g></svg>
-
-「飲水思源。」
