@@ -10,9 +10,9 @@ hideTOC: false
 • 2013 年 國際華語辯論邀請賽 冠軍<br>
 • 雄中演辯社教練團隊 (2010-2017)<br>
 • 市北辯論社指導老師 (2017-2018)<br>
-• 中山思辯社指導老師 (2025-)<br>
+• 中山思辯社指導老師 (2025-2026)<br>
 </div>
-<div style="flex:0 0 45%; align-self:flex-end;">
+<div style="flex:0 0 40%; align-self:flex-end;">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 339" style="width:80%; height:auto; margin-left:8%;">
 <g transform="scale(0.8425)" stroke-linejoin="round" shape-rendering="geometricPrecision">
 <polygon points="396.0,70.0 399.0,36.5 399.0,72.9" fill="#fffefd" stroke="#fffefd" stroke-width="0.6"/>
@@ -1854,7 +1854,7 @@ hideTOC: false
 
 **聯絡電話: 0988-289-469**　**E-mail:** kstin0815@gmail.com
 
-<center><div style="font-size: 20px;"><b>= 戰場意識 =</b></div></center>
+---
 
 ##  1. 政策辯論
 
@@ -2108,7 +2108,6 @@ hideTOC: false
 
 ┌“on-case”：需要、根屬、解決
 └“off-case”：合題、弊害、相抗、批判
-
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 736 350" style="width:100%; height:auto;">
 <style>
 .bx    { fill:none; stroke:#111; stroke-width:1.5; }
