@@ -13,13 +13,15 @@ draft: false
 aliases:
 ---
 ## 講師　張子龍
+
 <div style="display:flex; align-items:flex-start; gap:32px; font-family:'Microsoft JhengHei',sans-serif;">
 <div style="flex:1;">
-<p><strong>資料簡介:</strong></p>
-<p>• 2013 年 國際華語辯論邀請賽 冠軍<br>
+<strong>資料簡介:</strong><br>
+<br>
+• 2013 年 國際華語辯論邀請賽 冠軍<br>
 • 雄中演辯社教練團隊 (2010-2017)<br>
 • 市北辯論社指導老師 (2017-2018)<br>
-• 中山思辯社指導老師 (2025-)<br></p>
+• 中山思辯社指導老師 (2025-)<br>
 </div>
 <div style="flex:0 0 45%;">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 339" style="width:60%; height:auto;">
