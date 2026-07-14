@@ -1864,7 +1864,7 @@ aliases:
 **聯絡電話: 0988-289-469**　**E-mail:** kstin0815@gmail.com
 
 ---
-<center><b>整體架構</b></center>
+<center><h1>整體架構</h1></center>
 ## 一、政策辯論
 
 ┌價值辯輪：定義、因果、標準
