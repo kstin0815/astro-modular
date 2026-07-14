@@ -1856,7 +1856,7 @@ hideTOC: false
 
 ---
 
-##  1. 政策辯論
+<h2>1. 政策辯論</h2>
 
 ┌價值辯輪：定義、因果、標準
 └政策辯論：政策＝政府的行動
@@ -1919,8 +1919,7 @@ hideTOC: false
 <text class="tl" x="620" y="230">不能選行動</text>
 </svg>
 
-## 2. 三階架構
-
+<h2>2. 三階架構</h2>
 ┌(判準1)＝上位：解決的是不是利益？
 └(判準2)＝加權：利益和弊害的比較？
 
@@ -2077,7 +2076,7 @@ hideTOC: false
 <rect class="pill" x="888" y="500" width="116" height="28" rx="14"/>
 <circle cx="902" cy="514" r="4.5" fill="#888"/><text class="pt" x="914" y="514">Ｃ娛樂場所</text>
 <!-- 上下雙向箭頭：跨過列１與列２（加權比較） -->
-<path class="cn" d="M580 396 V484 M570 406 L580 396 L590 406 M570 474 L580 484 L590 474"/>
+<path class="cn" d="M580 372 V508 M570 382 L580 372 L590 382 M570 498 L580 508 L590 498"/>
 <!-- 列３ 權利（高 120；反方 536） -->
 <g clip-path="url(#r3)">
 <rect class="pro" x="160" y="572" width="320" height="120"/>
@@ -2100,11 +2099,10 @@ hideTOC: false
 </g>
 <rect class="bar" x="44" y="768" width="976" height="28" rx="6"/>
 <line class="bar" x1="572" y1="768" x2="572" y2="796"/>
-<text class="tb" x="44" y="818">正方 199,872 ：反方 169,920 —— 正方勝</text>
+<text class="tb" x="44" y="818">正方 189 ：反方 179 —— 正方勝</text>
 </svg>
 
-## 4. 反方策略
-
+<h2>4. 反方策略</h2>
 ┌“on-case”：需要、根屬、解決
 └“off-case”：合題、弊害、相抗、批判
 <svg xmlns="http://www.w3.org/2000/svg" id="fig4" viewBox="0 0 736 350" style="width:100%; height:auto;">
