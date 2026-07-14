@@ -83,7 +83,9 @@ export default defineConfig({
     enabled: true
   },
   redirects: (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'build') ? {
-  '/posts/00': '/posts/zhihu'
+  '/posts/未命名': '/posts/book',
+  '/posts/00': '/posts/zhihu',
+  '/docs/workflow 1': '/docs/application'
 } : {},
 image: {
     service: {

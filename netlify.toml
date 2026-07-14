@@ -146,8 +146,20 @@
 # Generated redirects from content aliases
 
 [[redirects]]
+  from = "/posts/未命名"
+  to = "/posts/book"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/posts/00"
   to = "/posts/zhihu"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/docs/workflow 1"
+  to = "/docs/application"
   status = 301
   force = true
 

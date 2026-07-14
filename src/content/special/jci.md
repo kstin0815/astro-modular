@@ -1,30 +1,19 @@
 ---
-title: Test
-date: 2026-07-14
+title: JCI
 description: ""
-tags: []
-image: ""
-imageAlt: ""
-imageOG: false
-hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
-draft: false
-aliases:
 ---
-## 講師　張子龍
-
-<div style="display:flex; align-items:flex-start; gap:32px; font-family:'Microsoft JhengHei',sans-serif;">
+<div style="display:flex; align-items:flex-start; gap:32px;">
 <div style="flex:1;">
-<strong>資料簡介:</strong><br>
-<br>
+<div style="font-size: 18px;"><b>講師　張子龍</b></div>
+<div style="line-height: 3;"><b>資料簡介:</b></div>
 • 2013 年 國際華語辯論邀請賽 冠軍<br>
 • 雄中演辯社教練團隊 (2010-2017)<br>
 • 市北辯論社指導老師 (2017-2018)<br>
 • 中山思辯社指導老師 (2025-)<br>
 </div>
-<div style="flex:0 0 45%;">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 339" style="width:60%; height:auto;">
+<div style="flex:0 0 45%; align-self:flex-end;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 339" style="width:80%; height:auto; margin-left:8%;">
 <g transform="scale(0.8425)" stroke-linejoin="round" shape-rendering="geometricPrecision">
 <polygon points="396.0,70.0 399.0,36.5 399.0,72.9" fill="#fffefd" stroke="#fffefd" stroke-width="0.6"/>
 <polygon points="362.7,0.0 359.0,9.0 326.5,0.0" fill="#fefdf9" stroke="#fefdf9" stroke-width="0.6"/>
@@ -1860,113 +1849,320 @@ aliases:
 <polygon points="304.0,398.0 302.0,396.0 313.0,385.0" fill="#0f0e0c" stroke="#0f0e0c" stroke-width="0.6"/>
 <polygon points="315.0,396.0 304.0,398.0 313.0,385.0" fill="#181310" stroke="#181310" stroke-width="0.6"/>
 </g></svg>
-  </div>
+</div>
 </div>
 
 **聯絡電話: 0988-289-469**　**E-mail:** kstin0815@gmail.com
 
----
+<center><div style="font-size: 20px;"><b>= 戰場意識 =</b></div></center>
 
-##  一、政策辯論
+##  1. 政策辯論
 
 ┌價值辯輪：定義、因果、標準
 └政策辯論：政策＝政府的行動
 
 ［`關鍵＝行動(✗)；強制認可權(✓)`］
 
-```
-　　　　　　　　政策辯論　　　　　　　　　　　　　　　　　價值辯論
-＋－－－－－－－－－－－－－－－－－－＋　＋－－－－－－－－＋
-｜　　　　　　上位（標準）　　　　　　｜　｜　價值（標準）　｜
-＋－－－－－－－－－－－－－－－－－－＋　＋－－－－－－－－＋
-＋－－－－－－－－＋＋－－－－－－－－＋　＋－－－－－－－－＋＋－虛－線－－－－＋
-｜　　　問題　　　｜｜　　　行動　　　｜　｜　　　事實　　　｜｜　　　　　　　　｜
-｜＋－－－－－－＋｜｜＋－－－－－－＋｜　｜＋－－－－－－＋｜｜　　　　　　　　虛
-｜｜惡害（定義）｜｜｜｜制度（定義）｜｜　｜｜　　定義　　｜｜｜　＋可以沒行動　｜
-｜＋－－－－－－＋｜｜＋－－－－－－＋｜　｜＋－－－－－－＋｜虛　｜　　　　　　線
-｜＋－－－－－－＋｜｜＋－－－－－－＋｜　｜＋－－－－－－＋｜｜　＋不能選行動　｜
-｜｜根屬（因果）｜｜｜｜解決（因果）｜｜　｜｜　　因果　　｜｜線　　　　　　　　｜
-｜＋－－－－－－＋｜｜＋－－－－－－＋｜　｜＋－－－－－－＋｜｜　　　　　　　　｜
-＋－－－－－－－－＋＋－－－－－－－－＋　＋－－－－－－－－＋＋－－－－虛－線－＋
-```
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 762 322" style="width:100%; height:auto;">
+<style>
+.bx   { fill:none; stroke:#111; stroke-width:1.5; }
+.fillA{ fill:#d9d9d9; }
+.fillB{ fill:#f0f0f0; }
+.dash { fill:none; stroke:#111; stroke-width:1.5; stroke-dasharray:6 4; }
+.t    { fill:#111; font-size:16px; text-anchor:middle; dominant-baseline:central; }
+.tl   { fill:#111; font-size:16px; text-anchor:start; dominant-baseline:central; }
+.hd   { fill:#111; font-size:20px; font-weight:700; text-anchor:middle; dominant-baseline:central; }
+.cn   { fill:none; stroke:#111; stroke-width:1.5; }
+</style>
+<!-- 標題 -->
+<text class="hd" x="192" y="20">政策辯論</text>
+<text class="hd" x="580" y="20">價值辯論</text>
+<!-- 上位（標準） -->
+<rect class="fillA" x="21" y="44" width="342" height="48"/>
+<rect class="bx"    x="21" y="44" width="342" height="48"/>
+<text class="t" x="192" y="68">上位（標準）</text>
+<!-- 價值（標準） -->
+<rect class="fillA" x="399" y="44" width="162" height="48"/>
+<rect class="bx"    x="399" y="44" width="162" height="48"/>
+<text class="t" x="480" y="68">價值（標準）</text>
+<!-- 問題 -->
+<rect class="bx" x="21" y="116" width="162" height="192"/>
+<text class="t" x="102" y="140">問題</text>
+<rect class="fillB" x="39" y="164" width="126" height="48"/>
+<rect class="bx"    x="39" y="164" width="126" height="48"/>
+<text class="t" x="102" y="188">惡害（定義）</text>
+<rect class="fillB" x="39" y="236" width="126" height="48"/>
+<rect class="bx"    x="39" y="236" width="126" height="48"/>
+<text class="t" x="102" y="260">根屬（因果）</text>
+<!-- 行動 -->
+<rect class="bx" x="201" y="116" width="162" height="192"/>
+<text class="t" x="282" y="140">行動</text>
+<rect class="fillB" x="219" y="164" width="126" height="48"/>
+<rect class="bx"    x="219" y="164" width="126" height="48"/>
+<text class="t" x="282" y="188">制度（定義）</text>
+<rect class="fillB" x="219" y="236" width="126" height="48"/>
+<rect class="bx"    x="219" y="236" width="126" height="48"/>
+<text class="t" x="282" y="260">解決（因果）</text>
+<!-- 事實 -->
+<rect class="bx" x="399" y="116" width="162" height="192"/>
+<text class="t" x="480" y="140">事實</text>
+<rect class="fillB" x="417" y="164" width="126" height="48"/>
+<rect class="bx"    x="417" y="164" width="126" height="48"/>
+<text class="t" x="480" y="188">定義</text>
+<rect class="fillB" x="417" y="236" width="126" height="48"/>
+<rect class="bx"    x="417" y="236" width="126" height="48"/>
+<text class="t" x="480" y="260">因果</text>
+<!-- 虛線框：兩項以線段相連，整體置中 -->
+<rect class="dash" x="579" y="116" width="158" height="192"/>
+<path class="cn" d="M604 198 H614 M604 198 V230 M604 230 H614"/>
+<text class="tl" x="620" y="198">可以沒行動</text>
+<text class="tl" x="620" y="230">不能選行動</text>
+</svg>
 
-## 二、三階架構
+## 2. 三階架構
 
 ┌(判準1)＝上位：解決的是不是利益？
 └(判準2)＝加權：利益和弊害的比較？
 
 ［`判準＝「判斷勝負關鍵的」標準`］
 
-```
-　　　　　①論證與反駁　　　　　　　②定義與合題　　　　　　　　③整理與比較
-＋－－－－－－－－－－－－－＋＋－－－－－－－－－－－＋＋－－－－－－－－－－－－＋
-｜＋－－－－－－－－－－－＋｜｜＋－－－－－－－－－＋｜｜＋－－－－－－－－－－＋｜
-｜｜論證＝問題＋行動＋上位｜｜｜｜合題：能不能討論？｜｜｜｜排序：哪一列要先講？｜｜
-｜＋－－－－－－－－－－－＋｜｜＋－－－－－－－－－＋｜｜＋－－－－－－－－－－＋｜
-｜＋－－－－－－－－－－－＋｜｜＋－－－－－－－－－＋｜｜＋－－－－－－－－－－＋｜
-｜｜反駁：拆解、反轉、比較｜｜｜｜重要：要不要討論？｜｜｜｜打平：哪一列不用講？｜｜
-｜＋－－－－－－－－－－－＋｜｜＋－－－－－－－－－＋｜｜＋－－－－－－－－－－＋｜
-｜　　　　　　　　　　　　　｜｜　　　　　　　　　　　｜｜　　　　　　　　　　　　｜
-｜　結算＝論點成立與強度？　｜｜　通分＝論點的類別？　｜｜　加權＝哪一列更重要？　｜
-＋－－－－－－－－－－－－－＋＋－－－－－－－－－－－＋＋－－－－－－－－－－－－＋
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" style="width:100%; height:auto;">
+<style>
+.bx   { fill:none; stroke:#111; stroke-width:1.5; }
+.fillA{ fill:#d9d9d9; }
+.fillB{ fill:#f0f0f0; }
+.dash { fill:none; stroke:#111; stroke-width:1.5; stroke-dasharray:6 4; }
+.t    { fill:#111; font-size:16px; text-anchor:middle; dominant-baseline:central; }
+.tl   { fill:#111; font-size:16px; text-anchor:start; dominant-baseline:central; }
+.hd   { fill:#111; font-size:20px; font-weight:700; text-anchor:middle; dominant-baseline:central; }
+.cn   { fill:none; stroke:#111; stroke-width:1.5; }
+</style>
+<!-- 標題方框 -->
+<rect class="fillA" x="21" y="20" width="252" height="48"/>
+<rect class="bx"    x="21" y="20" width="252" height="48"/>
+<text class="hd" x="147" y="44">①論證與反駁</text>
+<rect class="fillA" x="291" y="20" width="216" height="48"/>
+<rect class="bx"    x="291" y="20" width="216" height="48"/>
+<text class="hd" x="399" y="44">②定義與合題</text>
+<rect class="fillA" x="525" y="20" width="234" height="48"/>
+<rect class="bx"    x="525" y="20" width="234" height="48"/>
+<text class="hd" x="642" y="44">③整理與比較</text>
+<!-- ① 論證與反駁 -->
+<rect class="bx" x="21" y="92" width="252" height="216"/>
+<rect class="fillB" x="39" y="116" width="216" height="48"/>
+<rect class="bx"    x="39" y="116" width="216" height="48"/>
+<text class="t" x="147" y="140">論證＝問題＋行動＋上位</text>
+<rect class="fillB" x="39" y="188" width="216" height="48"/>
+<rect class="bx"    x="39" y="188" width="216" height="48"/>
+<text class="t" x="147" y="212">反駁：拆解、反轉、比較</text>
+<text class="t" x="147" y="274">結算＝論點成立與強度？</text>
+<!-- ② 定義與合題 -->
+<rect class="bx" x="291" y="92" width="216" height="216"/>
+<rect class="fillB" x="309" y="116" width="180" height="48"/>
+<rect class="bx"    x="309" y="116" width="180" height="48"/>
+<text class="t" x="399" y="140">合題：能不能討論？</text>
+<rect class="fillB" x="309" y="188" width="180" height="48"/>
+<rect class="bx"    x="309" y="188" width="180" height="48"/>
+<text class="t" x="399" y="212">重要：要不要討論？</text>
+<text class="t" x="399" y="274">通分＝論點的類別？</text>
+<!-- ③ 整理與比較 -->
+<rect class="bx" x="525" y="92" width="234" height="216"/>
+<rect class="fillB" x="543" y="116" width="198" height="48"/>
+<rect class="bx"    x="543" y="116" width="198" height="48"/>
+<text class="t" x="642" y="140">排序：哪一列要先講？</text>
+<rect class="fillB" x="543" y="188" width="198" height="48"/>
+<rect class="bx"    x="543" y="188" width="198" height="48"/>
+<text class="t" x="642" y="212">打平：哪一列不用講？</text>
+<text class="t" x="642" y="274">加權＝哪一列更重要？</text>
+</svg>
 
-• 通分：哪一行？
-• 結算：多少分？
-• 排序：要先講？
-• 打平：不用講？
-• 加權：更重要？
-```
+<div style="display:flex; align-items:flex-start; gap:32px;">
+<div style="flex:1;">
+<h2>3. 戰場地圖</h2>
+┌左右推移：「在(判準1)之下」的論證反駁<br>
+└上下推移：「在(判準2)之下」的利弊比較<br>
+</div>
+<div style="flex:0 0 20%; align-self:flex-end;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" width="37mm" height="37mm"><rect width="37" height="37" fill="#ffffff"/><path d="M4,4H5V5H4zM5,4H6V5H5zM6,4H7V5H6zM7,4H8V5H7zM8,4H9V5H8zM9,4H10V5H9zM10,4H11V5H10zM12,4H13V5H12zM13,4H14V5H13zM14,4H15V5H14zM15,4H16V5H15zM16,4H17V5H16zM17,4H18V5H17zM22,4H23V5H22zM26,4H27V5H26zM27,4H28V5H27zM28,4H29V5H28zM29,4H30V5H29zM30,4H31V5H30zM31,4H32V5H31zM32,4H33V5H32zM4,5H5V6H4zM10,5H11V6H10zM13,5H14V6H13zM16,5H17V6H16zM20,5H21V6H20zM21,5H22V6H21zM22,5H23V6H22zM24,5H25V6H24zM26,5H27V6H26zM32,5H33V6H32zM4,6H5V7H4zM6,6H7V7H6zM7,6H8V7H7zM8,6H9V7H8zM10,6H11V7H10zM12,6H13V7H12zM13,6H14V7H13zM14,6H15V7H14zM15,6H16V7H15zM16,6H17V7H16zM17,6H18V7H17zM18,6H19V7H18zM19,6H20V7H19zM20,6H21V7H20zM21,6H22V7H21zM24,6H25V7H24zM26,6H27V7H26zM28,6H29V7H28zM29,6H30V7H29zM30,6H31V7H30zM32,6H33V7H32zM4,7H5V8H4zM6,7H7V8H6zM7,7H8V8H7zM8,7H9V8H8zM10,7H11V8H10zM13,7H14V8H13zM14,7H15V8H14zM16,7H17V8H16zM17,7H18V8H17zM18,7H19V8H18zM21,7H22V8H21zM22,7H23V8H22zM26,7H27V8H26zM28,7H29V8H28zM29,7H30V8H29zM30,7H31V8H30zM32,7H33V8H32zM4,8H5V9H4zM6,8H7V9H6zM7,8H8V9H7zM8,8H9V9H8zM10,8H11V9H10zM13,8H14V9H13zM14,8H15V9H14zM15,8H16V9H15zM17,8H18V9H17zM22,8H23V9H22zM26,8H27V9H26zM28,8H29V9H28zM29,8H30V9H29zM30,8H31V9H30zM32,8H33V9H32zM4,9H5V10H4zM10,9H11V10H10zM12,9H13V10H12zM14,9H15V10H14zM20,9H21V10H20zM22,9H23V10H22zM26,9H27V10H26zM32,9H33V10H32zM4,10H5V11H4zM5,10H6V11H5zM6,10H7V11H6zM7,10H8V11H7zM8,10H9V11H8zM9,10H10V11H9zM10,10H11V11H10zM12,10H13V11H12zM14,10H15V11H14zM16,10H17V11H16zM18,10H19V11H18zM20,10H21V11H20zM22,10H23V11H22zM24,10H25V11H24zM26,10H27V11H26zM27,10H28V11H27zM28,10H29V11H28zM29,10H30V11H29zM30,10H31V11H30zM31,10H32V11H31zM32,10H33V11H32zM14,11H15V12H14zM15,11H16V12H15zM16,11H17V12H16zM20,11H21V12H20zM22,11H23V12H22zM23,11H24V12H23zM24,11H25V12H24zM4,12H5V13H4zM6,12H7V13H6zM10,12H11V13H10zM11,12H12V13H11zM16,12H17V13H16zM20,12H21V13H20zM22,12H23V13H22zM24,12H25V13H24zM27,12H28V13H27zM30,12H31V13H30zM32,12H33V13H32zM5,13H6V14H5zM6,13H7V14H6zM7,13H8V14H7zM9,13H10V14H9zM15,13H16V14H15zM17,13H18V14H17zM19,13H20V14H19zM20,13H21V14H20zM21,13H22V14H21zM23,13H24V14H23zM25,13H26V14H25zM26,13H27V14H26zM27,13H28V14H27zM31,13H32V14H31zM32,13H33V14H32zM4,14H5V15H4zM5,14H6V15H5zM7,14H8V15H7zM8,14H9V15H8zM9,14H10V15H9zM10,14H11V15H10zM12,14H13V15H12zM13,14H14V15H13zM14,14H15V15H14zM15,14H16V15H15zM16,14H17V15H16zM17,14H18V15H17zM18,14H19V15H18zM19,14H20V15H19zM23,14H24V15H23zM26,14H27V15H26zM27,14H28V15H27zM28,14H29V15H28zM29,14H30V15H29zM30,14H31V15H30zM32,14H33V15H32zM6,15H7V16H6zM8,15H9V16H8zM9,15H10V16H9zM11,15H12V16H11zM14,15H15V16H14zM16,15H17V16H16zM18,15H19V16H18zM19,15H20V16H19zM20,15H21V16H20zM22,15H23V16H22zM23,15H24V16H23zM24,15H25V16H24zM25,15H26V16H25zM27,15H28V16H27zM28,15H29V16H28zM29,15H30V16H29zM4,16H5V17H4zM5,16H6V17H5zM6,16H7V17H6zM8,16H9V17H8zM9,16H10V17H9zM10,16H11V17H10zM12,16H13V17H12zM13,16H14V17H13zM15,16H16V17H15zM23,16H24V17H23zM24,16H25V17H24zM26,16H27V17H26zM27,16H28V17H27zM32,16H33V17H32zM5,17H6V18H5zM8,17H9V18H8zM9,17H10V18H9zM11,17H12V18H11zM12,17H13V18H12zM13,17H14V18H13zM15,17H16V18H15zM16,17H17V18H16zM17,17H18V18H17zM20,17H21V18H20zM23,17H24V18H23zM24,17H25V18H24zM26,17H27V18H26zM27,17H28V18H27zM31,17H32V18H31zM32,17H33V18H32zM8,18H9V19H8zM10,18H11V19H10zM12,18H13V19H12zM14,18H15V19H14zM15,18H16V19H15zM19,18H20V19H19zM20,18H21V19H20zM21,18H22V19H21zM22,18H23V19H22zM23,18H24V19H23zM24,18H25V19H24zM28,18H29V19H28zM32,18H33V19H32zM4,19H5V20H4zM7,19H8V20H7zM8,19H9V20H8zM9,19H10V20H9zM11,19H12V20H11zM14,19H15V20H14zM16,19H17V20H16zM20,19H21V20H20zM22,19H23V20H22zM23,19H24V20H23zM24,19H25V20H24zM26,19H27V20H26zM27,19H28V20H27zM5,20H6V21H5zM6,20H7V21H6zM7,20H8V21H7zM10,20H11V21H10zM11,20H12V21H11zM12,20H13V21H12zM14,20H15V21H14zM19,20H20V21H19zM24,20H25V21H24zM26,20H27V21H26zM32,20H33V21H32zM5,21H6V22H5zM6,21H7V22H6zM7,21H8V22H7zM8,21H9V22H8zM11,21H12V22H11zM16,21H17V22H16zM19,21H20V22H19zM20,21H21V22H20zM22,21H23V22H22zM23,21H24V22H23zM24,21H25V22H24zM26,21H27V22H26zM27,21H28V22H27zM30,21H31V22H30zM31,21H32V22H31zM32,21H33V22H32zM4,22H5V23H4zM5,22H6V23H5zM6,22H7V23H6zM10,22H11V23H10zM11,22H12V23H11zM13,22H14V23H13zM14,22H15V23H14zM16,22H17V23H16zM19,22H20V23H19zM20,22H21V23H20zM22,22H23V23H22zM23,22H24V23H23zM26,22H27V23H26zM27,22H28V23H27zM29,22H30V23H29zM32,22H33V23H32zM7,23H8V24H7zM8,23H9V24H8zM9,23H10V24H9zM12,23H13V24H12zM13,23H14V24H13zM15,23H16V24H15zM16,23H17V24H16zM18,23H19V24H18zM19,23H20V24H19zM20,23H21V24H20zM25,23H26V24H25zM26,23H27V24H26zM28,23H29V24H28zM4,24H5V25H4zM5,24H6V25H5zM6,24H7V25H6zM8,24H9V25H8zM9,24H10V25H9zM10,24H11V25H10zM12,24H13V25H12zM17,24H18V25H17zM18,24H19V25H18zM20,24H21V25H20zM23,24H24V25H23zM24,24H25V25H24zM25,24H26V25H25zM26,24H27V25H26zM27,24H28V25H27zM28,24H29V25H28zM29,24H30V25H29zM31,24H32V25H31zM12,25H13V26H12zM14,25H15V26H14zM15,25H16V26H15zM17,25H18V26H17zM19,25H20V26H19zM20,25H21V26H20zM24,25H25V26H24zM28,25H29V26H28zM29,25H30V26H29zM30,25H31V26H30zM32,25H33V26H32zM4,26H5V27H4zM5,26H6V27H5zM6,26H7V27H6zM7,26H8V27H7zM8,26H9V27H8zM9,26H10V27H9zM10,26H11V27H10zM12,26H13V27H12zM13,26H14V27H13zM14,26H15V27H14zM19,26H20V27H19zM24,26H25V27H24zM26,26H27V27H26zM28,26H29V27H28zM32,26H33V27H32zM4,27H5V28H4zM10,27H11V28H10zM16,27H17V28H16zM17,27H18V28H17zM20,27H21V28H20zM22,27H23V28H22zM23,27H24V28H23zM24,27H25V28H24zM28,27H29V28H28zM31,27H32V28H31zM4,28H5V29H4zM6,28H7V29H6zM7,28H8V29H7zM8,28H9V29H8zM10,28H11V29H10zM14,28H15V29H14zM15,28H16V29H15zM17,28H18V29H17zM19,28H20V29H19zM20,28H21V29H20zM23,28H24V29H23zM24,28H25V29H24zM25,28H26V29H25zM26,28H27V29H26zM27,28H28V29H27zM28,28H29V29H28zM29,28H30V29H29zM31,28H32V29H31zM4,29H5V30H4zM6,29H7V30H6zM7,29H8V30H7zM8,29H9V30H8zM10,29H11V30H10zM14,29H15V30H14zM15,29H16V30H15zM16,29H17V30H16zM17,29H18V30H17zM19,29H20V30H19zM20,29H21V30H20zM22,29H23V30H22zM25,29H26V30H25zM27,29H28V30H27zM28,29H29V30H28zM29,29H30V30H29zM30,29H31V30H30zM32,29H33V30H32zM4,30H5V31H4zM6,30H7V31H6zM7,30H8V31H7zM8,30H9V31H8zM10,30H11V31H10zM12,30H13V31H12zM13,30H14V31H13zM15,30H16V31H15zM18,30H19V31H18zM19,30H20V31H19zM21,30H22V31H21zM23,30H24V31H23zM25,30H26V31H25zM28,30H29V31H28zM31,30H32V31H31zM32,30H33V31H32zM4,31H5V32H4zM10,31H11V32H10zM14,31H15V32H14zM15,31H16V32H15zM16,31H17V32H16zM20,31H21V32H20zM22,31H23V32H22zM24,31H25V32H24zM29,31H30V32H29zM4,32H5V33H4zM5,32H6V33H5zM6,32H7V33H6zM7,32H8V33H7zM8,32H9V33H8zM9,32H10V33H9zM10,32H11V33H10zM12,32H13V33H12zM14,32H15V33H14zM15,32H16V33H15zM20,32H21V33H20zM24,32H25V33H24zM28,32H29V33H28zM32,32H33V33H32z" id="qr-path" fill="#000000" fill-opacity="1" fill-rule="nonzero" stroke="none"/></svg>
+</div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1064 862" style="width:100%; height:auto;">
+<style>
+.card { fill:#fff; stroke:#111; stroke-width:1.5; }
+.pro  { fill:#e6e6e6; }            /* 正方 */
+.con  { fill:#c2c2c2; }            /* 反方 */
+.bar  { fill:none; stroke:#111; stroke-width:1.5; }
+.sep  { stroke:#bbb; stroke-width:1; }
+.btn  { fill:#fff; stroke:#111; stroke-width:1.5; }
+.inp  { fill:#f2f2f2; stroke:#999; stroke-width:1; }
+.pill { fill:#fff; stroke:#111; stroke-width:1.5; }
+.pt   { fill:#111; font-size:15px; dominant-baseline:central; }
+.t    { fill:#111; font-size:16px; dominant-baseline:central; }
+.tb   { fill:#111; font-size:16px; font-weight:700; dominant-baseline:central; }
+.tc   { fill:#111; font-size:14px; text-anchor:middle; dominant-baseline:central; }
+.tg   { fill:#777; font-size:15px; dominant-baseline:central; }
+.cn   { fill:none; stroke:#111; stroke-width:1.5; }
+</style>
+<defs>
+<clipPath id="r1"><rect x="160" y="212" width="856" height="216" rx="6"/></clipPath>
+<clipPath id="r2"><rect x="160" y="452" width="856" height="96"  rx="6"/></clipPath>
+<clipPath id="r3"><rect x="160" y="572" width="856" height="120" rx="6"/></clipPath>
+<clipPath id="rt"><rect x="44"  y="768" width="976" height="28"  rx="6"/></clipPath>
+</defs>
+<!-- ===== 正方／反方論點 ===== -->
+<rect class="card" x="24" y="20" width="432" height="88" rx="8"/>
+<text class="tb" x="54" y="46">正方論點</text>
+<rect class="btn" x="134" y="33" width="88" height="26" rx="6"/>
+<text class="tc" x="178" y="46">新增正方</text>
+<rect class="pill" x="54"  y="68" width="116" height="28" rx="14"/>
+<circle cx="68"  cy="82" r="4.5" fill="#333"/><text class="pt" x="80"  y="82">１他人健康</text>
+<rect class="pill" x="182" y="68" width="116" height="28" rx="14"/>
+<circle cx="196" cy="82" r="4.5" fill="#333"/><text class="pt" x="208" y="82">２健保負擔</text>
+<rect class="pill" x="310" y="68" width="116" height="28" rx="14"/>
+<circle cx="324" cy="82" r="4.5" fill="#bbb" stroke="#777"/><text class="pt" x="336" y="82">３氣味干擾</text>
+<rect class="card" x="480" y="20" width="560" height="88" rx="8"/>
+<text class="tb" x="510" y="46">反方論點</text>
+<rect class="btn" x="590" y="33" width="88" height="26" rx="6"/>
+<text class="tc" x="634" y="46">新增反方</text>
+<rect class="pill" x="510" y="68" width="116" height="28" rx="14"/>
+<circle cx="524" cy="82" r="4.5" fill="#333"/><text class="pt" x="536" y="82">Ａ私人場所</text>
+<rect class="pill" x="638" y="68" width="116" height="28" rx="14"/>
+<circle cx="652" cy="82" r="4.5" fill="#888"/><text class="pt" x="664" y="82">Ｂ零售業者</text>
+<rect class="pill" x="766" y="68" width="116" height="28" rx="14"/>
+<circle cx="780" cy="82" r="4.5" fill="#888"/><text class="pt" x="792" y="82">Ｃ娛樂場所</text>
+<rect class="pill" x="894" y="68" width="116" height="28" rx="14"/>
+<circle cx="908" cy="82" r="4.5" fill="#bbb" stroke="#777"/><text class="pt" x="920" y="82">Ｄ行為自由</text>
+<!-- ===== 編輯論點 ===== -->
+<rect class="card" x="24" y="124" width="1016" height="52" rx="8"/>
+<text class="tb" x="44"  y="150">編輯論點</text>
+<text class="t"  x="128" y="150">類別</text>
+<rect class="inp" x="168" y="135" width="120" height="30" rx="6"/>
+<text class="tg"  x="180" y="150">權利</text>
+<text class="t"  x="304" y="150">名稱</text>
+<rect class="inp" x="344" y="135" width="140" height="30" rx="6"/>
+<text class="tg"  x="356" y="150">氣味干擾</text>
+<text class="t"  x="504" y="150">分數</text>
+<rect class="btn" x="548" y="135" width="32" height="30" rx="6"/><text class="tc" x="564" y="150">－</text>
+<text class="tb"  x="590" y="150">2</text>
+<rect class="btn" x="610" y="135" width="32" height="30" rx="6"/><text class="tc" x="626" y="150">＋</text>
+<rect class="btn" x="660" y="134" width="72" height="32" rx="6"/><text class="tc" x="696" y="150">儲存</text>
+<rect class="btn" x="744" y="134" width="72" height="32" rx="6"/><text class="tc" x="780" y="150">刪除</text>
+<!-- ===== 三列（外框＋分隔線） ===== -->
+<rect class="card" x="24" y="192" width="1016" height="520" rx="8"/>
+<line class="sep" x1="24" y1="440" x2="1040" y2="440"/>
+<line class="sep" x1="24" y1="560" x2="1040" y2="560"/>
+<!-- 列１ 健康（高 216；正方 712） -->
+<g clip-path="url(#r1)">
+<rect class="pro" x="160" y="212" width="712" height="216"/>
+<rect class="con" x="872" y="212" width="144" height="216"/>
+</g>
+<rect class="bar" x="160" y="212" width="856" height="216" rx="6"/>
+<line class="bar" x1="872" y1="212" x2="872" y2="428"/>
+<text class="tb" x="40" y="320">列１</text><circle cx="82" cy="320" r="5" fill="#333"/><text class="t" x="94" y="320">健康</text>
+<rect class="pill" x="172" y="224" width="116" height="28" rx="14"/>
+<circle cx="186" cy="238" r="4.5" fill="#333"/><text class="pt" x="198" y="238">１他人健康</text>
+<rect class="pill" x="172" y="260" width="116" height="28" rx="14"/>
+<circle cx="186" cy="274" r="4.5" fill="#333"/><text class="pt" x="198" y="274">２健保負擔</text>
+<rect class="pill" x="888" y="224" width="116" height="28" rx="14"/>
+<circle cx="902" cy="238" r="4.5" fill="#333"/><text class="pt" x="914" y="238">Ａ私人場所</text>
+<!-- 列２ 經濟（高 96；反方 776 最寬） -->
+<g clip-path="url(#r2)">
+<rect class="pro" x="160" y="452" width="80"  height="96"/>
+<rect class="con" x="240" y="452" width="776" height="96"/>
+</g>
+<rect class="bar" x="160" y="452" width="856" height="96" rx="6"/>
+<line class="bar" x1="240" y1="452" x2="240" y2="548"/>
+<text class="tb" x="40" y="500">列２</text><circle cx="82" cy="500" r="5" fill="#888"/><text class="t" x="94" y="500">經濟</text>
+<rect class="pill" x="888" y="464" width="116" height="28" rx="14"/>
+<circle cx="902" cy="478" r="4.5" fill="#888"/><text class="pt" x="914" y="478">Ｂ零售業者</text>
+<rect class="pill" x="888" y="500" width="116" height="28" rx="14"/>
+<circle cx="902" cy="514" r="4.5" fill="#888"/><text class="pt" x="914" y="514">Ｃ娛樂場所</text>
+<!-- 上下雙向箭頭：跨過列１與列２（加權比較） -->
+<path class="cn" d="M580 396 V484 M570 406 L580 396 L590 406 M570 474 L580 484 L590 474"/>
+<!-- 列３ 權利（高 120；反方 536） -->
+<g clip-path="url(#r3)">
+<rect class="pro" x="160" y="572" width="320" height="120"/>
+<rect class="con" x="480" y="572" width="536" height="120"/>
+</g>
+<rect class="bar" x="160" y="572" width="856" height="120" rx="6"/>
+<line class="bar" x1="480" y1="572" x2="480" y2="692"/>
+<text class="tb" x="40" y="632">列３</text><circle cx="82" cy="632" r="5" fill="#bbb" stroke="#777"/><text class="t" x="94" y="632">權利</text>
+<rect class="pill" x="172" y="584" width="116" height="28" rx="14"/>
+<circle cx="186" cy="598" r="4.5" fill="#bbb" stroke="#777"/><text class="pt" x="198" y="598">３氣味干擾</text>
+<rect class="pill" x="888" y="584" width="116" height="28" rx="14"/>
+<circle cx="902" cy="598" r="4.5" fill="#bbb" stroke="#777"/><text class="pt" x="914" y="598">Ｄ行為自由</text>
+<path class="cn" d="M400 640 H560 M410 632 L400 640 L410 648 M550 632 L560 640 L550 648"/>
+<!-- ===== 總面積 ===== -->
+<rect class="card" x="24" y="728" width="1016" height="110" rx="8"/>
+<text class="t" x="44" y="752">總面積（僅計未壓扁的列；深＝正方、淺＝反方）</text>
+<g clip-path="url(#rt)">
+<rect class="pro" x="44"  y="768" width="528" height="28"/>
+<rect class="con" x="572" y="768" width="448" height="28"/>
+</g>
+<rect class="bar" x="44" y="768" width="976" height="28" rx="6"/>
+<line class="bar" x1="572" y1="768" x2="572" y2="796"/>
+<text class="tb" x="44" y="818">正方 199,872 ：反方 169,920 —— 正方勝</text>
+</svg>
 
-## 三、戰場地圖
-
-┌左右推移：「在(判準1)之下」的論證反駁
-└上下推移：「在(判準2)之下」的利弊比較
-
-```
-＋－－－－－－－－－－－－＋＋－－－－－－－－－－－－＋　
-｜正方論點：　　　　　　　｜｜反方論點：　　　　　　　｜
-｜　　　　　　　　　　　　｜｜　　　　　　　　　　　　｜
-｜　　　１他人健康　　　　｜｜　　　　Ａ私人場所　　　｜
-｜　　　２健保負擔　　　　｜｜　　　　Ｂ零售業者　　　｜
-｜　　　３氣味干擾　　　　｜｜　　　　Ｃ娛樂場所　　　｜
-｜　　　　　　　　　　　　｜｜　　　　Ｄ行為自由　　　｜
-＋－－－－－－－－－－－－＋＋－－－－－－－－－－－－＋
-＋－＋－－－－－－－－－－－－－－－－－－＋－－－－－＋
-｜　｜　　　　　　　　　　　　　　　　　　｜　　　　　｜
-｜健｜１他人健康　　　　　︽　　　　　　　｜　　　　　｜
-｜　｜　　　　　　　　　　｜　　　　　　　｜Ａ私人場所｜
-｜康｜２健保負擔　　　　　︾　　　　　　　｜　　　　　｜
-｜　｜　　　　　　　　　　　　　　　　　　｜　　　　　｜
-＋－＋－－－－－－－－－－－－－－－－－－＋－－－－－＋
-＋－＋－＋－－－－－－－－－－－－－－－－－－－－－－＋
-｜經｜　｜　　　　　　　　　　　　　　　　　Ｂ零售業者｜
-｜濟｜　｜　　　　　　　　　　　　　　　　　Ｃ娛樂場所｜
-＋－＋－＋－－－－－－－－－－－－－－－－－－－－－－＋
-＋－＋－－－－－－－－＋－－－－－－－－－－－－－－－＋
-｜權｜　　　　　　　　｜　　　　　　　　　　　　　　　｜
-｜　｜３氣味干擾　《－＋－》　　　　　　　　Ｄ行為自由｜
-｜利｜　　　　　　　　｜　　　　　　　　　　　　　　　｜
-＋－＋－－－－－－－－＋－－－－－－－－－－－－－－－＋
-```
-
-## 四、反方策略
+## 4. 反方策略
 
 ┌“on-case”：需要、根屬、解決
 └“off-case”：合題、弊害、相抗、批判
 
-```
-“on-case”
-　　　　　　　　　　　　　　　　＋－－－－－－－－－－－－－－－－－－－＋
-　＋純粹反對＋直接反駁：論證　　｜小　　　　　　　　　　　　　　　　不明｜
-　｜　　　　｜反駁需要：需要　　｜　　︽　　　　　　　　　　　　　︽　　｜
-　｜　　　　＋反駁解決：解決　　｜　制｜＋－－－－＋　＋－－－－＋｜　　｜
-　｜　　　　　　　　　　　　　　｜　度｜｜捍衛現況｜　｜程序質疑｜｜價　｜
-　＋小幅修正：解決［反駁／取代］｜　變｜｜小幅修正｜Ｘ｜純粹反對｜｜值　｜
-　　　　　　　　　　　　　　　　｜　動｜｜相抗計畫｜　｜哲學批判｜｜立　｜
-　＋捍衛現況：獲得Ｚ＜造成Ｂ　　｜　　｜＋－－－－＋　＋－－－－＋｜場　｜
-　｜相抗計畫：正方Ｚ＜反方Ｚ　　｜　　︾　　　　　　　　　　　　　︾　　｜
-　｜程序質疑：正方制度不合題　　｜大　　　　　　　　　　　　　　　　鮮明｜
-　＋哲學批判：需要上位不合理　　＋－－－－－－－－－－－－－－－－－－－＋
-
-“off-case”
-```
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 736 350" style="width:100%; height:auto;">
+<style>
+.bx    { fill:none; stroke:#111; stroke-width:1.5; }
+.fillB { fill:#f0f0f0; }
+.cn    { fill:none; stroke:#111; stroke-width:1.5; }
+.t     { fill:#111; font-size:16px; dominant-baseline:central; }
+.tc    { fill:#111; font-size:16px; text-anchor:middle; dominant-baseline:central; }
+.tr    { fill:#111; font-size:16px; text-anchor:end; dominant-baseline:central; }
+.tx    { fill:#111; font-size:20px; font-weight:700; text-anchor:middle; dominant-baseline:central; }
+.cap   { fill:#111; font-size:16px; font-style:italic; dominant-baseline:central; }
+</style>
+<text class="cap" x="24" y="32">“on-case”</text>
+<!-- ===== 左：策略清單 ===== -->
+<path class="cn" d="M40 72 V168 M40 72 H52 M40 168 H52"/>
+<text class="t" x="60" y="72">純粹反對</text>
+<path class="cn" d="M132 72 V120 M132 72 H144 M132 120 H144"/>
+<text class="t" x="152" y="72">直接反駁：論證</text>
+<text class="t" x="152" y="96">反駁需要：需要</text>
+<text class="t" x="152" y="120">反駁解決：解決</text>
+<text class="t" x="60" y="168">小幅修正：解決［反駁／取代］</text>
+<path class="cn" d="M40 216 V288 M40 216 H52 M40 288 H52"/>
+<text class="t" x="60" y="216">捍衛現況：獲得Ｚ＜造成Ｂ</text>
+<text class="t" x="60" y="240">相抗計畫：正方Ｚ＜反方Ｚ</text>
+<text class="t" x="60" y="264">程序質疑：正方制度不合題</text>
+<text class="t" x="60" y="288">哲學批判：需要上位不合理</text>
+<!-- ===== 右：雙軸方框 ===== -->
+<rect class="bx" x="340" y="60" width="372" height="204"/>
+<text class="t"  x="352" y="84">小</text>
+<text class="tr" x="700" y="84">不明</text>
+<text class="t"  x="352" y="240">大</text>
+<text class="tr" x="700" y="240">鮮明</text>
+<!-- 左軸：制度變動（小→大） -->
+<path class="cn" d="M384 104 V232 M376 114 L384 104 L392 114 M376 222 L384 232 L392 222"/>
+<text class="tc" x="360" y="132">制</text>
+<text class="tc" x="360" y="156">度</text>
+<text class="tc" x="360" y="180">變</text>
+<text class="tc" x="360" y="204">動</text>
+<!-- 右軸：價值立場（不明→鮮明） -->
+<path class="cn" d="M656 104 V232 M648 114 L656 104 L664 114 M648 222 L656 232 L664 222"/>
+<text class="tc" x="676" y="132">價</text>
+<text class="tc" x="676" y="156">值</text>
+<text class="tc" x="676" y="180">立</text>
+<text class="tc" x="676" y="204">場</text>
+<!-- 兩個內框 -->
+<rect class="fillB" x="404" y="120" width="96" height="96"/>
+<rect class="bx"    x="404" y="120" width="96" height="96"/>
+<text class="tc" x="452" y="144">捍衛現況</text>
+<text class="tc" x="452" y="168">小幅修正</text>
+<text class="tc" x="452" y="192">相抗計畫</text>
+<text class="tx" x="520" y="168">Ｘ</text>
+<rect class="fillB" x="540" y="120" width="96" height="96"/>
+<rect class="bx"    x="540" y="120" width="96" height="96"/>
+<text class="tc" x="588" y="144">程序質疑</text>
+<text class="tc" x="588" y="168">純粹反對</text>
+<text class="tc" x="588" y="192">哲學批判</text>
+<text class="cap" x="24" y="320">“off-case”</text>
+</svg>
