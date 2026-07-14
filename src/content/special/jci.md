@@ -1865,14 +1865,14 @@ hideTOC: false
 
 <svg xmlns="http://www.w3.org/2000/svg" id="fig1" viewBox="0 0 762 322" style="width:100%; height:auto;">
 <style>
-.bx   { fill:none; stroke:#111; stroke-width:1.5; }
-.fillA{ fill:#d9d9d9; }
-.fillB{ fill:#f0f0f0; }
-.dash { fill:none; stroke:#111; stroke-width:1.5; stroke-dasharray:6 4; }
-.t    { fill:#111; font-size:16px; text-anchor:middle; dominant-baseline:central; }
-.tl   { fill:#111; font-size:16px; text-anchor:start; dominant-baseline:central; }
-.hd   { fill:#111; font-size:20px; font-weight:700; text-anchor:middle; dominant-baseline:central; }
-.cn   { fill:none; stroke:#111; stroke-width:1.5; }
+#fig1 .bx   { fill:none; stroke:#111; stroke-width:1.5; }
+#fig1 .fillA{ fill:#d9d9d9; }
+#fig1 .fillB{ fill:#f0f0f0; }
+#fig1 .dash { fill:none; stroke:#111; stroke-width:1.5; stroke-dasharray:6 4; }
+#fig1 .t    { fill:#111; font-size:16px; text-anchor:middle; dominant-baseline:central; }
+#fig1 .tl   { fill:#111; font-size:16px; text-anchor:start; dominant-baseline:central; }
+#fig1 .hd   { fill:#111; font-size:20px; font-weight:700; text-anchor:middle; dominant-baseline:central; }
+#fig1 .cn   { fill:none; stroke:#111; stroke-width:1.5; }
 </style>
 <!-- 標題 -->
 <text class="hd" x="192" y="20">政策辯論</text>
@@ -1928,14 +1928,14 @@ hideTOC: false
 
 <svg xmlns="http://www.w3.org/2000/svg" id="fig2" viewBox="0 0 780 330" style="width:100%; height:auto;">
 <style>
-.bx   { fill:none; stroke:#111; stroke-width:1.5; }
-.fillA{ fill:#d9d9d9; }
-.fillB{ fill:#f0f0f0; }
-.dash { fill:none; stroke:#111; stroke-width:1.5; stroke-dasharray:6 4; }
-.t    { fill:#111; font-size:16px; text-anchor:middle; dominant-baseline:central; }
-.tl   { fill:#111; font-size:16px; text-anchor:start; dominant-baseline:central; }
-.hd   { fill:#111; font-size:20px; font-weight:700; text-anchor:middle; dominant-baseline:central; }
-.cn   { fill:none; stroke:#111; stroke-width:1.5; }
+#fig2 .bx   { fill:none; stroke:#111; stroke-width:1.5; }
+#fig2 .fillA{ fill:#d9d9d9; }
+#fig2 .fillB{ fill:#f0f0f0; }
+#fig2 .dash { fill:none; stroke:#111; stroke-width:1.5; stroke-dasharray:6 4; }
+#fig2 .t    { fill:#111; font-size:16px; text-anchor:middle; dominant-baseline:central; }
+#fig2 .tl   { fill:#111; font-size:16px; text-anchor:start; dominant-baseline:central; }
+#fig2 .hd   { fill:#111; font-size:20px; font-weight:700; text-anchor:middle; dominant-baseline:central; }
+#fig2 .cn   { fill:none; stroke:#111; stroke-width:1.5; }
 </style>
 <!-- 標題方框 -->
 <rect class="fillA" x="21" y="20" width="252" height="48"/>
@@ -1987,20 +1987,20 @@ hideTOC: false
 </div></div>
 <svg xmlns="http://www.w3.org/2000/svg" id="fig3" viewBox="0 0 1064 862" style="width:100%; height:auto;">
 <style>
-.card { fill:#fff; stroke:#111; stroke-width:1.5; }
-.pro  { fill:#e6e6e6; }            /* 正方 */
-.con  { fill:#c2c2c2; }            /* 反方 */
-.bar  { fill:none; stroke:#111; stroke-width:1.5; }
-.sep  { stroke:#bbb; stroke-width:1; }
-.btn  { fill:#fff; stroke:#111; stroke-width:1.5; }
-.inp  { fill:#f2f2f2; stroke:#999; stroke-width:1; }
-.pill { fill:#fff; stroke:#111; stroke-width:1.5; }
-.pt   { fill:#111; font-size:15px; dominant-baseline:central; }
-.t    { fill:#111; font-size:16px; dominant-baseline:central; }
-.tb   { fill:#111; font-size:16px; font-weight:700; dominant-baseline:central; }
-.tc   { fill:#111; font-size:14px; text-anchor:middle; dominant-baseline:central; }
-.tg   { fill:#777; font-size:15px; dominant-baseline:central; }
-.cn   { fill:none; stroke:#111; stroke-width:1.5; }
+#fig3 .card { fill:#fff; stroke:#111; stroke-width:1.5; }
+#fig3 .pro  { fill:#e6e6e6; }            /* 正方 */
+#fig3 .con  { fill:#c2c2c2; }            /* 反方 */
+#fig3 .bar  { fill:none; stroke:#111; stroke-width:1.5; }
+#fig3 .sep  { stroke:#bbb; stroke-width:1; }
+#fig3 .btn  { fill:#fff; stroke:#111; stroke-width:1.5; }
+#fig3 .inp  { fill:#f2f2f2; stroke:#999; stroke-width:1; }
+#fig3 .pill { fill:#fff; stroke:#111; stroke-width:1.5; }
+#fig3 .pt   { fill:#111; font-size:15px; dominant-baseline:central; }
+#fig3 .t    { fill:#111; font-size:16px; dominant-baseline:central; }
+#fig3 .tb   { fill:#111; font-size:16px; font-weight:700; dominant-baseline:central; }
+#fig3 .tc   { fill:#111; font-size:14px; text-anchor:middle; dominant-baseline:central; }
+#fig3 .tg   { fill:#777; font-size:15px; dominant-baseline:central; }
+#fig3 .cn   { fill:none; stroke:#111; stroke-width:1.5; }
 </style>
 <defs>
 <clipPath id="r1"><rect x="160" y="212" width="856" height="216" rx="6"/></clipPath>
@@ -2109,14 +2109,14 @@ hideTOC: false
 └“off-case”：合題、弊害、相抗、批判
 <svg xmlns="http://www.w3.org/2000/svg" id="fig4" viewBox="0 0 736 350" style="width:100%; height:auto;">
 <style>
-.bx    { fill:none; stroke:#111; stroke-width:1.5; }
-.fillB { fill:#f0f0f0; }
-.cn    { fill:none; stroke:#111; stroke-width:1.5; }
-.t     { fill:#111; font-size:16px; dominant-baseline:central; }
-.tc    { fill:#111; font-size:16px; text-anchor:middle; dominant-baseline:central; }
-.tr    { fill:#111; font-size:16px; text-anchor:end; dominant-baseline:central; }
-.tx    { fill:#111; font-size:20px; font-weight:700; text-anchor:middle; dominant-baseline:central; }
-.cap   { fill:#111; font-size:16px; font-style:italic; dominant-baseline:central; }
+#fig4 .bx    { fill:none; stroke:#111; stroke-width:1.5; }
+#fig4 .fillB { fill:#f0f0f0; }
+#fig4 .cn    { fill:none; stroke:#111; stroke-width:1.5; }
+#fig4 .t     { fill:#111; font-size:16px; dominant-baseline:central; }
+#fig4 .tc    { fill:#111; font-size:16px; text-anchor:middle; dominant-baseline:central; }
+#fig4 .tr    { fill:#111; font-size:16px; text-anchor:end; dominant-baseline:central; }
+#fig4 .tx    { fill:#111; font-size:20px; font-weight:700; text-anchor:middle; dominant-baseline:central; }
+#fig4 .cap   { fill:#111; font-size:16px; font-style:italic; dominant-baseline:central; }
 </style>
 <text class="cap" x="24" y="32">“on-case”</text>
 <!-- ===== 左：策略清單 ===== -->
