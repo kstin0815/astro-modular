@@ -1852,7 +1852,7 @@ hideTOC: false
 </div>
 </div>
 
-**聯絡電話: 0988-289-469**　**E-mail:** kstin0815@gmail.com
+**聯絡電話: 0988-289-460**　**E-mail:** kstin0815@gmail.com
 
 ---
 
