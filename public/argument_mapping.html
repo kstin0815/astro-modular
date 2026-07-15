@@ -11,7 +11,7 @@ body{margin:0;font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;color:v
 header{padding:12px 22px;background:#fff;border-bottom:2px solid var(--line)}
 header h1{font-size:19px;margin:0;letter-spacing:1px}
 main{max-width:1280px;margin:0 auto;padding:16px 22px 60px}
-button{font-family:inherit;font-size:14px;padding:7px 14px;border:1.5px solid var(--ink);border-radius:8px;background:#fff;cursor:pointer}
+button{font-family:inherit;font-size:14px;padding:7px 14px;border:1.5px solid var(--ink);border-radius:8px;background:#fff;cursor:pointer;touch-action:manipulation}
 button:hover{background:#eef2f7}
 button.mini{font-size:12.5px;padding:3px 10px;border-radius:6px}
 button.on{background:var(--ink);color:#fff}
@@ -22,11 +22,14 @@ button.on{background:var(--ink);color:#fff}
 .pal h3{margin:0 0 6px;font-size:15px;display:flex;align-items:center;gap:8px}
 .pal.pro h3{color:var(--pro)}.pal.con h3{color:var(--con)}
 .chips{display:flex;flex-wrap:wrap;gap:6px;min-height:34px}
-.chip{display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:7px;font-size:13.5px;font-weight:700;cursor:grab;border:2px solid;user-select:none;background:#fff}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:7px;font-size:13.5px;font-weight:700;cursor:grab;border:2px solid;user-select:none;-webkit-user-select:none;background:#fff;touch-action:none}
 .chip.pro{border-color:var(--pro);background:var(--proL)}
 .chip.con{border-color:var(--con);background:var(--conL)}
 .chip .cat{width:11px;height:11px;border-radius:3px;display:inline-block;flex:none}
 .chip .sc{font-size:11.5px;color:#475569;font-weight:400}
+.chip.ghost{position:fixed;left:0;top:0;z-index:9999;pointer-events:none;opacity:.92;box-shadow:0 6px 18px rgba(0,0,0,.25);will-change:transform}
+.rowghost{position:fixed;left:0;top:0;z-index:9999;pointer-events:none;opacity:.95;background:#fff;border:2px solid var(--ink);border-radius:8px;padding:5px 10px;font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:6px;box-shadow:0 6px 18px rgba(0,0,0,.25);will-change:transform}
+.rowghost .cat{width:12px;height:12px;border-radius:3px;display:inline-block}
 #ed{background:#fff;border:2px solid var(--ink);border-radius:10px;padding:10px 12px;margin-bottom:14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:14px}
 #ed input{font-family:inherit;font-size:14px;padding:5px 8px;border:1.5px solid var(--line);border-radius:6px;width:120px}
 #ed input[type=number]{width:64px}
@@ -36,7 +39,7 @@ button.on{background:var(--ink);color:#fff}
 .row.lift{opacity:.35;outline:2px dashed var(--grn)}
 .row.bad .track{outline:3px solid var(--red)}
 .row.over .track{outline:3px dashed var(--grn)}
-.handle{width:24px;text-align:center;font-size:17px;color:#94a3b8;cursor:grab;flex:none}
+.handle{width:30px;text-align:center;font-size:19px;color:#94a3b8;cursor:grab;flex:none;touch-action:none;user-select:none;-webkit-user-select:none}
 .rlab{width:104px;flex:none;font-size:13.5px;display:flex;align-items:center;gap:6px}
 .rlab .cat{width:12px;height:12px;border-radius:3px;display:inline-block}
 .track{position:relative;flex:1;border:1.5px solid var(--ink);border-radius:5px;overflow:hidden}
@@ -51,7 +54,7 @@ button.on{background:var(--ink);color:#fff}
 .row.flat .orange{background:#e2e5e9}
 .row.flat .track{border-color:#9aa3ad}
 .row.flat .inchips .chip{opacity:.45}
-.vdiv{height:10px;cursor:ns-resize;background:linear-gradient(#fff 3px,var(--line) 3px,var(--line) 7px,#fff 7px)}
+.vdiv{height:14px;cursor:ns-resize;background:linear-gradient(#fff 5px,var(--line) 5px,var(--line) 9px,#fff 9px);touch-action:none}
 .totals{margin-top:16px;background:#fff;border:2px solid var(--ink);border-radius:10px;padding:12px}
 .tbar{height:28px;border:1.5px solid var(--ink);border-radius:6px;overflow:hidden;display:flex;margin:8px 0}
 .tbar .b{background:var(--proD)}.tbar .o{background:var(--conD)}
@@ -112,7 +115,7 @@ function piecesIn(r,side){return PIECES.filter(p=>placed[p.id]===r.id&&(!side||p
 function fracOf(r){const sp=piecesIn(r,'pro').reduce((a,p)=>a+p.score,0),sc=piecesIn(r,'con').reduce((a,p)=>a+p.score,0);return sp+sc===0?.5:sp/(sp+sc)}
 function unassign(p){const r=rows.find(x=>x.id===placed[p.id]);placed[p.id]=null;if(r&&piecesIn(r).length===0)r.cat=null}
 /* ---------- render ---------- */
-function chipHTML(p){return `<span class="chip ${p.side}" draggable="true" data-p="${p.id}"><span class="cat" style="background:${catColor(p.cat)}"></span>${p.label}<span class="sc">${p.score}</span></span>`}
+function chipHTML(p){return `<span class="chip ${p.side}" data-p="${p.id}"><span class="cat" style="background:${catColor(p.cat)}"></span>${p.label}<span class="sc">${p.score}</span></span>`}
 function render(){
   $('#palPro').innerHTML=PIECES.filter(p=>p.side==='pro'&&!placed[p.id]).map(chipHTML).join('');
   $('#palCon').innerHTML=PIECES.filter(p=>p.side==='con'&&!placed[p.id]).map(chipHTML).join('');
@@ -122,7 +125,7 @@ function render(){
     const el=document.createElement('div');
     el.className='row'+(r.state==='tie'?' flat':'');el.dataset.r=r.id;
     el.innerHTML=`
-      <div class="handle" draggable="true">⠿</div>
+      <div class="handle" data-handle="1">⠿</div>
       <div class="rlab"><b>列 ${i+1}</b>${r.cat?`<span class="cat" style="background:${catColor(r.cat)}"></span>${r.cat}`:''}</div>
       <div class="track" style="height:${r.h}px">
         <div class="blue" style="width:${(f*100).toFixed(1)}%"></div>
@@ -132,34 +135,12 @@ function render(){
       </div>
       <div class="rctl"><button data-a="tie" class="${r.state==='tie'?'on':''}">打平</button></div>`;
     S.appendChild(el);
-    const track=el.querySelector('.track');
-    track.ondragover=e=>{if(dragPiece){e.preventDefault();el.classList.add('over')}};
-    track.ondragleave=()=>el.classList.remove('over');
-    track.ondrop=e=>{e.preventDefault();el.classList.remove('over');
-      const p=PIECES.find(x=>x.id===dragPiece);
-      if(p){
-        if(r.cat&&r.cat!==p.cat){el.classList.add('bad');setTimeout(()=>el.classList.remove('bad'),600)}
-        else{unassign(p);placed[p.id]=r.id;if(!r.cat)r.cat=p.cat;render();if(edit&&edit.id===p.id)openEd(edit)}
-      }
-      endDrag();
-    };
-    const hd=el.querySelector('.handle');
-    hd.ondragstart=e=>{dragRow=r.id;suppress=true;el.classList.add('lift');
-      e.dataTransfer.setData('text/plain','row');e.dataTransfer.setDragImage(el,30,el.offsetHeight/2)};
-    el.ondragover=e=>{if(dragRow&&dragRow!==r.id){e.preventDefault();el.classList.add('ins')}};
-    el.ondragleave=()=>el.classList.remove('ins');
-    el.ondrop=e=>{el.classList.remove('ins');
-      if(dragRow&&dragRow!==r.id){e.preventDefault();
-        const from=rows.findIndex(x=>x.id===dragRow),to=rows.findIndex(x=>x.id===r.id);
-        const[m]=rows.splice(from,1);rows.splice(to,0,m);render();
-      }
-      endDrag();
-    };
     el.querySelector('[data-a=tie]').onclick=()=>{r.state=r.state==='tie'?'normal':'tie';render()};
     if(i<rows.length-1){
       const nxt=rows[i+1];
       const strip=document.createElement('div');strip.className='vdiv';S.appendChild(strip);
       strip.onpointerdown=e=>{e.preventDefault();strip.setPointerCapture(e.pointerId);
+        const track=el.querySelector('.track');
         const y0=e.clientY,h1=r.h,h2=nxt.h,sum=h1+h2;
         strip.onpointermove=ev=>{
           r.h=Math.max(HMIN,Math.min(sum-HMIN,h1+(ev.clientY-y0)));nxt.h=sum-r.h;
@@ -180,19 +161,100 @@ function totals(){
   $('#tb').style.width=pb+'%';$('#to').style.width=(100-pb)+'%';
   $('#verdict').textContent=t===0?'—':`藍 ${Math.round(b)} ： 橘 ${Math.round(o)} —— ${b>o?'正方勝':b<o?'反方勝':'平手'}`;
 }
-/* ---------- drag lifecycle ---------- */
-let dragPiece=null,dragRow=null,suppress=false;
-function endDrag(){dragPiece=null;dragRow=null;
-  setTimeout(()=>suppress=false,80);
-  document.querySelectorAll('.ins,.over,.lift').forEach(x=>x.classList.remove('ins','over','lift'));
+/* ---------- 統一指標拖曳（滑鼠 + 觸控通用） ---------- */
+let DRAG=null,ghost=null,suppress=false;
+const THRESH=6;
+function clearHL(){document.querySelectorAll('.ins,.over,.lift').forEach(x=>x.classList.remove('ins','over','lift'))}
+function makeGhost(){
+  if(DRAG.type==='chip'){
+    ghost=DRAG.el.cloneNode(true);
+    ghost.classList.add('ghost');
+  }else{
+    ghost=document.createElement('div');
+    ghost.className='rowghost';
+    ghost.innerHTML=DRAG.el.querySelector('.rlab').innerHTML;
+  }
+  document.body.appendChild(ghost);
 }
-document.addEventListener('dragstart',e=>{const c=e.target.closest('.chip');if(c){dragPiece=c.dataset.p;suppress=true}});
-document.addEventListener('dragend',endDrag);
-document.querySelectorAll('.pal').forEach(pal=>{
-  pal.ondragover=e=>{if(dragPiece)e.preventDefault()};
-  pal.ondrop=e=>{e.preventDefault();const p=PIECES.find(x=>x.id===dragPiece);if(p){unassign(p);render();if(edit&&edit.id===p.id)openEd(edit)}endDrag()};
-});
-/* ---------- click：論點區＝編輯；戰場內＝單擊歸位、雙擊編輯 ---------- */
+function moveGhost(x,y){if(ghost)ghost.style.transform=`translate(${x-ghost.offsetWidth/2}px,${y-16}px)`}
+function killGhost(){if(ghost){ghost.remove();ghost=null}}
+function onDown(e){
+  if(e.pointerType==='mouse'&&e.button!==0)return;
+  if(e.target.closest('button')||e.target.closest('#ed')||e.target.closest('.vdiv'))return;
+  const handle=e.target.closest('[data-handle]');
+  const chip=e.target.closest('.chip');
+  if(handle){
+    const rowEl=handle.closest('.row');if(!rowEl)return;
+    DRAG={type:'row',rowId:rowEl.dataset.r,el:rowEl,x0:e.clientX,y0:e.clientY,moved:false};
+  }else if(chip){
+    DRAG={type:'chip',pid:chip.dataset.p,el:chip,x0:e.clientX,y0:e.clientY,moved:false};
+  }else return;
+  window.addEventListener('pointermove',onMove,{passive:false});
+  window.addEventListener('pointerup',onUp);
+  window.addEventListener('pointercancel',onUp);
+}
+function onMove(e){
+  if(!DRAG)return;
+  const dx=e.clientX-DRAG.x0,dy=e.clientY-DRAG.y0;
+  if(!DRAG.moved){
+    if(Math.hypot(dx,dy)<THRESH)return;
+    DRAG.moved=true;suppress=true;
+    makeGhost();
+    if(DRAG.type==='row')DRAG.el.classList.add('lift');
+  }
+  e.preventDefault();
+  moveGhost(e.clientX,e.clientY);
+  if(ghost)ghost.style.visibility='hidden';
+  const under=document.elementFromPoint(e.clientX,e.clientY);
+  if(ghost)ghost.style.visibility='';
+  clearHL();
+  if(DRAG.type==='row')DRAG.el.classList.add('lift');
+  if(DRAG.type==='chip'){
+    const track=under&&under.closest('.track');
+    if(track)track.closest('.row').classList.add('over');
+    const pal=under&&under.closest('.pal');
+    if(pal)pal.style.outline='3px dashed var(--grn)';else document.querySelectorAll('.pal').forEach(x=>x.style.outline='');
+  }else{
+    const rowEl=under&&under.closest('.row');
+    if(rowEl&&rowEl.dataset.r!==DRAG.rowId)rowEl.classList.add('ins');
+  }
+}
+function onUp(e){
+  window.removeEventListener('pointermove',onMove);
+  window.removeEventListener('pointerup',onUp);
+  window.removeEventListener('pointercancel',onUp);
+  const d=DRAG;DRAG=null;
+  document.querySelectorAll('.pal').forEach(x=>x.style.outline='');
+  if(d&&d.moved){
+    if(ghost)ghost.style.visibility='hidden';
+    const under=document.elementFromPoint(e.clientX,e.clientY);
+    if(d.type==='chip')dropChip(d,under);else dropRow(d,under);
+    setTimeout(()=>{suppress=false},60);
+  }
+  killGhost();clearHL();
+}
+function dropChip(d,under){
+  const p=PIECES.find(x=>x.id===d.pid);if(!p)return;
+  const track=under&&under.closest('.track');
+  const pal=under&&under.closest('.pal');
+  if(track){
+    const rowEl=track.closest('.row');
+    const r=rows.find(x=>x.id===rowEl.dataset.r);if(!r)return;
+    if(r.cat&&r.cat!==p.cat){rowEl.classList.add('bad');setTimeout(()=>rowEl.classList.remove('bad'),600)}
+    else{unassign(p);placed[p.id]=r.id;if(!r.cat)r.cat=p.cat;render();if(edit&&edit.id===p.id)openEd(edit)}
+  }else if(pal){
+    unassign(p);render();if(edit&&edit.id===p.id)openEd(edit);
+  }
+}
+function dropRow(d,under){
+  const rowEl=under&&under.closest('.row');if(!rowEl)return;
+  const targetId=rowEl.dataset.r;if(targetId===d.rowId)return;
+  const from=rows.findIndex(x=>x.id===d.rowId),to=rows.findIndex(x=>x.id===targetId);
+  if(from<0||to<0)return;
+  const[m]=rows.splice(from,1);rows.splice(to,0,m);render();
+}
+document.addEventListener('pointerdown',onDown);
+/* ---------- 點擊：論點區＝編輯；戰場內＝單擊編輯、雙擊歸位 ---------- */
 let clickTimer=null;
 document.addEventListener('click',e=>{
   if(suppress)return;
