@@ -1851,8 +1851,12 @@ hideTOC: false
 </g></svg>
 </div>
 </div>
-**聯絡電話: 0988-289-460**
-**E-mail:** kstin0815@gmail.com
+
+<b>聯絡電話: 0988-289-460</b>
+<b>E-mail:</b> kstin0815@gmail.com
+
+---
+
 <h2>1. 政策辯論</h2>
 
 ┌價值辯輪：定義、因果、標準
