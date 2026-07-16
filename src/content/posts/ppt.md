@@ -62,9 +62,9 @@ https://tzulungchang.com/jci
 ### **⒊課程目標**
 　　• 論證結構：對「需根解損」的重新理解。
 　　• 三階段架：對「辯論比賽」的重新理解。
-　　• 戰場地圖：
+　　• 戰場地圖：對「三種比較」的初步理解。
 　　• 反方策略
-　　• 利弊比較
+　　• 整理比較
 ## 【Part 02】架構：「辯論比賽」到底在比什麼？
 ### **⒈論證結構**
 #### ⑴ 價值辯論
@@ -173,6 +173,7 @@ https://tzulungchang.com/argument_mapping
 　　b. 標的
 　　　　┌“on-case”：需要、根屬、解決
 　　　　└“off-case”：合題、弊害、相抗、批判
+　　　　［Hahn & Hobeika. Finding Your Voice. 2013.］
 #### ⑵ 裁決典範
 　　a. 推定利益
 　　　　┌整體vs個別舉證責任
@@ -184,12 +185,12 @@ https://tzulungchang.com/argument_mapping
 ### **⒉ 反方策略**
 #### ⑴ 立場
 　　a. 不合題性
-						┌正方：你應該做Ａ！
-						└反方：除了「不能做Ａ」以外，其他都能做～
+				┌正方：你應該做Ａ！
+				└反方：除了「不能做Ａ」以外，其他都能做～
 　　b. 不能做Ａ
-						①純粹反對（沒Ａ）
-						②捍衛現況（反Ａ）
-						③相抗計畫（非Ａ）→「並行不悖」!?
+				①純粹反對（沒Ａ）
+				②捍衛現況（反Ａ）
+				③相抗計畫（非Ａ）→「並行不悖」!?
 #### ⑵ 選擇
 　　a. 反方架構
 　　　　• 純粹反對：論證+“on-case”
@@ -198,7 +199,7 @@ https://tzulungchang.com/argument_mapping
 　　　　• 相抗計畫：正方Ｚ＜反方Ｚ
 　　　　• 程序質疑：正方制度不合題
 　　　　• 哲學批判：正方上位不合理
-　　　　［Wood & Goodnight. Strategic Debate. 1968.］
+　　　　［Wood & Goodnight. Strategic Debate (4th). 1989.］
 　　b. 純粹反對
 　　　　• 直接反駁：論證（沒證據/證據爛/不相關）
 　　　　• 反駁需要：需要
@@ -261,7 +262,14 @@ https://tzulungchang.com/argument_mapping
 　　b. 制度
 　　　　• 外掛：我能解決，你不行
 　　　　• 彈性：我能兼顧，你不行
-#### ⑵ 加權：價值比較
+#### ⑵ 通分：利弊比較
+　　a. 通分
+　　　　• 通分：可以共量，我更多
+　　　　• 專屬：不可共量，但我多
+　　b. 整理
+　　　　• 排序
+　　　　• 打平
+#### ⑶ 加權：價值比較
 　　a. 性質
 　　　　• 風險（Probability）
 　　　　• 急迫（Timeframe）
@@ -269,14 +277,8 @@ https://tzulungchang.com/argument_mapping
 　　　　• 獨立vs依賴（Independent vs. Dependent）
 　　　　• 不可承受（Most Grievous Error）
 　　　　• 最後一搏（Try or Die）
+　　　　［Meany & Shuster. On That Point. 2003.］
 　　b. 背景
 　　　　• 均衡：強優補劣？
 　　　　• 弱勢：我弱我有理嗎？
 　　　　• 座標：從來如此，便對嗎？
-#### ⑶ 通分：利弊比較
-　　a. 通分
-　　　　• 通分：可以共量，我更多
-　　　　• 專屬：不可共量，但我多
-　　b. 整理
-　　　　• 排序
-　　　　• 打平
