@@ -1857,6 +1857,7 @@ hideTOC: false
 
 ---
 
+# ▌學員手冊
 <h2>1. 論證結構</h2>
 
 ┌價值辯輪：定義、因果、標準
@@ -2166,8 +2167,10 @@ https://tzulungchang.com/argument_mapping
 <text class="tc" x="588" y="192">哲學批判</text>
 <text class="cap" x="24" y="320">“off-case”</text>
 </svg>
+
 ---
 
+# ▌課程大綱
 ## 【Part 01】前言：「需根解損」的重新理解？
 
 ### **⒈核心議題**
@@ -2288,7 +2291,6 @@ https://tzulungchang.com/argument_mapping
 　　　　①：結算→分類→計分
 　　　　②：結算→分類→排序→計分
 　　　　③：結算→分類→排序→加權→計分
-
 ### **⒊正方策略**
 #### ⑴ 需要vs利益
 　　a. 需要
