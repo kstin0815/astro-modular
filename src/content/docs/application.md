@@ -4,7 +4,7 @@ description: AI協作過程回顧
 category: AI
 order: 3
 version:
-lastModified: 2026-07-14
+lastModified: 2026-07-16
 image:
 imageAlt:
 hideCoverImage: false
@@ -14,7 +14,200 @@ featured: true
 aliases:
   - workflow 1
 ---
+## ▌用AI做了一個視覺化的戰場工具。
 
+https://tzulungchang.com/argument_mapping
+
+一些前提的知識：所有論點，都要有論證。如果沒立住，或被擊倒，就沒資格進行比較。口說無憑，或在樣本上以偏概全，而在資料上空口說白話或在推論上草率歸因使論證出了問題，而就有可能面臨質疑和削弱，甚至被擊倒——當然，通常來說，要「證明一件事情有可能」遠比「證明不可能」簡單的多，所以除非在「因果關係」上出了大問題，例如倒果為因或複合結果或交互作用，或甚至是反效果，不然再多不充分和不必要或不必然和不唯一也都只能削弱可能，而不能徹底擊倒，除非你能從「比較」的角度，提出替代政策或相應弊害，而徹底「擊倒一個論點」而非論證。
+
+但即便「論證本身」沒問題，我們也還要思考兩件事情：⑴它的成立程度有多少呢？很有可能為真？還是，也不是沒有可能為真？⑵它所討論的對象，又真的是我們一開始所關心的嗎？還是有人魚目混珠或指鹿為馬呢？以及，這些看似個別獨立的論點，有沒有可能其實是同一個論點的子論點？只有考慮了這兩個問題之後，我們才能放心把一個成功立住而沒被擊倒的論點放入名為「戰場」的棋盤之中，以帶著「類別」和「分數」的旗子之姿。
+
+首先，論證和反駁；然後，定義與合題；接著，可以被放入戰場之中。
+
+在「argument_mapping」的工具中，我們有幾個操作可以選擇：⑴我們可以選中，在正反論點區中，既已成立並且合題的論點，編輯它們的類別和名稱並加減分數，分數就是我們判斷論點的成立強度，類別是通分和排序的前提；然後，儲存或刪除，或點選其他地方取消選擇；或如果候選區沒有你要的論點，也可以點擊上方新增論點並同樣儲存，或點擊空排自動取消；⑵再來，選中的論點可以自由拖拉進戰場橫列，但要注意第一個論點一旦進去之後之後就會鎖定只有同類論點可以進來，不管是己方論點或對方論點亦然；當然，你可以拖放到其他格，或是雙擊兩下讓它自動歸位回到論點區——已經在戰場中的論點不能更改類別和名稱，但可以調整數值，以反映畢竟辯論賽是動態的競技活動，儘管已經進入了「整理」階段也沒人規定你不能回去繼續打攻防，去強化或削弱己方與對方的論點；⑶在分類與結算之外，我們還可以拖曳橫列的順序，因為雖然地圖是共時性的呈現，我們瞬見就能一目了然掌握戰場全局，但是辯論畢竟是口語的歷時性活動，在將地圖轉化為口語時，呈現之順序仍然至關重要而應以拖曳排序的方式註記；⑷而與「排序」同樣重要的是「打平」，這裡的打平不只是內容意義的，對方打我一拳而我也打對方一拳，所以這兩個論點各自被削弱四四六六算了，或是它有一個正面利益，我有一個弊害也就是反面利益，也倆倆抵銷算了。在「整理比較」的打平，更多的是像排序一樣，是一種影響表達接收的呈現技巧，在認知心理學上稱為認知減負或在完形心理學上成為圖底關係：讓不重要的或許是真的打平也可以只是捨棄不管的部分，從觀眾和評審的認知中消失化為灰色的背景；點一下變灰，點一下就變回來；⑸最後，是加權，在「戰場工具」中，我們除了可以拖曳排序改變橫列的順序，你還可以拖拉分界改變橫列的高度，而對應「座標、均衡、弱勢」和「風險、急迫、手段目的、獨立依賴、不可承受、最後一搏」等加權手法，就如同結算時其實也包含了「明確、中性」以及「專屬、外掛、彈性」等細部計算，然後自動計算加權後的總面積而分出勝負——更進一步，我們其實也可以從定義再著手，不只是不合題的不能討論也包含不重要的不用討論：因為概念的非屬核心而也是以偏概全或是反映背後價值膚淺的捨本逐末。只不過，這些就是無法呈現在「戰場工具」中的遺珠了。就如同，合題與計分和類別的判斷只能交由先驗的，在放入論點區之前就已完成；⑹在比較之外的最後，為了方便操作，還有新增橫列，以及取消加權的功能，而全部重置則是把新增的橫列以及加全和打平全部重置，並把論點歸回論點區——但新增儲存的論點不會消失。
+
+---
+
+## ▌八本英文辯論的教材和給AI的提示。
+
+我的想法是這樣的：延續我之前看比賽的觀察所得的直覺，我覺得確實應該要以「核心議題」為核心去展開去講正反方論點或整體的戰局策略和設計。所以像是核心議題有哪些，反方可以在哪些地方攻擊又有哪些策略選擇，然後能形成一個整體的大局觀概念——例如，《Finding Your Voice》認為正方核心議題有「根屬性(現況)、惡害(需要)、優勢、制度(合題性)、解決力」總共五個，而反方針對合題以外的四個攻擊稱為 “on-case” 的論證，針對「合題性、弊害、相抗計畫、哲學批判」的攻擊，則稱為 “off-case” 的論證；並且，反方根據策略選擇，有「捍衛現況、相抗計畫、哲學批判」三種不同的策略選擇：儘管「合題性」和「弊害」屬於 “off-case”，但依舊是捍衛現況的反方可以選擇。
+
+不過，這只是一種觀點，另一種觀點可能認為，還有不提弊害的純粹反對策略，或是對現況進行小幅修正即可——《Strategic Debate》甚至更進一步區分「直接反駁→捍衛現況→質疑解決→提出弊害→相抗計畫」以程度區分正方瑕疵大小以區辨反方策略；以及也區分正方策略，除了「傳統方案」之外（但因為年代較早，所以反而多了「顯著」）還有「比較優勢、標準、淨效益」等辯案類型。類似的，《Burden of Proof》則認為「核心議題」還應該包含「標準」：不只有淨效益和容易混淆的成本效益分析，還有目標標準，也因此反方除了前述策略之外，還能挑戰「顯著」和「標準」。
+
+反過來說，除了反方策略的擴展，這裡也顯示了正方立論，應該要注意的部分：不能只有提出現況惡害，還要有衡量標準和顯著——《Finding Your Voice》其實也有提到「比較優勢」辯案，只是更著重於 1 AC 也就是一辯申論的立論稿撰寫，而這個也可以回應到我觀察到的，對於論點的分點問題（每個核心議題一個論點？每個需要性一個論點？每個利益一個論點？）以及前面說的攻防層次混亂平行並列的問題（區分清楚策略也就知道是在攻擊哪裡和哪裡被攻擊）
+
+再往後，《Finding Your Voice》和《On That Point!》都有提到如何權衡利弊大小的標準，例如「風險、急迫、規模、性質」和「程度、性質、風險、持續、優先考量、獨立 vs 依賴、不可承受、最後一搏」等等。此外，在《Argumentation and Debate》和《Discovering the World Through Debate》還都討論了，除了政策性命題以外的命題類型，後者更是提到了因果事實和價值以及政策之間的關聯，我想既是對整體架構的補充，也是對利弊如何權衡和爭奪標準的補充。
+
+而除了這幾本外文的辯論教科書以外，華語辯論也有自己的發展，例如張哲耀的損益九比和上位與惡害的區分，或是我以《Winning Debates》的「論證地圖」所整理的，在攻防階段結束之後對攻防結果進行評估和「通分、排序、加權」的技巧——請注意，台灣奧瑞岡所說的「損益比」已經不同於美國政策辯論，並非成本效益分析，而是獨立發展出的辯論觀念（但卻望文生義的被認為是「優勢」的替代而被放進了「核心議題」之中稱為：需要性、根屬性、解決力、損益比。）
+
+根據我個人經驗，一個三小時的課程，大概講三個單元，一個單元 2-3 個要點，每個要點搭配 2-4 個觀念或技巧，這樣其實就差不多了。
+
+--
+
+［Hahn &  Hobeika. Finding Your Voice.］
+
+＋－＋Basics of Policy Debate
+｜　｜The Policy Debate Squad
+｜　 ＋The Topic Process
+｜
+＋－＋Arguments
+｜　｜Evidence
+｜　＋Responsibilities
+｜
+＋－＋Speaking and Flowing
+｜　｜Speeches
+｜　＋Cross-Examination
+｜
+＋－＋The 1AC
+｜　｜The Negative Strategy
+｜　｜Stock Issues 
+｜　｜Topicality
+｜　｜Disadvantages
+｜　｜Counterplans
+｜　＋Kritiks
+｜
+＋－＋Judging the Debate
+　　｜Your First Tournament
+　　＋“Oh Shit” List
+
+［Wood & Goodnight.Strategic Debate.］
+
+＋－＋Fundamentals
+｜　｜Research
+｜　｜Affirmative
+｜　＋Negative
+｜
+＋－┌Competitive Presentation
+｜　└Refutation and Rebuttal
+｜
+＋－＋Lincoln-Douglas Debate
+　　｜Forensic Tournaments
+　　＋Communicative Persuasion
+
+［Crossman, M. Burden of Proof.］
+
+＋－＋Inductive Arguments 
+｜　｜Fallacies
+｜　＋Parliamentary Debate
+｜
+＋－＋Research
+｜　｜Propositions of Fact and Value
+｜　＋Propositions of Policy
+｜
+＋－＋Forensics
+　　｜Refutation
+　　｜Presentinig Your Argument 
+　　＋Advanced Strategies
+
+［Meany & Shuster. On That Point!］
+
+＋－＋Parliamentary Debating
+｜　｜Taking Notes
+｜　｜Topics and Topic Interpretation
+｜　｜Case Construction
+｜　＋Arguing Against the Case
+｜
+＋－＋Argument Analysis
+｜　｜Research and Evidence
+｜　｜Disadvantages
+｜　｜Counterplans
+｜　＋Critiques
+｜
+＋－┌Points of Information
+｜　└Rebuttals and Humor
+｜
+＋－┌Judging Debates
+　　└Tournament Administration
+
+［Discovering the World Through Debate.］
+
+＋－＋Debate in Public Spheres
+｜　｜The Structure of Argument
+｜　｜Claims and Propositions
+｜　｜Evidence
+｜　｜Warrants
+｜　＋The Quality of Arguments
+｜
+＋－＋The Karl Popper Debate Format
+｜　｜Claims of Cause and Effect
+｜　｜Claims of Value
+｜　｜Claims of Policy
+｜　＋Refutation and Rebuttals
+｜
+＋－＋Research 
+　　｜Cross-Examination
+　　｜Arrangement, Style, and Delivery
+　　｜Judging Debates
+　　｜Debating in an International Setting 
+　　＋Debate Club in the School Community
+
+［Freeley. Argumentation and Debate.］
+
+＋－┌Critical Thinking
+｜　└Applied and Academic Debate
+｜
+＋－＋Stating the Controversy
+｜　｜Analyzing the Controversy
+｜　｜Exploring the Controversy 
+｜　｜Evidence
+｜　｜Tests of Evidence
+｜　｜The Structure of Reasoning
+｜　｜Types of Reasoning
+｜　＋Obstacles to Clear Thinking
+｜
+＋－＋Requirements of the Case
+｜　｜Building the Affirmative Case
+｜　＋Building the Negative Case
+｜
+＋－＋Refutation
+｜　｜Presenting the Case: Composition
+｜　＋Presenting the Case: Delivery
+｜
+＋－＋Evaluating the Debate
+　　｜Academic Debate Formats and CX
+　　＋Applied Parliamentary Debate
+
+［Snider, A. The Code of the Debater.］
+
+＋－＋Policy Debate
+｜　｜Affirmative Case
+｜　｜Attacks the Case
+｜　｜Disadvantage	 
+｜　｜Counterplan
+｜　｜Critique	 
+｜　｜Topicality	
+｜　＋Debate Steps
+｜
+＋－＋Speaking
+｜　｜Flowing
+｜　｜Organizing Arguments
+｜　｜Preparing as a Team
+｜　｜Cross-Examination
+｜　｜Research
+｜　｜Evidence
+｜　｜Briefing
+｜　｜Rebuttals
+｜　＋Adapting to Judges
+｜
+＋－＋The Better Debater?
+　　｜How the Decision Gets Made
+　　｜Cross-Application of Ideas
+　　＋Evolving Arguments
+
+［Johnson, S. Winning Debates.］
+
+＋－＋A Philosophy of Debating
+｜　｜Arguments and Argumentation
+｜　＋Stasis and Structure
+｜
+＋－＋Basic Strategy and Skills
+｜　｜The Speakers and Speeches
+｜　＋Decision Making and Strategy
+｜
+＋－┌The Paradoxes of Debating
+｜　└Advanced Tactics
+｜
+＋－＋Adjudicating Debates
 ## 【腦/心/眼：清單×對比×轉折×反轉×類比】
 
 ┏修正┳偏／落點＝否定選言：MECE＋場景
@@ -248,6 +441,12 @@ An essay has to tell people something they don't already know. But there are thr
 ──還有隨時的延伸、闡釋、細化、舉例。
 
 ---
+
+▌用AI做了一個視覺化的戰場工具。260714
+https://www.facebook.com/lunglung0815/posts/28067967209462984
+
+▌八本英文辯論的教材和給AI的提示。260712
+https://www.facebook.com/lunglung0815/posts/28053023520957353
 
 【腦/心/眼：清單×對比×轉折×反轉×類比】260710
 https://www.facebook.com/lunglung0815/posts/28031444119781960

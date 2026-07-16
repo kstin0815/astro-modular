@@ -4,7 +4,7 @@ description: "How: 技巧和實踐"
 category: Debate
 order: 1
 version:
-lastModified: 2026-07-12
+lastModified: 2026-07-16
 image:
 imageAlt:
 hideCoverImage: false
@@ -936,189 +936,6 @@ https://www.facebook.com/lunglung0815/posts/25352524531007279
 
 ## 歷史
 
-### ▌八本英文辯論的教材和給AI的提示。
-
-我的想法是這樣的：延續我之前看比賽的觀察所得的直覺，我覺得確實應該要以「核心議題」為核心去展開去講正反方論點或整體的戰局策略和設計。所以像是核心議題有哪些，反方可以在哪些地方攻擊又有哪些策略選擇，然後能形成一個整體的大局觀概念——例如，《Finding Your Voice》認為正方核心議題有「根屬性(現況)、惡害(需要)、優勢、制度(合題性)、解決力」總共五個，而反方針對合題以外的四個攻擊稱為 “on-case” 的論證，針對「合題性、弊害、相抗計畫、哲學批判」的攻擊，則稱為 “off-case” 的論證；並且，反方根據策略選擇，有「捍衛現況、相抗計畫、哲學批判」三種不同的策略選擇：儘管「合題性」和「弊害」屬於 “off-case”，但依舊是捍衛現況的反方可以選擇。
-
-不過，這只是一種觀點，另一種觀點可能認為，還有不提弊害的純粹反對策略，或是對現況進行小幅修正即可——《Strategic Debate》甚至更進一步區分「直接反駁→捍衛現況→質疑解決→提出弊害→相抗計畫」以程度區分正方瑕疵大小以區辨反方策略；以及也區分正方策略，除了「傳統方案」之外（但因為年代較早，所以反而多了「顯著」）還有「比較優勢、標準、淨效益」等辯案類型。類似的，《Burden of Proof》則認為「核心議題」還應該包含「標準」：不只有淨效益和容易混淆的成本效益分析，還有目標標準，也因此反方除了前述策略之外，還能挑戰「顯著」和「標準」。
-
-反過來說，除了反方策略的擴展，這裡也顯示了正方立論，應該要注意的部分：不能只有提出現況惡害，還要有衡量標準和顯著——《Finding Your Voice》其實也有提到「比較優勢」辯案，只是更著重於 1 AC 也就是一辯申論的立論稿撰寫，而這個也可以回應到我觀察到的，對於論點的分點問題（每個核心議題一個論點？每個需要性一個論點？每個利益一個論點？）以及前面說的攻防層次混亂平行並列的問題（區分清楚策略也就知道是在攻擊哪裡和哪裡被攻擊）
-
-再往後，《Finding Your Voice》和《On That Point!》都有提到如何權衡利弊大小的標準，例如「風險、急迫、規模、性質」和「程度、性質、風險、持續、優先考量、獨立 vs 依賴、不可承受、最後一搏」等等。此外，在《Argumentation and Debate》和《Discovering the World Through Debate》還都討論了，除了政策性命題以外的命題類型，後者更是提到了因果事實和價值以及政策之間的關聯，我想既是對整體架構的補充，也是對利弊如何權衡和爭奪標準的補充。
-
-而除了這幾本外文的辯論教科書以外，華語辯論也有自己的發展，例如張哲耀的損益九比和上位與惡害的區分，或是我以《Winning Debates》的「論證地圖」所整理的，在攻防階段結束之後對攻防結果進行評估和「通分、排序、加權」的技巧——請注意，台灣奧瑞岡所說的「損益比」已經不同於美國政策辯論，並非成本效益分析，而是獨立發展出的辯論觀念（但卻望文生義的被認為是「優勢」的替代而被放進了「核心議題」之中稱為：需要性、根屬性、解決力、損益比。）
-
-根據我個人經驗，一個三小時的課程，大概講三個單元，一個單元 2-3 個要點，每個要點搭配 2-4 個觀念或技巧，這樣其實就差不多了。
-
---
-
-［Hahn &  Hobeika. Finding Your Voice.］
-
-＋－＋Basics of Policy Debate
-｜　｜The Policy Debate Squad
-｜　 ＋The Topic Process
-｜
-＋－＋Arguments
-｜　｜Evidence
-｜　＋Responsibilities
-｜
-＋－＋Speaking and Flowing
-｜　｜Speeches
-｜　＋Cross-Examination
-｜
-＋－＋The 1AC
-｜　｜The Negative Strategy
-｜　｜Stock Issues 
-｜　｜Topicality
-｜　｜Disadvantages
-｜　｜Counterplans
-｜　＋Kritiks
-｜
-＋－＋Judging the Debate
-　　｜Your First Tournament
-　　＋“Oh Shit” List
-
-［Wood & Goodnight.Strategic Debate.］
-
-＋－＋Fundamentals
-｜　｜Research
-｜　｜Affirmative
-｜　＋Negative
-｜
-＋－┌Competitive Presentation
-｜　└Refutation and Rebuttal
-｜
-＋－＋Lincoln-Douglas Debate
-　　｜Forensic Tournaments
-　　＋Communicative Persuasion
-
-［Crossman, M. Burden of Proof.］
-
-＋－＋Inductive Arguments 
-｜　｜Fallacies
-｜　＋Parliamentary Debate
-｜
-＋－＋Research
-｜　｜Propositions of Fact and Value
-｜　＋Propositions of Policy
-｜
-＋－＋Forensics
-　　｜Refutation
-　　｜Presentinig Your Argument 
-　　＋Advanced Strategies
-
-［Meany & Shuster. On That Point!］
-
-＋－＋Parliamentary Debating
-｜　｜Taking Notes
-｜　｜Topics and Topic Interpretation
-｜　｜Case Construction
-｜　＋Arguing Against the Case
-｜
-＋－＋Argument Analysis
-｜　｜Research and Evidence
-｜　｜Disadvantages
-｜　｜Counterplans
-｜　＋Critiques
-｜
-＋－┌Points of Information
-｜　└Rebuttals and Humor
-｜
-＋－┌Judging Debates
-　　└Tournament Administration
-
-［Discovering the World Through Debate.］
-
-＋－＋Debate in Public Spheres
-｜　｜The Structure of Argument
-｜　｜Claims and Propositions
-｜　｜Evidence
-｜　｜Warrants
-｜　＋The Quality of Arguments
-｜
-＋－＋The Karl Popper Debate Format
-｜　｜Claims of Cause and Effect
-｜　｜Claims of Value
-｜　｜Claims of Policy
-｜　＋Refutation and Rebuttals
-｜
-＋－＋Research 
-　　｜Cross-Examination
-　　｜Arrangement, Style, and Delivery
-　　｜Judging Debates
-　　｜Debating in an International Setting 
-　　＋Debate Club in the School Community
-
-［Freeley. Argumentation and Debate.］
-
-＋－┌Critical Thinking
-｜　└Applied and Academic Debate
-｜
-＋－＋Stating the Controversy
-｜　｜Analyzing the Controversy
-｜　｜Exploring the Controversy 
-｜　｜Evidence
-｜　｜Tests of Evidence
-｜　｜The Structure of Reasoning
-｜　｜Types of Reasoning
-｜　＋Obstacles to Clear Thinking
-｜
-＋－＋Requirements of the Case
-｜　｜Building the Affirmative Case
-｜　＋Building the Negative Case
-｜
-＋－＋Refutation
-｜　｜Presenting the Case: Composition
-｜　＋Presenting the Case: Delivery
-｜
-＋－＋Evaluating the Debate
-　　｜Academic Debate Formats and CX
-　　＋Applied Parliamentary Debate
-
-［Snider, A. The Code of the Debater.］
-
-＋－＋Policy Debate
-｜　｜Affirmative Case
-｜　｜Attacks the Case
-｜　｜Disadvantage	 
-｜　｜Counterplan
-｜　｜Critique	 
-｜　｜Topicality	
-｜　＋Debate Steps
-｜
-＋－＋Speaking
-｜　｜Flowing
-｜　｜Organizing Arguments
-｜　｜Preparing as a Team
-｜　｜Cross-Examination
-｜　｜Research
-｜　｜Evidence
-｜　｜Briefing
-｜　｜Rebuttals
-｜　＋Adapting to Judges
-｜
-＋－＋The Better Debater?
-　　｜How the Decision Gets Made
-　　｜Cross-Application of Ideas
-　　＋Evolving Arguments
-
-［Johnson, S. Winning Debates.］
-
-＋－＋A Philosophy of Debating
-｜　｜Arguments and Argumentation
-｜　＋Stasis and Structure
-｜
-＋－＋Basic Strategy and Skills
-｜　｜The Speakers and Speeches
-｜　＋Decision Making and Strategy
-｜
-＋－┌The Paradoxes of Debating
-｜　└Advanced Tactics
-｜
-＋－＋Adjudicating Debates
-
----
-
 ### ▌一種史觀：台灣華語辯論史及其可能。
 
 「如果穿越回1630年，你人會在哪裡？」
@@ -1905,6 +1722,9 @@ Kruger的觀點主要來自1920年Warren C. Shaw的“The Art of Debate”（其
 前十年與後十年，我們經歷的只是一個追趕和停滯的十年。
 
 ---
+
+▌一種史觀：台灣華語辯論史及其可能。260708
+https://www.facebook.com/lunglung0815/posts/28015728274686878
 
 【整理筆記：台灣政策辯論的理念發展】260104
 https://www.facebook.com/lunglung0815/posts/25994214470171612
