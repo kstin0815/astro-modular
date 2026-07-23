@@ -4,7 +4,7 @@ description: AI協作過程回顧
 category: AI
 order: 3
 version:
-lastModified: 2026-07-16
+lastModified: 2026-07-23
 image:
 imageAlt:
 hideCoverImage: false
@@ -208,6 +208,9 @@ https://tzulungchang.com/argument_mapping
 ｜　└Advanced Tactics
 ｜
 ＋－＋Adjudicating Debates
+
+---
+
 ## 【腦/心/眼：清單×對比×轉折×反轉×類比】
 
 ┏修正┳偏／落點＝否定選言：MECE＋場景
