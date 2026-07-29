@@ -4,7 +4,7 @@ description: AI的發展與反思
 category: AI
 order: 2
 version:
-lastModified: 2026-06-30
+lastModified: 2026-07-29
 image:
 imageAlt:
 hideCoverImage: false

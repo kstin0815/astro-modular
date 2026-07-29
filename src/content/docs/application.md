@@ -4,7 +4,7 @@ description: AI協作過程回顧
 category: AI
 order: 3
 version:
-lastModified: 2026-07-23
+lastModified: 2026-07-29
 image:
 imageAlt:
 hideCoverImage: false
@@ -411,7 +411,7 @@ An essay has to tell people something they don't already know. But there are thr
 
 `#真正的對話對象`
 
-不是那些來求學的弟子，不是那些飽讀詩書的士大夫。而是那個在龍場的寒夜裡，在生死邊緣徘徊的自己。是那個曾經追隨朱熹，格物格到吐血，卻還是找不到「理」的王守仁。他真正在對話的，是每一個被「應該」壓垮的靈魂──那些背負聖賢教誨，卻在現實中步履維艱的人。​
+不是那些來求學的弟子，不是那些飽讀詩書的士大夫。而是那個在龍場的寒夜裡，在生死邊緣徘徊的自己。是那個曾經追隨朱熹，格物格到吐血，卻還是找不到「理」的王守仁。他真正在對話的，是每一個被「應該」壓垮的靈魂──那些背負聖賢教誨，卻在現實中步履維艱的人。
 
 `#關鍵轉向`
 

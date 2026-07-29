@@ -9,13 +9,9 @@ imageOG: false
 hideCoverImage: false
 hideTOC: false
 targetKeyword: ""
-draft: false
+draft: true
 aliases:
 ---
-00
-
----
-
 我喜歡有宏大歷史感的對比，例如，在最後一隻猛獁象死絕以前，古埃及人已搭建起了第一座的金字塔；或是，在 1895 年欽差頭等全權大臣、太子太傅、文華殿大學士、北洋通商大臣、直隸總督、一等肅毅伯爵李鴻章，在大日本帝國山口縣赤間關馬關港簽屬條約，將臺灣和澎湖割讓予日本時，大洋彼岸美國哈佛大學英語系教授 George Pierce Baker 正在完成他的「現代辯論」的第一本教科書：“The Principles of Argumentation”。
 
 臺灣華語辯論的歷史，又更為短暫。
@@ -48,8 +44,8 @@ aliases:
 
 [^辯論的場景]: ▌2022黑島隊內培訓：立論課。221004
 https://zhuanlan.zhihu.com/p/570530256
-	▌辯論絮語：辯論，是什麼？220103
-	https://zhuanlan.zhihu.com/p/452710377
+▌辯論絮語：辯論，是什麼？220103
+https://zhuanlan.zhihu.com/p/452710377
 
 ⑵辯論的知識與意義
 
@@ -70,8 +66,8 @@ https://fb.com/lunglung0815/posts/25279702631622803
 
 [^言說]: ▌讀書筆記：信念倫理與知識運氣。260204
 https://fb.com/lunglung0815/posts/26264482523144804
-	「好，咱們廢話不多說，直接進入辯題。」
-	https://fb.com/lunglung0815/posts/26249271194665937
+「好，咱們廢話不多說，直接進入辯題。」
+https://fb.com/lunglung0815/posts/26249271194665937
 
 ③形象
 
@@ -105,8 +101,8 @@ https://zhuanlan.zhihu.com/p/80049224
 
 [^證成]: ▌關於「辯論」的知識。251015
 https://fb.com/lunglung0815/posts/25279702631622803
-	▌為什麼要區分「論點」和「判準」？260210
-	https://fb.com/lunglung0815/posts/26325268723732850
+▌為什麼要區分「論點」和「判準」？260210
+https://fb.com/lunglung0815/posts/26325268723732850
 
 ⑶比較：勝負是相對的[^立論框架]
 
@@ -116,8 +112,8 @@ https://fb.com/lunglung0815/posts/25279702631622803
 
 [^立論框架]: ▌2022黑島隊內培訓：立論課。221004
 https://zhuanlan.zhihu.com/p/570530256
-	【2023維洛納：立論設計＆戰局策略】230226
-	https://fb.com/lunglung0815/posts/9651862774833374
+【2023維洛納：立論設計＆戰局策略】230226
+https://fb.com/lunglung0815/posts/9651862774833374
 
 ⑷修辭：形式大於內容
 
@@ -289,9 +285,9 @@ https://fb.com/lunglung0815/posts/24751524497773955
 ②效益
 
 • 程度：影響範圍（Magnitude）
-　└Number of People Affected
+└Number of People Affected
 • 性質：難以挽回（Impact Framework）
-　└Degree of Harm Inflicted
+└Degree of Harm Inflicted
 • 持續：影響深遠（Systemic）
 
 ③加權
@@ -299,9 +295,9 @@ https://fb.com/lunglung0815/posts/24751524497773955
 • 風險（Probability）
 • 急迫（Timeframe）
 • 優先考量（Prior Consideration）
-　└手段 or 目的
+└手段 or 目的
 • 獨立 vs 依賴（Independent vs. Dependent）
-　└兼顧 or 排他=彈性
+└兼顧 or 排他=彈性
 • 不可承受（Most Grievous Error）
 • 最後一搏（Try or Die）
 
