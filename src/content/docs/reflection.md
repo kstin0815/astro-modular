@@ -4,7 +4,7 @@ description: AI的發展與反思
 category: AI
 order: 2
 version:
-lastModified: 2026-07-29
+lastModified: 2026-07-31
 image:
 imageAlt:
 hideCoverImage: false
@@ -434,7 +434,7 @@ https://www.facebook.com/lunglung0815/posts/24052878097638602
 https://www.facebook.com/lunglung0815/posts/9901280873224895
 
 ▌我發現「寫AI提示詞」還挺讓人上癮的。250222
-https://www.facebook.com/lunglung0815/posts/9689769907709327\
+https://www.facebook.com/lunglung0815/posts/9689769907709327
 
 ▌AI是取代思考或只是改變了思考？250110
 https://www.facebook.com/lunglung0815/posts/9443231762363144

@@ -339,8 +339,9 @@ Kimi 還有 Gemini 都有夠呆…，
 
 ---
 
- ▌與AI對話的後設分析與回饋循環。260731
- 
+▌與AI對話的後設分析與回饋循環。260731
+https://www.facebook.com/lunglung0815/posts/28272760808983622
+
 ▌昨天用 AI 搭了一個「個人網站」。260629
 https://www.facebook.com/lunglung0815/posts/27908753328717707
 
