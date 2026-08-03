@@ -242,7 +242,14 @@
     {
       "id": "external--;5",
       "name": "全部展開",
-      "ariaLabel": "全部展開",
+      "ariaLabel": "全部折疊",
+      "type": "external",
+      "hidden": false
+    },
+    {
+      "id": "external--;6",
+      "name": "顯示搜尋過濾內容",
+      "ariaLabel": "顯示搜尋過濾內容",
       "type": "external",
       "hidden": false
     }
