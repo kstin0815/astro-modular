@@ -1997,9 +1997,72 @@ hideTOC: false
 <text class="t" x="642" y="274">加權＝哪一列更重要？</text>
 </svg>
 
+<h2>3. 反方策略</h2>
+
+┌“on-case”：需要、根屬、解決
+└“off-case”：合題、弊害、相抗、批判
+
+<svg xmlns="http://www.w3.org/2000/svg" id="fig4" viewBox="0 0 736 350" style="width:100%; height:auto;">
+<style>
+#fig4 .bx    { fill:none; stroke:#111; stroke-width:1.5; }
+#fig4 .fillB { fill:#f0f0f0; }
+#fig4 .cn    { fill:none; stroke:#111; stroke-width:1.5; }
+#fig4 .t     { fill:#111; font-size:16px; dominant-baseline:central; }
+#fig4 .tc    { fill:#111; font-size:16px; text-anchor:middle; dominant-baseline:central; }
+#fig4 .tr    { fill:#111; font-size:16px; text-anchor:end; dominant-baseline:central; }
+#fig4 .tx    { fill:#111; font-size:20px; font-weight:700; text-anchor:middle; dominant-baseline:central; }
+#fig4 .cap   { fill:#111; font-size:16px; font-style:italic; dominant-baseline:central; }
+</style>
+<text class="cap" x="24" y="32">“on-case”</text>
+<!-- ===== 左：策略清單 ===== -->
+<path class="cn" d="M40 72 V168 M40 72 H52 M40 168 H52"/>
+<text class="t" x="60" y="72">純粹反對</text>
+<path class="cn" d="M132 72 V120 M132 72 H144 M132 120 H144"/>
+<text class="t" x="152" y="72">直接反駁：論證</text>
+<text class="t" x="152" y="96">反駁需要：需要</text>
+<text class="t" x="152" y="120">反駁解決：解決</text>
+<text class="t" x="60" y="168">小幅修正：根屬不固著現況</text>
+<path class="cn" d="M40 216 V288 M40 216 H52 M40 288 H52"/>
+<text class="t" x="60" y="216">捍衛現況：獲得Ｚ＜造成Ｂ</text>
+<text class="t" x="60" y="240">相抗計畫：正方Ｚ＜反方Ｚ</text>
+<text class="t" x="60" y="264">程序質疑：正方制度不合題</text>
+<text class="t" x="60" y="288">哲學批判：需要上位不合理</text>
+<!-- ===== 右：雙軸方框 ===== -->
+<rect class="bx" x="340" y="60" width="372" height="204"/>
+<text class="t"  x="352" y="84">小</text>
+<text class="tr" x="700" y="84">不明</text>
+<text class="t"  x="352" y="240">大</text>
+<text class="tr" x="700" y="240">鮮明</text>
+<!-- 左軸：制度變動（小→大） -->
+<path class="cn" d="M384 104 V232 M376 114 L384 104 L392 114 M376 222 L384 232 L392 222"/>
+<text class="tc" x="360" y="132">制</text>
+<text class="tc" x="360" y="156">度</text>
+<text class="tc" x="360" y="180">變</text>
+<text class="tc" x="360" y="204">動</text>
+<!-- 右軸：價值立場（不明→鮮明） -->
+<path class="cn" d="M656 104 V232 M648 114 L656 104 L664 114 M648 222 L656 232 L664 222"/>
+<text class="tc" x="676" y="132">價</text>
+<text class="tc" x="676" y="156">值</text>
+<text class="tc" x="676" y="180">立</text>
+<text class="tc" x="676" y="204">場</text>
+<!-- 兩個內框 -->
+<rect class="fillB" x="404" y="120" width="96" height="96"/>
+<rect class="bx"    x="404" y="120" width="96" height="96"/>
+<text class="tc" x="452" y="144">捍衛現況</text>
+<text class="tc" x="452" y="168">小幅修正</text>
+<text class="tc" x="452" y="192">相抗計畫</text>
+<text class="tx" x="520" y="168">Ｘ</text>
+<rect class="fillB" x="540" y="120" width="96" height="96"/>
+<rect class="bx"    x="540" y="120" width="96" height="96"/>
+<text class="tc" x="588" y="144">程序質疑</text>
+<text class="tc" x="588" y="168">純粹反對</text>
+<text class="tc" x="588" y="192">哲學批判</text>
+<text class="cap" x="24" y="320">“off-case”</text>
+</svg>
+
 <div style="display:flex; align-items:flex-start; gap:32px;">
 <div style="flex:1;">
-<h2>3. 戰場地圖</h2>
+<h2>4. 戰場地圖</h2>
 ┌左右：判準之下的論證<br>
 └上下：判準之間的比較<br></div>
 <div style="flex:0 0 20%; align-self:flex-end;">
@@ -2123,69 +2186,6 @@ hideTOC: false
 <rect class="bar" x="44" y="768" width="976" height="28" rx="6"/>
 <line class="bar" x1="572" y1="768" x2="572" y2="796"/>
 <text class="tb" x="44" y="818">正方 189 ：反方 179 —— 正方勝</text>
-</svg>
-
-<h2>4. 反方策略</h2>
-
-┌“on-case”：需要、根屬、解決
-└“off-case”：合題、弊害、相抗、批判
-
-<svg xmlns="http://www.w3.org/2000/svg" id="fig4" viewBox="0 0 736 350" style="width:100%; height:auto;">
-<style>
-#fig4 .bx    { fill:none; stroke:#111; stroke-width:1.5; }
-#fig4 .fillB { fill:#f0f0f0; }
-#fig4 .cn    { fill:none; stroke:#111; stroke-width:1.5; }
-#fig4 .t     { fill:#111; font-size:16px; dominant-baseline:central; }
-#fig4 .tc    { fill:#111; font-size:16px; text-anchor:middle; dominant-baseline:central; }
-#fig4 .tr    { fill:#111; font-size:16px; text-anchor:end; dominant-baseline:central; }
-#fig4 .tx    { fill:#111; font-size:20px; font-weight:700; text-anchor:middle; dominant-baseline:central; }
-#fig4 .cap   { fill:#111; font-size:16px; font-style:italic; dominant-baseline:central; }
-</style>
-<text class="cap" x="24" y="32">“on-case”</text>
-<!-- ===== 左：策略清單 ===== -->
-<path class="cn" d="M40 72 V168 M40 72 H52 M40 168 H52"/>
-<text class="t" x="60" y="72">純粹反對</text>
-<path class="cn" d="M132 72 V120 M132 72 H144 M132 120 H144"/>
-<text class="t" x="152" y="72">直接反駁：論證</text>
-<text class="t" x="152" y="96">反駁需要：需要</text>
-<text class="t" x="152" y="120">反駁解決：解決</text>
-<text class="t" x="60" y="168">小幅修正：根屬不固著現況</text>
-<path class="cn" d="M40 216 V288 M40 216 H52 M40 288 H52"/>
-<text class="t" x="60" y="216">捍衛現況：獲得Ｚ＜造成Ｂ</text>
-<text class="t" x="60" y="240">相抗計畫：正方Ｚ＜反方Ｚ</text>
-<text class="t" x="60" y="264">程序質疑：正方制度不合題</text>
-<text class="t" x="60" y="288">哲學批判：需要上位不合理</text>
-<!-- ===== 右：雙軸方框 ===== -->
-<rect class="bx" x="340" y="60" width="372" height="204"/>
-<text class="t"  x="352" y="84">小</text>
-<text class="tr" x="700" y="84">不明</text>
-<text class="t"  x="352" y="240">大</text>
-<text class="tr" x="700" y="240">鮮明</text>
-<!-- 左軸：制度變動（小→大） -->
-<path class="cn" d="M384 104 V232 M376 114 L384 104 L392 114 M376 222 L384 232 L392 222"/>
-<text class="tc" x="360" y="132">制</text>
-<text class="tc" x="360" y="156">度</text>
-<text class="tc" x="360" y="180">變</text>
-<text class="tc" x="360" y="204">動</text>
-<!-- 右軸：價值立場（不明→鮮明） -->
-<path class="cn" d="M656 104 V232 M648 114 L656 104 L664 114 M648 222 L656 232 L664 222"/>
-<text class="tc" x="676" y="132">價</text>
-<text class="tc" x="676" y="156">值</text>
-<text class="tc" x="676" y="180">立</text>
-<text class="tc" x="676" y="204">場</text>
-<!-- 兩個內框 -->
-<rect class="fillB" x="404" y="120" width="96" height="96"/>
-<rect class="bx"    x="404" y="120" width="96" height="96"/>
-<text class="tc" x="452" y="144">捍衛現況</text>
-<text class="tc" x="452" y="168">小幅修正</text>
-<text class="tc" x="452" y="192">相抗計畫</text>
-<text class="tx" x="520" y="168">Ｘ</text>
-<rect class="fillB" x="540" y="120" width="96" height="96"/>
-<rect class="bx"    x="540" y="120" width="96" height="96"/>
-<text class="tc" x="588" y="144">程序質疑</text>
-<text class="tc" x="588" y="168">純粹反對</text>
-<text class="tc" x="588" y="192">哲學批判</text>
-<text class="cap" x="24" y="320">“off-case”</text>
 </svg>
 
 ---
