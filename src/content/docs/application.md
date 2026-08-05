@@ -1,6 +1,6 @@
 ---
 title: Application
-description: AI協作過程回顧
+description: AI協作過程回顧？
 category: AI
 order: 3
 version:
@@ -12,7 +12,6 @@ hideTOC: false
 draft: false
 featured: true
 aliases:
-  - workflow 1
 ---
 ## 流程
 

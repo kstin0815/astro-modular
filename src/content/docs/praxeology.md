@@ -1,6 +1,6 @@
 ---
 title: Praxeology
-description: "How: 技巧和實踐"
+description: "How: 技巧和實踐？"
 category: Debate
 order: 1
 version:

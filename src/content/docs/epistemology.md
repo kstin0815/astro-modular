@@ -1,6 +1,6 @@
 ---
 title: Epistemology
-description: "What: 知識和證成"
+description: "What: 知識和證成？"
 category: Debate
 order: 2
 version:
