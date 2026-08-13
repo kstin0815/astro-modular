@@ -4,7 +4,7 @@ description: "How: 技巧和實踐？"
 category: Debate
 order: 1
 version:
-lastModified: 2026-07-31
+lastModified: 2026-08-12
 image:
 imageAlt:
 hideCoverImage: false
@@ -1532,7 +1532,7 @@ https://zhuanlan.zhihu.com/p/94381803
 
 ---
 
-### 【2023蘇州盃裁判準則，初稿】
+### 【張子龍，2023蘇州盃，裁判準則（初稿）】
 
 沒錯，如果沒有意外，我今年會去評蘇州杯。所以如果有人很倒楣，在前一天公布裁判時發現自己會被我評到又無法避裁，希望這篇文對你會有幫助。
 
@@ -1629,7 +1629,7 @@ https://zhuanlan.zhihu.com/p/94381803
 
 ---
 
-### 【2017蘇州盃裁判準則，二稿】
+### 【張子龍，2017蘇州盃，裁判準則（二稿）】
 
 **壹、程序問題**
 
@@ -1818,13 +1818,13 @@ https://www.facebook.com/lunglung0815/posts/9191403060879350
 【第34屆蘇州盃大三角：南山 vs 彰女】230727
 https://www.facebook.com/lunglung0815/posts/6810990828920597
 
-【張子龍，2023蘇州盃裁判準則，初稿】230621
+【張子龍，2023蘇州盃，裁判準則（初稿）】230621
 https://www.facebook.com/lunglung0815/posts/6686348918051456
 
 【相愛在於天長地久／相愛在於曾經擁有】210828
 https://www.facebook.com/lunglung0815/posts/4607496279270074
 
-【張子龍，2017蘇州盃裁判準則，二稿】170329
+【張子龍，2017蘇州盃，裁判準則（二稿）】170329
 https://www.facebook.com/lunglung0815/posts/1482606821759051
 
 ---
