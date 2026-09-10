@@ -4,7 +4,7 @@ description: "How: 技巧和實踐？"
 category: Debate
 order: 1
 version:
-lastModified: 2026-09-10
+lastModified: 2026-09-11
 image:
 imageAlt:
 hideCoverImage: false
@@ -910,7 +910,7 @@ https://www.facebook.com/lunglung0815/posts/24530728546520219
 ▌「比較型」辯題的處理。250723
 https://www.facebook.com/lunglung0815/posts/24538469219079485
 
-▌黃執中，辯士的講義拾遺。
+▌黃執中，辯士的講義拾遺。250723
 https://www.facebook.com/lunglung0815/posts/24538511129075294
 
 ▌「損益比」和價值比較。250724
