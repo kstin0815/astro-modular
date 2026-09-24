@@ -2,7 +2,7 @@ import type { APIRoute } from "astro";
 import { siteConfig } from "../config";
 
 export const GET: APIRoute = async () => {
-  const siteUrl = import.meta.env.SITE || siteConfig.site;
+  const siteUrl = (import.meta.env.SITE || siteConfig.site).replace(/\/?$/, "/");
 
   const llmsTxt = `# ${siteConfig.title}
 
