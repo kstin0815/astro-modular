@@ -1,15 +1,16 @@
 ---
 title: Entertainment
-date: 2026-06-30
-description: ""
-tags:
-image: ""
-imageAlt: ""
-imageOG: false
+description: AI時代前的娛樂？
+category: AI
+order: 3
+version:
+lastModified: 2026-09-24
+image:
+imageAlt:
 hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
 draft: false
+featured: true
 aliases:
 ---
 ## 網路

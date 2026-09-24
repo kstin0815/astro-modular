@@ -2,7 +2,7 @@
 title: Reflection
 description: AI的發展與反思？
 category: AI
-order: 2
+order: 1
 version:
 lastModified: 2026-08-07
 image:
