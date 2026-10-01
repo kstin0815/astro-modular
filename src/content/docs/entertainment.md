@@ -4,7 +4,7 @@ description: AI時代前的娛樂？
 category: AI
 order: 3
 version:
-lastModified: 2026-09-24
+lastModified: 2026-10-01
 image:
 imageAlt:
 hideCoverImage: false
@@ -335,9 +335,6 @@ https://www.facebook.com/lunglung0815/posts/24878693625057041
 
 ▌我希望，他只是回去為孩子搭建樹屋了。250826
 https://www.facebook.com/lunglung0815/posts/24830214883238249
-
-▌「理想」和「現實」只能選一個嗎？250810
-https://www.facebook.com/lunglung0815/posts/24691926153733790
 
 ▌在知乎，看到一波好可怕的攻防。250529
 https://www.facebook.com/lunglung0815/posts/24123289700597441
