@@ -193,7 +193,7 @@ export const siteConfig: SiteConfig = {
   // [CONFIG:SITE_AUTHOR]
   author: "kstin0815",
   // [CONFIG:SITE_LANGUAGE]
-  language: "zh-Hant-TW",
+  language: "zh-TW",
   // [CONFIG:FAVICON_THEME_ADAPTIVE]
   faviconThemeAdaptive: true, // If true, favicon switches between favicon-dark.png and favicon-light.png based on browser's system theme preference. If false, always uses favicon.png
   // [CONFIG:DEFAULT_OG_IMAGE_ALT]

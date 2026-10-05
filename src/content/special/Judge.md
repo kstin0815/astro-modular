@@ -3,6 +3,78 @@ title: 2026 青商會 奧瑞岡評審研習營
 description: ""
 hideTOC: false
 ---
+
+## ▌
+
+### (1) 整體架構
+
+┌判斷流程：➀合題→➁損益→➂推定→➃心證
+└講評順序：➊論點→➋攻防→➌架構→➍比較
+
+<svg xmlns="http://www.w3.org/2000/svg" id="figA" viewBox="0 0 780 310" style="width:100%; height:auto;">
+<style>#figA .bx { fill:none; stroke:#111; stroke-width:1.5; } #figA .fillA{ fill:#d9d9d9; } #figA .fillB{ fill:#f0f0f0; } #figA .fade { fill:#fafafa; stroke:#aaa; stroke-width:1.5; stroke-dasharray:6 4; } #figA .t { fill:#111; font-size:16px; text-anchor:middle; dominant-baseline:central; } #figA .tg { fill:#999; font-size:16px; text-anchor:middle; dominant-baseline:central; } #figA .s { fill:#111; font-size:15px; text-anchor:start; dominant-baseline:central; } #figA .hl { fill:#111; font-size:18px; font-weight:700; text-anchor:start; dominant-baseline:central; } #figA .hm { fill:#111; font-size:18px; font-weight:700; text-anchor:middle; dominant-baseline:central; } #figA .hg { fill:#999; font-size:18px; font-weight:700; text-anchor:middle; dominant-baseline:central; } #figA .hd { fill:#111; font-size:20px; font-weight:700; text-anchor:middle; dominant-baseline:central; } #figA .cn { fill:none; stroke:#111; stroke-width:1.5; } #figA .cg { fill:none; stroke:#aaa; stroke-width:1.5; } </style>
+<defs> <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#111"/></marker> <marker id="arAg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#aaa"/></marker> </defs>
+<!-- 第一層 -->
+<rect class="fillA" x="21" y="24" width="70" height="122"/><rect class="bx" x="21" y="24" width="70" height="122"/> <text class="hd" x="56" y="85">程序</text>
+<rect class="fillA" x="21" y="164" width="70" height="122"/><rect class="bx" x="21" y="164" width="70" height="122"/> <text class="hd" x="56" y="225">實體</text>
+<!-- 子項先彼此連起來，再接到上層 -->
+<line class="cn" x1="91" y1="85" x2="106" y2="85"/>
+<line class="cn" x1="106" y1="50" x2="106" y2="120"/>
+<line class="cg" x1="106" y1="50" x2="121" y2="50"/>
+<line class="cn" x1="106" y1="120" x2="121" y2="120"/>
+<line class="cn" x1="91" y1="225" x2="106" y2="225"/>
+<line class="cn" x1="106" y1="190" x2="106" y2="260"/>
+<line class="cn" x1="106" y1="190" x2="121" y2="190"/>
+<line class="cn" x1="106" y1="260" x2="121" y2="260"/>
+<!-- 第二層 -->
+<rect class="fade" x="121" y="24" width="90" height="52"/>
+<text class="hg" x="166" y="50">形式</text>
+<rect class="fillB" x="121" y="94" width="90" height="52"/>
+<rect class="bx" x="121" y="94" width="90" height="52"/>
+<text class="hm" x="166" y="120">內容</text>
+<rect class="fillB" x="121" y="164" width="90" height="52"/>
+<rect class="bx" x="121" y="164" width="90" height="52"/>
+<text class="hm" x="166" y="190">證成</text>
+<rect class="fillB" x="121" y="234" width="90" height="52"/>
+<rect class="bx" x="121" y="234" width="90" height="52"/>
+<text class="hm" x="166" y="260">僵局</text>
+<line class="cg" x1="211" y1="50" x2="231" y2="50"/>
+<line class="cn" x1="211" y1="120" x2="231" y2="120"/>
+<line class="cn" x1="211" y1="190" x2="231" y2="190"/>
+<line class="cn" x1="211" y1="260" x2="231" y2="260"/>
+<!-- 第三層 -->
+<rect class="fade" x="231" y="24" width="230" height="52"/>
+<text class="tg" x="346" y="50">硬性規則・時間利益</text>
+<rect class="bx" x="231" y="94" width="230" height="52"/>
+<text class="t" x="346" y="120">合題性・新論點・一致性</text>
+<rect class="bx" x="231" y="164" width="230" height="52"/>
+<text class="t" x="346" y="190">論點→攻防→架構→比較</text>
+<rect class="bx" x="231" y="234" width="230" height="52"/>
+<text class="t" x="346" y="260">整體・階段・推定・心證</text>
+<line class="cg" x1="461" y1="50" x2="482" y2="50" marker-end="url(#arAg)"/>
+<line class="cn" x1="461" y1="120" x2="482" y2="120" marker-end="url(#arA)"/>
+<line class="cn" x1="461" y1="190" x2="482" y2="190" marker-end="url(#arA)"/>
+<line class="cn" x1="461" y1="260" x2="482" y2="260" marker-end="url(#arA)"/>
+<!-- 第四層 -->
+<rect class="fade" x="484" y="24" width="110" height="52"/>
+<text class="hg" x="539" y="50">扣分</text>
+<rect class="fillA" x="484" y="94" width="110" height="52"/>
+<rect class="bx" x="484" y="94" width="110" height="52"/>
+<text class="hm" x="539" y="120">不計分</text>
+<rect class="fillA" x="484" y="164" width="110" height="52"/>
+<rect class="bx" x="484" y="164" width="110" height="52"/>
+<text class="hm" x="539" y="190">得分</text>
+<rect class="fillA" x="484" y="234" width="110" height="52"/>
+<rect class="bx" x="484" y="234" width="110" height="52"/>
+<text class="hm" x="539" y="260">勝負</text>
+<!-- 裁判／評審 -->
+<path class="cn" d="M606,24 h10 v122 h-10"/>
+<text class="hl" x="630" y="72">裁判：</text>
+<text class="s" x="630" y="98">有沒有犯規？</text>
+<path class="cn" d="M606,164 h10 v122 h-10"/>
+<text class="hl" x="630" y="212">評審：</text>
+<text class="s" x="630" y="238">有沒有得分？</text></svg> 
+
 ## ▌評分單
 
 <svg xmlns="http://www.w3.org/2000/svg" id="ballot" viewBox="0 0 1000 680" style="width:100%; height:auto;">
