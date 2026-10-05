@@ -1,16 +1,16 @@
 ---
-title: 2026 青商會 奧瑞岡式辯論進階講習會
+title: 2026 青商總會長盃 奧瑞岡式辯論進階講習會
 description: ""
 hideTOC: false
 ---
 <div style="display:flex; align-items:flex-start; gap:32px;">
 <div style="flex:1;">
 <div style="font-size: 18px;"><b>講師　張子龍</b></div>
-<div style="line-height: 3;"><b>資歷簡介:</b></div>
+<div style="line-height: 18px;">　</div>
 • 2013 年 新國辯 冠軍<br>
 • 雄中演辯社教練團隊<br>
 • 市北辯論社指導老師<br>
-• 中山思辯社指導老師 <br>
+• 中山思辯社指導老師<br>
 </div>
 <div style="flex:0 0 40%; align-self:flex-end;">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 339" style="width:80%; height:auto; margin-left:8%;">
