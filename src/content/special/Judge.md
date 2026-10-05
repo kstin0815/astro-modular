@@ -181,6 +181,11 @@ hideTOC: false
 
 ## 3. 奇襲架構
 
+┌合題 ┌應字之前、全稱命題、實質爭議、現時現地
+│　　 └強制認可權、外題性（利益不根屬/不合題）
+└證成 ┌論點：需要性、根屬性、解決力
+　　　└推定：倒推舉證、正方維持現況
+
 <svg xmlns="http://www.w3.org/2000/svg" id="figE" viewBox="0 0 780 474" style="width:100%; height:auto;">
 <style>
 #figE .bx   { fill:none; stroke:#111; stroke-width:1.5; }
