@@ -181,7 +181,7 @@ hideTOC: false
 
 ## 3. 奇襲架構
 
-┌合題 ┌應字之前、全稱命題、實質爭議、現時現地
+┌合題 ┌現時現地、全稱命題、實質爭議、應字之前
 │　　 └強制認可權、外題性（利益不根屬/不合題）
 └證成 ┌論點：需要性、根屬性、解決力
 　　　└推定：倒推舉證、正方維持現況
@@ -205,8 +205,8 @@ hideTOC: false
 <text class="hd" x="238.0" y="42">合題</text>
 <rect class="fillB" x="124.0" y="76" width="228" height="378"/><rect class="bx" x="124.0" y="76" width="228" height="378"/>
 <rect class="wh" x="140.0" y="88.0" width="196" height="61.2"/><rect class="bx" x="140.0" y="88.0" width="196" height="61.2"/>
-<text class="hm" x="238.0" y="108.6">應字之前</text>
-<text class="sm" x="238.0" y="128.6">廢除我國or刑法？</text>
+<text class="hm" x="238.0" y="108.6">現時現地</text>
+<text class="sm" x="238.0" y="128.6">備而不用(現在?)</text>
 <rect class="wh" x="140.0" y="161.2" width="196" height="61.2"/><rect class="bx" x="140.0" y="161.2" width="196" height="61.2"/>
 <text class="hm" x="238.0" y="181.79999999999998">全稱命題</text>
 <text class="sm" x="238.0" y="201.79999999999998">只廢除某種死刑。</text>
@@ -214,8 +214,8 @@ hideTOC: false
 <text class="hm" x="238.0" y="255.0">實質爭議</text>
 <text class="sm" x="238.0" y="275.0">無期徒刑關到死！</text>
 <rect class="wh" x="140.0" y="307.6" width="196" height="61.2"/><rect class="bx" x="140.0" y="307.6" width="196" height="61.2"/>
-<text class="hm" x="238.0" y="328.20000000000005">現時現地</text>
-<text class="sm" x="238.0" y="348.20000000000005">備而不用(現在?)</text>
+<text class="hm" x="238.0" y="328.20000000000005">應字之前</text>
+<text class="sm" x="238.0" y="348.20000000000005">廢除我國or刑法？</text>
 <rect class="wh" x="140.0" y="380.8" width="196" height="61.2"/><rect class="bx" x="140.0" y="380.8" width="196" height="61.2"/>
 <text class="hm" x="238.0" y="401.40000000000003">無關配套</text>
 <text class="sm" x="238.0" y="421.40000000000003">強制勞動發大財～</text>
