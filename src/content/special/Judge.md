@@ -1949,25 +1949,25 @@ hideTOC: false
 <text class="hd" x="80.0" y="117.0">合題</text>
 <rect class="fillB" x="129.0" y="70.0" width="124" height="42"/>
 <rect class="bx" x="129.0" y="70.0" width="124" height="42"/>
-<text class="sm" x="191.0" y="91.0">不合題</text>
+<text class="sm" x="191.0" y="91.0">反方合題打贏</text>
 <path d="M257.0 91.0 H267.0" stroke="#595959" stroke-width="1.5"/><path d="M267.0 87.0 L273.0 91.0 L267.0 95.0 Z" fill="#595959"/>
 <rect class="fillA" x="277.0" y="70.0" width="95.0" height="42"/>
 <rect class="bx" x="277.0" y="70.0" width="95.0" height="42"/>
 <text class="sm" x="324.5" y="91.0">反方贏合題</text>
 <rect class="fade" x="129.0" y="122.0" width="124" height="42"/>
-<text class="sg" x="191.0" y="143.0">合題</text>
+<text class="sg" x="191.0" y="143.0">正方合題打贏</text>
 <path d="M257.0 143.0 H267.0" stroke="#b7b7b7" stroke-width="1.5"/>
 <path d="M267.0 139.0 L273.0 143.0 L267.0 147.0 Z" fill="#b7b7b7"/>
 <rect class="fade" x="277.0" y="122.0" width="95.0" height="42"/>
 <text class="sg" x="324.5" y="143.0">預設合題</text> <rect class="wh" x="396.0" y="32" width="351.0" height="170"/><rect class="bx" x="396.0" y="32" width="351.0" height="170"/> <rect class="fillA" x="408.0" y="44" width="70" height="146"/><rect class="bx" x="408.0" y="44" width="70" height="146"/> <text class="hd" x="443.0" y="117.0">弊害</text>
 <rect class="fillB" x="492.0" y="44.0" width="124" height="42"/>
 <rect class="bx" x="492.0" y="44.0" width="124" height="42"/>
-<text class="sm" x="554.0" y="65.0">反方比較成功</text> <path d="M620.0 65.0 H630.0" stroke="#595959" stroke-width="1.5"/>
+<text class="sm" x="554.0" y="65.0">反方比較打贏</text> <path d="M620.0 65.0 H630.0" stroke="#595959" stroke-width="1.5"/>
 <path d="M630.0 61.0 L636.0 65.0 L630.0 69.0 Z" fill="#595959"/>
 <rect class="fillA" x="640.0" y="44.0" width="95.0" height="42"/>
 <rect class="bx" x="640.0" y="44.0" width="95.0" height="42"/>
 <text class="sm" x="687.5" y="65.0">反方贏論點</text> <rect class="fillB" x="492.0" y="96.0" width="124" height="42"/><rect class="bx" x="492.0" y="96.0" width="124" height="42"/>
-<text class="sm" x="554.0" y="117.0">雙方比較失敗</text>
+<text class="sm" x="554.0" y="117.0">雙方比較打平</text>
 <path d="M620.0 117.0 H630.0" stroke="#595959" stroke-width="1.5"/>
 <path d="M630.0 113.0 L636.0 117.0 L630.0 121.0 Z" fill="#595959"/>
 <rect class="fillA" x="640.0" y="96.0" width="95.0" height="42"/>
@@ -1975,7 +1975,7 @@ hideTOC: false
 <text class="sm" x="687.5" y="117.0">反方贏推定</text>
 <rect class="fillB" x="492.0" y="148.0" width="124" height="42"/>
 <rect class="bx" x="492.0" y="148.0" width="124" height="42"/>
-<text class="sm" x="554.0" y="169.0">正方比較成功</text> <path d="M620.0 169.0 H630.0" stroke="#595959" stroke-width="1.5"/><path d="M630.0 165.0 L636.0 169.0 L630.0 173.0 Z" fill="#595959"/>
+<text class="sm" x="554.0" y="169.0">正方比較打贏</text> <path d="M620.0 169.0 H630.0" stroke="#595959" stroke-width="1.5"/><path d="M630.0 165.0 L636.0 169.0 L630.0 173.0 Z" fill="#595959"/>
 <rect class="wh" x="640.0" y="148.0" width="95.0" height="42"/>
 <rect class="bx" x="640.0" y="148.0" width="95.0" height="42"/>
 <text class="sm" x="687.5" y="169.0">正方贏論點</text>
@@ -1986,13 +1986,13 @@ hideTOC: false
 <text class="hd" x="80.0" y="299.0">純反</text>
 <rect class="fillB" x="129.0" y="252.0" width="124" height="42"/>
 <rect class="bx" x="129.0" y="252.0" width="124" height="42"/>
-<text class="sm" x="191.0" y="273.0">反方純反成功</text>
+<text class="sm" x="191.0" y="273.0">反方純反打贏</text>
 <path d="M257.0 273.0 H267.0" stroke="#595959" stroke-width="1.5"/>
 <path d="M267.0 269.0 L273.0 273.0 L267.0 277.0 Z" fill="#595959"/>
 <rect class="fillA" x="277.0" y="252.0" width="95.0" height="42"/>
 <rect class="bx" x="277.0" y="252.0" width="95.0" height="42"/>
 <text class="sm" x="324.5" y="273.0">反方贏推定</text> <rect class="fillB" x="129.0" y="304.0" width="124" height="42"/><rect class="bx" x="129.0" y="304.0" width="124" height="42"/>
-<text class="sm" x="191.0" y="325.0">反方純反失敗</text>
+<text class="sm" x="191.0" y="325.0">反方純反打輸</text>
 <path d="M257.0 325.0 H267.0" stroke="#595959" stroke-width="1.5"/>
 <path d="M267.0 321.0 L273.0 325.0 L267.0 329.0 Z" fill="#595959"/>
 <rect class="dash" x="277.0" y="304.0" width="95.0" height="42"/>
@@ -2003,21 +2003,21 @@ hideTOC: false
 <rect class="bx" x="408.0" y="226" width="70" height="146"/> <text class="hd" x="443.0" y="299.0">相抗</text>
 <rect class="fillB" x="492.0" y="226.0" width="124" height="42"/>
 <rect class="bx" x="492.0" y="226.0" width="124" height="42"/>
-<text class="sm" x="554.0" y="247.0">反方比較成功</text>
+<text class="sm" x="554.0" y="247.0">反方比較打贏</text>
 <path d="M620.0 247.0 H630.0" stroke="#595959" stroke-width="1.5"/>
 <path d="M630.0 243.0 L636.0 247.0 L630.0 251.0 Z" fill="#595959"/>
 <rect class="fillA" x="640.0" y="226.0" width="95.0" height="42"/>
 <rect class="bx" x="640.0" y="226.0" width="95.0" height="42"/>
 <text class="sm" x="687.5" y="247.0">反方贏論點</text>
 <rect class="fillB" x="492.0" y="278.0" width="124" height="42"/><rect class="bx" x="492.0" y="278.0" width="124" height="42"/>
-<text class="sm" x="554.0" y="299.0">雙方比較失敗</text>
+<text class="sm" x="554.0" y="299.0">雙方比較打平</text>
 <path d="M620.0 299.0 H630.0" stroke="#595959" stroke-width="1.5"/>
 <path d="M630.0 295.0 L636.0 299.0 L630.0 303.0 Z" fill="#595959"/>
 <rect class="dash" x="640.0" y="278.0" width="95.0" height="42"/>
 <text class="sm" x="687.5" y="299.0">正反方誰贏?</text>
 <rect class="fillB" x="492.0" y="330.0" width="124" height="42"/>
 <rect class="bx" x="492.0" y="330.0" width="124" height="42"/>
-<text class="sm" x="554.0" y="351.0">正方比較成功</text>
+<text class="sm" x="554.0" y="351.0">正方比較打贏</text>
 <path d="M620.0 351.0 H630.0" stroke="#595959" stroke-width="1.5"/><path d="M630.0 347.0 L636.0 351.0 L630.0 355.0 Z" fill="#595959"/>
 <rect class="wh" x="640.0" y="330.0" width="95.0" height="42"/>
 <rect class="bx" x="640.0" y="330.0" width="95.0" height="42"/>
