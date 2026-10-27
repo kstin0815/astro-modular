@@ -8,7 +8,8 @@
   check                列出待辦（需要更新的臉書留言、待確認、建議共用區塊）
   mark-posted 檔名     把產生的留言記為已貼到臉書
   due [N]              列出最久沒檢查的 N 篇已收錄文章（預設 5）
-  metrics 檔名 JSON    把最新的洞察數字寫進貼文索引（瀏覽、互動、新追蹤、收益）
+  metrics 檔名 JSON    把臉書洞察數字寫進該篇的屬性（只留最新）
+  export [路徑]        把所有文章的洞察數字匯出成 CSV（分析用）
   checked 檔名…        記錄這些文章已檢查、沒有變動
 """
 import os, re, sys, glob, json, argparse
@@ -34,7 +35,9 @@ def norm_title(t): return re.sub(r'^▌\s+', '▌', t.strip())
 def with_date(t, d): return t + (((' ' if re.search(r'[A-Za-z.!?]$', t) else '') + d) if d else '')
 
 # ---------------- 貼文索引 ----------------
-COLS = ['臉書編號', '標題', '日期碼', '網站檔名', '舊標題', '內文指紋', '留言指紋', '瀏覽', '互動', '新追蹤', '收益', '最後檢查', '備註']
+COLS = ['臉書編號', '標題', '日期碼', '網站檔名', '舊標題', '內文指紋', '留言指紋', '最後檢查', '備註']
+# 臉書洞察數字：存在各篇文章的屬性（frontmatter），不出現在網站上
+INSIGHT_KEYS = ['洞察日期', '瀏覽次數', '瀏覽者', '追蹤者瀏覽', '非追蹤者瀏覽', '心情', '留言', '點擊', '分享', '收益', '第1天瀏覽', '第3天瀏覽', '第7天瀏覽', '第14天瀏覽']
 class Registry:
     def __init__(self):
         self.rows = {}
@@ -80,7 +83,7 @@ class Registry:
     def save(self):
         rows = sorted(self.rows.values(), key=lambda r: (r['日期碼'] or '000000', r['臉書編號']), reverse=True)
         esc = lambda s: s.replace('|', '\\|')
-        out = ['# 貼文索引', '', '所有出現過的臉書貼文。留言與相關文章裡的標題、日期都以這裡為準（已收錄的文章以文章本身的標題為準）。「留言指紋」記錄目前貼在臉書上的整理留言版本；瀏覽、互動、新追蹤、收益（美元）是最後檢查那天的臉書洞察報告數字。', '',
+        out = ['# 貼文索引', '', '所有出現過的臉書貼文。留言與相關文章裡的標題、日期都以這裡為準（已收錄的文章以文章本身的標題為準）。「留言指紋」記錄目前貼在臉書上的整理留言版本。臉書洞察數字存在各篇文章的屬性裡。', '',
                '| ' + ' | '.join(COLS) + ' |', '| ' + ' | '.join(['---'] * len(COLS)) + ' |']
         for r in rows: out.append('| ' + ' | '.join(esc(r[c]) for c in COLS) + ' |')
         write(REG, '\n'.join(out) + '\n')
@@ -196,12 +199,17 @@ def original_date(raw):
         if m: return m.group(1)[2:] + m.group(2) + m.group(3)
     return None
 
-def post_text(title, desc, date, fid, body, related, category='', image='', fbdate=''):
+def insight_lines(fm):
+    """從舊的 frontmatter 取出洞察數字那幾行（重新收錄時保留）"""
+    return [l for l in fm.split('\n') if l.split(':', 1)[0].strip() in INSIGHT_KEYS]
+
+def post_text(title, desc, date, fid, body, related, category='', image='', fbdate='', keep=()):
     fm = ['---', 'title: ' + json.dumps(title, ensure_ascii=False), 'description: ' + json.dumps(desc, ensure_ascii=False),
           'date: 20%s-%s-%s' % (date[:2], date[2:4], date[4:6]), 'category: ' + json.dumps(category, ensure_ascii=False), 'order: -%s' % date[:6],
           'fb: ' + FBU + fid]
     if fbdate: fm.append('fbDate: 20%s-%s-%s' % (fbdate[:2], fbdate[2:4], fbdate[4:6]))  # 臉書發文日期（與原文日期不同時）
     if image: fm += ['image: ' + json.dumps(image, ensure_ascii=False), 'hideCoverImage: true']
+    fm += list(keep)
     fm.append('---')
     return '\n'.join(fm) + '\n' + body + '\n\n' + HEAD + '\n\n' + related.strip('\n') + '\n'
 
@@ -272,7 +280,7 @@ def cmd_import(a):
         old_main, _ = split_related(old['body'])
         kept = re.findall(r'^!\[\]\(/docs/attachments/[^)]+\)$', old_main, re.M)
         if kept: body = body + '\n\n' + '\n'.join(kept); image = fm_get(old['fm'], 'image') or ''
-    write(path, post_text(title, description(raw), a.date, a.fb, body, rel, folder, image, fbdate))
+    write(path, post_text(title, description(raw), a.date, a.fb, body, rel, folder, image, fbdate, insight_lines(old['fm']) if old else ()))
     if old and os.path.abspath(old['path']) != os.path.abspath(path): os.remove(old['path'])
     print('已收錄：%s（%s）' % (file, title)); cmd_sync(quiet=True)
     # 詢問：本篇第一區塊引用的文章，是否也要在它們的前後篇加上本篇（由作者決定，不自動加）
@@ -381,12 +389,27 @@ if __name__ == '__main__':
         ap.add_argument('--post', required=True); ap.add_argument('--comment'); ap.add_argument('--folder', default='')
         ap.add_argument('--images', nargs='*'); cmd_import(ap.parse_args())
     elif c == 'sync': cmd_sync()
-    elif c == 'metrics':  # metrics 檔名 '{"瀏覽次數":…}'：把最新的洞察數字寫進貼文索引（瀏覽、互動、新追蹤、收益）
+    elif c == 'metrics':  # metrics 檔名 '{"瀏覽次數":…}'：把臉書洞察數字寫進該篇的屬性（只留最新）
         reg, posts = Registry(), load_posts(); f2i = {v['file']: k for k, v in posts.items()}
-        f = sys.argv[2]; i = f2i[f]; m = json.loads(sys.argv[3]); r = reg.rows[i]
-        r['瀏覽'], r['互動'], r['新追蹤'], r['收益'] = m.get('瀏覽次數', ''), m.get('互動次數', ''), m.get('新追蹤', ''), m.get('收益', '')
-        r['最後檢查'] = today(); reg.save()
-        print('已更新成效：%s（瀏覽 %s、互動 %s、新追蹤 %s、收益 US$%s）' % (f, r['瀏覽'], r['互動'], r['新追蹤'], r['收益']))
+        f = sys.argv[2]; i = f2i[f]; m = json.loads(sys.argv[3]); p = posts[i]
+        m['洞察日期'] = __import__('datetime').date.today().isoformat()
+        fm = '\n'.join(l for l in p['fm'].split('\n') if l.split(':', 1)[0].strip() not in INSIGHT_KEYS)
+        def val(k):
+            v = str(m.get(k, '')).replace(',', '')
+            return v if re.fullmatch(r'\d+(\.\d+)?', v) else json.dumps(v, ensure_ascii=False)
+        fm += '\n' + '\n'.join('%s: %s' % (k, val(k)) for k in INSIGHT_KEYS if str(m.get(k, '')) != '')
+        write(p['path'], '---\n' + fm + '\n---\n' + p['body'])
+        reg.rows[i]['最後檢查'] = today(); reg.save()
+        print('已更新洞察：%s（瀏覽 %s、第7天 %s、收益 US$%s）' % (f, m.get('瀏覽次數'), m.get('第7天瀏覽'), m.get('收益')))
+    elif c == 'export':  # 把所有文章的洞察數字匯出成 CSV（分析用，需要時才產生）
+        import csv
+        posts = load_posts(); out = sys.argv[2] if len(sys.argv) > 2 else os.path.join(SYNC, '洞察匯出.csv')
+        cols = ['檔名', '分類', '標題', '發文日期'] + INSIGHT_KEYS
+        with open(out, 'w', encoding='utf-8-sig', newline='') as fh:
+            w = csv.writer(fh); w.writerow(cols)
+            for i, p in sorted(posts.items(), key=lambda x: x[1]['file'], reverse=True):
+                fm = p['fm']; w.writerow([p['file'], fm_get(fm, 'category') or '', fm_get(fm, 'title') or '', str(fm_get(fm, 'fbDate') or fm_get(fm, 'date') or '')] + [fm_get(fm, k) or '' for k in INSIGHT_KEYS])
+        print('已匯出：' + out)
     elif c == 'due':  # 最久沒檢查的已收錄文章（臉書編號、檔名、內文指紋、留言指紋）
         n = int(sys.argv[2]) if len(sys.argv) > 2 else 5
         reg, posts = Registry(), load_posts()

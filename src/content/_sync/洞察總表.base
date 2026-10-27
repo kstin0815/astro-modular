@@ -1,0 +1,44 @@
+filters:
+  and:
+    - file.folder.startsWith("docs")
+    - file.ext == "md"
+formulas:
+  互動: (if(note.心情, note.心情, 0) + if(note.留言, note.留言, 0) + if(note.點擊, note.點擊, 0) + if(note.分享, note.分享, 0))
+  非追蹤比例: if(note.瀏覽次數, (note.非追蹤者瀏覽 / note.瀏覽次數 * 100).round(1), "")
+properties:
+  file.name:
+    displayName: 檔名
+  note.category:
+    displayName: 分類
+  note.title:
+    displayName: 標題
+  formula.互動:
+    displayName: 互動
+  formula.非追蹤比例:
+    displayName: 非追蹤%
+views:
+  - type: table
+    name: 洞察總表
+    order:
+      - file.name
+      - note.category
+      - note.title
+      - note.瀏覽次數
+      - note.瀏覽者
+      - formula.互動
+      - note.心情
+      - note.留言
+      - note.點擊
+      - note.分享
+      - note.追蹤者瀏覽
+      - note.非追蹤者瀏覽
+      - formula.非追蹤比例
+      - note.收益
+      - note.第1天瀏覽
+      - note.第3天瀏覽
+      - note.第7天瀏覽
+      - note.第14天瀏覽
+      - note.洞察日期
+    sort:
+      - property: file.name
+        direction: DESC

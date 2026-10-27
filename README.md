@@ -53,7 +53,7 @@
 ### 臉書同步
 - 臉書貼文放 `src/content/docs/分類/YYMMDD.md`（檔名＝發文日期碼，資料夾＝分類：辯論、表達、觀點、閱讀、生活）；圖片在 `src/content/docs/attachments/`；`posts` 留給整理完成的文章。
 - Obsidian 新增文章的範本（Astro Composer、Vault CMS 兩個外掛）已精簡成只留必要欄位（2026-10-27）。
-- `src/content/_sync/` 放流程說明（同步說明.md）、貼文索引、共用區塊（L 清單／S 系列／T 主題／A AI 精選）、待貼留言；貼文索引也記錄最新的臉書洞察數字（瀏覽、互動、新追蹤、收益）；這個資料夾不會出現在網站上。
+- `src/content/_sync/` 放流程說明（同步說明.md）、貼文索引、共用區塊（L 清單／S 系列／T 主題／A AI 精選）、待貼留言、洞察總表（Obsidian Bases 表格）；臉書洞察數字存在各篇文章的屬性裡（不顯示在網站上）；這個資料夾不會出現在網站上。
 - 流程規格：`src/content/_sync/同步說明.md`。
 
 已移除：Cusdis 留言（2026-10-27 作廢，`GiscusComments.astro` 恢復原版，留言開關目前關閉）。
