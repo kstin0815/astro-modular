@@ -8,7 +8,7 @@
   check                列出待辦（需要更新的臉書留言、待確認、建議共用區塊）
   mark-posted 檔名     把產生的留言記為已貼到臉書
   due [N]              列出最久沒檢查的 N 篇已收錄文章（預設 5）
-  metrics 檔名 JSON    在成效紀錄.csv 加一行（瀏覽、互動、追蹤、收益）
+  metrics 檔名 JSON    把最新的洞察數字寫進貼文索引（瀏覽、互動、新追蹤、收益）
   checked 檔名…        記錄這些文章已檢查、沒有變動
 """
 import os, re, sys, glob, json, argparse
@@ -18,8 +18,6 @@ POSTS = os.path.join(ROOT, 'src/content/docs')
 SYNC = os.path.join(ROOT, 'src/content/_sync')
 SHARED = os.path.join(SYNC, '共用區塊')
 REG = os.path.join(SYNC, '貼文索引.md')
-STATS = os.path.join(SYNC, '成效紀錄.csv')
-STAT_COLS = ['檢查日期', '檔名', '臉書編號', '發文日期', '發文後天數', '瀏覽次數', '瀏覽者', '互動次數', '心情', '點擊', '留言', '分享', '追蹤者瀏覽', '非追蹤者瀏覽', '新追蹤', '合格觀看', '收益USD']
 FBU = 'https://www.facebook.com/lunglung0815/posts/'
 HEAD = '## 相關文章'
 SEP = '--'
@@ -36,7 +34,7 @@ def norm_title(t): return re.sub(r'^▌\s+', '▌', t.strip())
 def with_date(t, d): return t + (((' ' if re.search(r'[A-Za-z.!?]$', t) else '') + d) if d else '')
 
 # ---------------- 貼文索引 ----------------
-COLS = ['臉書編號', '標題', '日期碼', '網站檔名', '舊標題', '內文指紋', '留言指紋', '最後檢查', '備註']
+COLS = ['臉書編號', '標題', '日期碼', '網站檔名', '舊標題', '內文指紋', '留言指紋', '瀏覽', '互動', '新追蹤', '收益', '最後檢查', '備註']
 class Registry:
     def __init__(self):
         self.rows = {}
@@ -82,7 +80,7 @@ class Registry:
     def save(self):
         rows = sorted(self.rows.values(), key=lambda r: (r['日期碼'] or '000000', r['臉書編號']), reverse=True)
         esc = lambda s: s.replace('|', '\\|')
-        out = ['# 貼文索引', '', '所有出現過的臉書貼文。留言與相關文章裡的標題、日期都以這裡為準（已收錄的文章以文章本身的標題為準）。「留言指紋」記錄目前貼在臉書上的整理留言版本，用來判斷哪些留言需要更新。', '',
+        out = ['# 貼文索引', '', '所有出現過的臉書貼文。留言與相關文章裡的標題、日期都以這裡為準（已收錄的文章以文章本身的標題為準）。「留言指紋」記錄目前貼在臉書上的整理留言版本；瀏覽、互動、新追蹤、收益（美元）是最後檢查那天的臉書洞察報告數字。', '',
                '| ' + ' | '.join(COLS) + ' |', '| ' + ' | '.join(['---'] * len(COLS)) + ' |']
         for r in rows: out.append('| ' + ' | '.join(esc(r[c]) for c in COLS) + ' |')
         write(REG, '\n'.join(out) + '\n')
@@ -383,20 +381,12 @@ if __name__ == '__main__':
         ap.add_argument('--post', required=True); ap.add_argument('--comment'); ap.add_argument('--folder', default='')
         ap.add_argument('--images', nargs='*'); cmd_import(ap.parse_args())
     elif c == 'sync': cmd_sync()
-    elif c == 'metrics':  # metrics 檔名 '{"瀏覽次數":…}'：在成效紀錄.csv 加一行
-        import csv, datetime
+    elif c == 'metrics':  # metrics 檔名 '{"瀏覽次數":…}'：把最新的洞察數字寫進貼文索引（瀏覽、互動、新追蹤、收益）
         reg, posts = Registry(), load_posts(); f2i = {v['file']: k for k, v in posts.items()}
-        f = sys.argv[2]; i = f2i[f]; m = json.loads(sys.argv[3]); fm = posts[i]['fm']
-        pd = fm_get(fm, 'fbDate') or fm_get(fm, 'date')  # 舊文重發以臉書發文日計算天數
-        d0 = datetime.date.fromisoformat(str(pd)[:10]); td = datetime.date.today()
-        row = {'檢查日期': td.isoformat(), '檔名': f, '臉書編號': i, '發文日期': d0.isoformat(), '發文後天數': (td - d0).days}
-        row.update({k: m.get(k.replace('USD', ''), '') for k in STAT_COLS[5:]})
-        new = not os.path.exists(STATS)
-        with open(STATS, 'a', encoding='utf-8-sig' if new else 'utf-8', newline='') as fh:
-            w = csv.DictWriter(fh, fieldnames=STAT_COLS)
-            if new: w.writeheader()
-            w.writerow(row)
-        print('已記錄成效：%s（發文後第 %d 天，瀏覽 %s）' % (f, row['發文後天數'], row['瀏覽次數']))
+        f = sys.argv[2]; i = f2i[f]; m = json.loads(sys.argv[3]); r = reg.rows[i]
+        r['瀏覽'], r['互動'], r['新追蹤'], r['收益'] = m.get('瀏覽次數', ''), m.get('互動次數', ''), m.get('新追蹤', ''), m.get('收益', '')
+        r['最後檢查'] = today(); reg.save()
+        print('已更新成效：%s（瀏覽 %s、互動 %s、新追蹤 %s、收益 US$%s）' % (f, r['瀏覽'], r['互動'], r['新追蹤'], r['收益']))
     elif c == 'due':  # 最久沒檢查的已收錄文章（臉書編號、檔名、內文指紋、留言指紋）
         n = int(sys.argv[2]) if len(sys.argv) > 2 else 5
         reg, posts = Registry(), load_posts()
