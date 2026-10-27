@@ -11,6 +11,7 @@ import TableOfContents from '@/components/TableOfContents.astro';
 import Lightbox from '@/components/Lightbox.astro';
 import ImageWrapper from '@/components/ImageWrapper.astro';
 import DocsSidebar from '@/components/DocsSidebar.astro';
+import LinkedMentions from '@/components/LinkedMentions.astro';
 import Icon from '@/components/Icon.astro';
 import { shouldShowContent, getAdjacentDocs, formatDate } from '@/utils/markdown';
 
@@ -184,6 +185,10 @@ const structuredData = {
           </div>
         </div>
       </article>
+
+      {siteConfig.postOptions.linkedMentions.enabled && (
+        <LinkedMentions currentSlug={documentation.id} collection="docs" />
+      )}
 
       <!-- Documentation navigation (only if there are other docs in the same category) -->
       {siteConfig.postOptions.postNavigation && (prevDoc || nextDoc) && (

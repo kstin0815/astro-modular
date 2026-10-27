@@ -7,13 +7,14 @@ import Icon from './Icon.astro';
 
 export interface Props {
   currentSlug: string;
+  collection?: 'posts' | 'docs';
 }
 
-const { currentSlug } = Astro.props;
+const { currentSlug, collection = 'posts' } = Astro.props;
 const isCompact = (siteConfig.postOptions.linkedMentions as any).linkedMentionsCompact;
 
 // Get all posts and pages to find linked mentions
-const posts = await getCollection('posts');
+const posts = await getCollection(collection);
 const pages = await getCollection('pages');
 const linkedMentions = findLinkedMentions(posts as any[], currentSlug, posts as any[], pages as any[]);
 
@@ -37,8 +38,8 @@ function processExcerptLinks(text: string, targetSlug: string): string {
 
     // Extract the link text from URL to check if it matches target
     let linkText: string | null = null;
-    if (baseUrl.startsWith('/posts/')) {
-      linkText = baseUrl.replace('/posts/', '').replace(/\.md$/, '');
+    if (baseUrl.startsWith('/posts/') || baseUrl.startsWith('/docs/')) {
+      linkText = baseUrl.replace(/^\/(posts|docs)\//, '').replace(/\.md$/, '');
       if (linkText && linkText.endsWith('/index')) {
         linkText = linkText.replace('/index', '');
       }
@@ -304,7 +305,7 @@ function processExcerptLinks(text: string, targetSlug: string): string {
         <div class="space-y-2">
           {linkedMentions.filter(mention => mention !== null).map(mention => (
             <a
-              href={`/posts/${mention.slug}`}
+              href={`/${collection}/${mention.slug}`}
               class="group flex items-center justify-between p-3 bg-primary-50 dark:bg-primary-800/30 rounded-lg border border-primary-200 dark:border-primary-700 hover:border-primary-300 dark:hover:border-primary-600 transition-colors block"
             >
               <span class="text-primary-900 dark:text-primary-50 group-hover:text-highlight-600 dark:group-hover:text-highlight-400 transition-colors font-medium">
@@ -320,7 +321,7 @@ function processExcerptLinks(text: string, targetSlug: string): string {
             <article class="p-4 bg-primary-50 dark:bg-primary-800/30 rounded-lg border border-primary-200 dark:border-primary-700 hover:border-primary-300 dark:hover:border-primary-600 transition-colors">
               <div class="font-medium text-primary-900 dark:text-primary-50 mb-2">
                 <a
-                  href={`/posts/${mention.slug}`}
+                  href={`/${collection}/${mention.slug}`}
                   class="hover:text-highlight-600 dark:hover:text-highlight-400 transition-colors"
                 >
                   {mention.title}

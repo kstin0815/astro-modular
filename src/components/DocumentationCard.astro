@@ -29,7 +29,8 @@ const description = rawDescription || excerpt;
 const shouldShowCoverImage = true;
 
 // Hide images for docs on homepage for cleaner look
-const showCoverImage = shouldShowCoverImage && cover && context !== 'home';
+// hideCoverImage: true 時清單卡片也不顯示（只用於分享預覽圖；臉書同步）
+const showCoverImage = shouldShowCoverImage && cover && context !== 'home' && documentation.data.hideCoverImage !== true;
 ---
 
 <div class="group relative bg-white dark:bg-primary-800 rounded-lg border border-primary-200 dark:border-primary-700 hover:shadow-lg transition-all duration-300 h-full flex flex-col">

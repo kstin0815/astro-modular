@@ -4,6 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import { unified } from '@astrojs/markdown-remark';
 import mdx from '@astrojs/mdx';
 import { remarkInternalLinks, remarkFolderImages, remarkImageCaptions } from './src/utils/internallinks.ts';
+import { remarkSharedBlocks } from './src/utils/remark-shared-blocks.ts';
 import remarkCallouts from './src/utils/remark-callouts.ts';
 import remarkImageGrids from './src/utils/remark-image-grids.ts';
 import remarkMermaid from './src/utils/remark-mermaid.ts';
@@ -138,7 +139,9 @@ image: {
   ],
   markdown: {
     processor: unified({
+      smartypants: false, // 保留原文的 -- 與 ...，不轉成破折號、省略號
       remarkPlugins: [
+      remarkSharedBlocks, // 臉書同步的共用區塊 ![[名稱]]，必須排第一
       remarkObsidianImageSize, // Parse Obsidian image size syntax first
       remarkInternalLinks,
       remarkInlineTags,

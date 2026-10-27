@@ -1,7 +1,6 @@
 ---
 title: 2026 青商總會長盃 奧瑞岡式辯論進階講習會
 description: ""
-hideTOC: false
 ---
 <div style="display:flex; align-items:flex-start; gap:32px;">
 <div style="flex:1;">

@@ -1,3 +1,18 @@
+import { expandSharedBlocks } from './remark-shared-blocks';
+import { existsSync as __existsSync, readdirSync as __readdirSync } from 'node:fs';
+import { join as __join } from 'node:path';
+// 臉書同步：[[YYMMDD]] 若是 docs（含分類資料夾）裡的檔案，連到 /docs/分類/YYMMDD
+function findDocPath(name: string): string | null {
+  if (!/^[\w-]+$/.test(name)) return null;
+  const root = __join(process.cwd(), 'src/content/docs');
+  if (__existsSync(__join(root, `${name}.md`))) return name;
+  try {
+    for (const d of __readdirSync(root, { withFileTypes: true })) {
+      if (d.isDirectory() && d.name !== 'attachments' && __existsSync(__join(root, d.name, `${name}.md`))) return `${d.name}/${name}`;
+    }
+  } catch {}
+  return null;
+}
 import type { Post, WikilinkMatch } from "@/types";
 import { visit } from "unist-util-visit";
 
@@ -540,9 +555,10 @@ export function remarkWikilinks() {
             return;
             }
           } else {
-            // Handle simple slug format - ASSUMES POSTS COLLECTION
+            // Handle simple slug format - posts by default; docs when src/content/docs/<name>.md exists（臉書同步）
             const slugifiedLink = createSlugFromTitle(link);
-            url = `/posts/${slugifiedLink}`;
+            const docPath = findDocPath(link.trim());
+            url = docPath ? `/docs/${docPath}` : `/posts/${slugifiedLink}`;
             wikilinkData = link.trim();
           }
 
@@ -1129,19 +1145,23 @@ export function findLinkedMentions(
     .map((post) => {
       // Skip if body is not available
       if (!post.body) return null;
+      // 共用區塊 ![[名稱]] 裡的連結也算（臉書同步）
+      const body = expandSharedBlocks(post.body);
 
       // Check both wikilinks and standard markdown links
-      const wikilinks = extractWikilinks(post.body);
-      const standardLinks = extractStandardLinks(post.body);
+      const wikilinks = extractWikilinks(body);
+      const standardLinks = extractStandardLinks(body);
       const allLinks = [...wikilinks, ...standardLinks];
 
-      const matchingLinks = allLinks.filter((link) => link.slug === targetSlug);
+      // 分類資料夾裡的 docs（例如「辯論/261025」）也用檔名比對（臉書同步）
+      const targetName = targetSlug.split('/').pop();
+      const matchingLinks = allLinks.filter((link) => link.slug === targetSlug || link.slug === targetName);
 
       if (matchingLinks.length > 0) {
         // Use the original link text from the content for excerpt creation
         const originalLinkText = matchingLinks[0].link;
         const excerptResult = createExcerptAroundWikilink(
-            post.body,
+            body,
             originalLinkText,
             allPosts,
             allPages

@@ -12,7 +12,7 @@
 - **正式網域**：https://tzulungchang.com （自有網域，已在 Cloudflare 綁定到 Worker）
 - **原始預設網址**：https://astro-modular.kstin0815.workers.dev （workers.dev 子網域，仍可運作）
 - **編輯流程**：本機 clone → 用 Obsidian 編輯 → Obsidian Git 同步 → Cloudflare 自動重新建置。
-- **本地預覽**：在專案資料夾執行 `pnpm install`（第一次或升級後），之後 `pnpm dev`，瀏覽器開 `http://localhost:4321`。
+- **本地預覽**：在專案資料夾執行 `pnpm install`（第一次或升級後），之後 `pnpm dev`，瀏覽器開 `http://localhost:5000`。
 - **只能打網址進去的頁面**（不在導覽列）：`/jci/`、`/judge/`（講義，`src/content/special/`）、`/argument_mapping.html`（互動工具，`public/`）。
 
 ---
@@ -39,8 +39,22 @@
 | 8 | CSS：內文左右對齊；所有內文連結（站內 wikilink 與站外）一律實線底線；引文精簡樣式 | `src/styles/global.css` 最後面 |
 | 9 | 內文寬度 40rem（原版 45rem） | `src/config.ts` 的 `layout.contentWidth` |
 | 10 | 建置結果比對工具（升級前後比對頁面有沒有變） | `scripts/build-fingerprint.mjs`（自建） |
+| 11 | llms.txt 改寫成正確的中文網站介紹（給 AI 讀） | `src/pages/llms.txt.ts` |
+| 12 | 臉書同步輔助程式 | `scripts/fbsync.py`（自建），規格見 `src/content/_sync/同步說明.md` |
+| 13 | 共用區塊 `![[代號]]`（`src/content/_sync/共用區塊/`）在網站上展開；「提到這篇的文章」也計入共用區塊裡的連結 | `src/utils/remark-shared-blocks.ts`（自建）＋ `astro.config.mjs` 排第一的 remark 外掛 ＋ `src/utils/internallinks.ts` 的 `findLinkedMentions` |
+| 14 | 關閉 smartypants：`--`、`...` 照原文顯示，不轉成破折號、省略號 | `astro.config.mjs` 的 `smartypants: false` |
+| 15 | Docs 支援 wikilink 與「提到這篇的文章」：`[[YYMMDD]]` 若是 docs（含分類資料夾）裡的檔案就連到 `/docs/分類/YYMMDD`；比對引用時用檔名；Docs 頁面加上 LinkedMentions | `src/utils/internallinks.ts`（`findDocPath`、`findLinkedMentions`）、`src/components/LinkedMentions.astro`（`collection` 參數）、`src/layouts/DocumentationLayout.astro` |
+| 16 | Docs 清單卡片遵守 `hideCoverImage: true`（不顯示縮圖，只用於分享預覽圖），避免只有少數文章有圖時排版參差 | `src/components/DocumentationCard.astro` |
 
 其他設定值（站名、導覽、社群連結、主題 charcoal、作者「張子龍」等）都在 `src/config.ts`，升級時沿用。
+
+文章與 Docs 底部的「提到這篇的文章」（`postOptions.linkedMentions.enabled: true`，2026-10-27 開啟）配合臉書同步使用；站內搜尋也包含 Docs。
+
+### 臉書同步
+- 臉書貼文放 `src/content/docs/分類/YYMMDD.md`（檔名＝發文日期碼，資料夾＝分類：辯論、表達、觀點、閱讀、生活）；圖片在 `src/content/docs/attachments/`；`posts` 留給整理完成的文章。
+- Obsidian 新增文章的範本（Astro Composer、Vault CMS 兩個外掛）已精簡成只留必要欄位（2026-10-27）。
+- `src/content/_sync/` 放流程說明（同步說明.md）、貼文索引、共用區塊（L 清單／S 系列／T 主題／A AI 精選）、待貼留言、成效紀錄（臉書洞察報告數字，CSV）；這個資料夾不會出現在網站上。
+- 流程規格：`src/content/_sync/同步說明.md`。
 
 已移除：Cusdis 留言（2026-10-27 作廢，`GiscusComments.astro` 恢復原版，留言開關目前關閉）。
 
