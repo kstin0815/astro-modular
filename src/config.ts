@@ -38,6 +38,7 @@ export interface SiteConfig {
   };
   layout: {
     contentWidth: string;
+    preserveCoverAspectRatio: boolean;
   };
   tableOfContents: {
     enabled: boolean;
@@ -191,7 +192,7 @@ export const siteConfig: SiteConfig = {
   // [CONFIG:SITE_DESCRIPTION]
   description: "「第30年晴耕雨讀的悠閒生活。」",
   // [CONFIG:SITE_AUTHOR]
-  author: "kstin0815",
+  author: "張子龍",
   // [CONFIG:SITE_LANGUAGE]
   language: "zh-TW",
   // [CONFIG:FAVICON_THEME_ADAPTIVE]
@@ -223,6 +224,8 @@ export const siteConfig: SiteConfig = {
   layout: {
     // [CONFIG:LAYOUT_CONTENT_WIDTH]
     contentWidth: "40rem",
+    // [CONFIG:LAYOUT_PRESERVE_COVER_ASPECT_RATIO]
+    preserveCoverAspectRatio: true, // When true, detail-page covers use 16:9. When false, use the previous fixed-height banner.
   },
   tableOfContents: {
     // [CONFIG:TABLE_OF_CONTENTS_ENABLED]
@@ -416,6 +419,7 @@ export const siteConfig: SiteConfig = {
     postCardAspectRatio: "og", // "16:9" | "4:3" | "3:2" | "og" | "square" | "golden" | "custom"
     // [CONFIG:POST_OPTIONS_CUSTOM_POST_CARD_ASPECT_RATIO]
     customPostCardAspectRatio: "2.5/1", // Only used when postCardAspectRatio is "custom" (e.g., "2.5/1")
+    // 備註：留言目前關閉。下方 giscus 欄位是原作者的範例值，日後要開留言時再換成自己的。
     comments: {
       // [CONFIG:POST_OPTIONS_COMMENTS_ENABLED]
       enabled: false,
@@ -460,6 +464,13 @@ export function getCommandPaletteShortcut(): string {
 
 export function getContentWidth(): string {
   return siteConfig.layout.contentWidth;
+}
+
+export function getCoverAspectClasses(extra = ""): string {
+  const base = siteConfig.layout.preserveCoverAspectRatio
+    ? "aspect-video overflow-hidden"
+    : "h-40 sm:h-48 md:h-56 lg:h-64 overflow-hidden";
+  return extra ? `${base} ${extra}` : base;
 }
 
 export function getTheme(): "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin" | "charcoal" | "dracula" | "everforest" | "flexoki" | "gruvbox" | "macos" | "nord" | "obsidian" | "rose-pine" | "sky" | "solarized" | "things" | "custom" {
@@ -685,6 +696,10 @@ function validateSiteConfig(config: SiteConfig): { isValid: boolean; errors: str
   // Content width validation
   if (!config.layout.contentWidth || !config.layout.contentWidth.match(/^\d+(\.\d+)?(rem|px|em)$/)) {
     errors.push(`Content width must be a valid CSS length value like "45rem", "800px", or "90em". Current value "${config.layout.contentWidth}" is invalid.`);
+  }
+
+  if (typeof config.layout.preserveCoverAspectRatio !== 'boolean') {
+    errors.push('Preserve cover aspect ratio must be a boolean value (true or false).');
   }
 
   // Navigation style validation

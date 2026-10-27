@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import { unified } from '@astrojs/markdown-remark';
 import mdx from '@astrojs/mdx';
@@ -83,8 +83,22 @@ export default defineConfig({
     enabled: true
   },
   redirects: (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'build') ? {
-  '/posts/00': '/posts/zhihu',
-  '/docs/workflow 1': '/docs/application'
+  '/about-me': '/about',
+  '/about-us': '/about',
+  '/contact-me': '/contact',
+  '/contact-us': '/contact',
+  '/privacy': '/privacy-policy',
+  '/posts/mermaid-test': '/posts/obsidian-embeds-demo',
+  '/posts/mermaid-diagram-test': '/posts/obsidian-embeds-demo',
+  '/posts/mermaid-diagrams': '/posts/obsidian-embeds-demo',
+  '/posts/astro-suite-vault-modular-guide': '/posts/vault-cms-guide',
+  '/posts/astro-suite-obsidian-vault-guide-astro-modular': '/posts/vault-cms-guide',
+  '/posts/obsidian-vault-guide': '/posts/vault-cms-guide',
+  '/projects/obsidian-astro-composer': '/projects/astro-composer',
+  '/projects/obsidian-astro-suite': '/projects/vault-cms',
+  '/docs/api-reference': '/docs/api',
+  '/docs/astro-modular-configuration': '/docs/configuration',
+  '/docs/sourcetree-and-git': '/docs/sourcetree-and-git-setup'
 } : {},
 image: {
     service: {
@@ -99,7 +113,6 @@ image: {
   },
   integrations: [
     refreshContentOnChange(),
-    tailwind(),
     sitemap(),
     mdx(),
     swup({
@@ -173,6 +186,7 @@ image: {
     }
   },
   vite: {
+    plugins: [tailwindcss()],
     assetsInclude: ['**/*.base', '**/*.home', '**/*.base'],
     resolve: {
       alias: {
@@ -206,7 +220,24 @@ image: {
       'process.env.ASTRO_CONTENT_COLLECTION_CACHE': 'false'
     },
     optimizeDeps: {
-      exclude: ['astro:content']
+      exclude: ['astro:content'],
+      // Pre-bundle these at dev startup instead of letting Vite discover them
+      // lazily. Without this, the first page that pulls one in triggers a
+      // re-optimization, which changes the ?v= hash on every optimized module,
+      // 504s any request already in flight, and forces a full page reload.
+      // Swup navigates via a dynamic import, so a 504 there drops it back to a
+      // full document load: the nav "flash", with images dying in the same
+      // window. Keep this list in sync with node_modules/.vite/deps/_metadata.json.
+      include: [
+        '@swup/astro/client/Swup',
+        '@swup/astro/client/SwupHeadPlugin',
+        '@swup/astro/client/SwupScriptsPlugin',
+        '@swup/astro/idle',
+        '@swup/astro/serialise',
+        'd3',
+        'fuse.js',
+        'mermaid'
+      ]
     },
     exclude: ['**/_redirects']
   },

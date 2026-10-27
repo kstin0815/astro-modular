@@ -178,8 +178,8 @@ const structuredData = {
   <div class="py-8 relative">
     <div class="mx-auto px-4 sm:px-6 lg:px-8" style={`max-width: ${siteConfig.layout.contentWidth}`}>
       {onlyBlurbContent ? (
-        <!-- Blurb-only homepage with page-like layout -->
-        <article class="bg-primary-50 dark:bg-primary-900 rounded-lg border border-primary-200 dark:border-primary-700 shadow-sm">
+        <article class="bg-primary-50 dark:bg-primary-900 rounded-lg border border-primary-200 dark:border-primary-700 shadow-xs">
+          {/* Blurb-only homepage with page-like layout */}
           <div class="p-6 rounded-lg">
             <!-- Page header -->
             {homeBlurbContent?.data.title && (
@@ -335,8 +335,8 @@ const structuredData = {
 
         </>
       ) : (
-        <!-- Empty state -->
         <section class="text-center py-16">
+          {/* Empty state */}
           <div class="max-w-md mx-auto">
             <Icon name="file-text" class="w-16 h-16 text-primary-400 dark:text-primary-500 mx-auto mb-6" />
             <h2 class="text-2xl font-semibold text-primary-900 dark:text-primary-50 mb-4">
@@ -375,9 +375,13 @@ const structuredData = {
 </script>
 
 <style>
+  /* Tailwind 4 compiles component styles in isolation, so @apply needs
+     this to see the theme context. */
+  @reference "../styles/global.css";
+
   /* Enhanced homepage styles */
   .btn-primary {
-    @apply inline-flex items-center px-6 py-3 font-medium rounded-lg transition-all duration-200 hover:shadow-lg transform hover:scale-105;
+    @apply inline-flex items-center px-6 py-3 font-medium rounded-lg transition-all duration-200 hover:shadow-lg;
   }
 
   .btn-primary:focus-visible {

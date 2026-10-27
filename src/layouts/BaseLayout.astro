@@ -11,28 +11,32 @@ import Lightbox from '@/components/Lightbox.astro';
 import ImageGalleryManager from '@/components/ImageGalleryManager.astro';
 import CategoryFilter from '@/components/CategoryFilter.astro';
 import RefNoteCard from '@/components/RefNoteCard.astro';
+import DocsCategoryCollapse from '@/components/DocsCategoryCollapse.astro';
 import '@/styles/global.css';
 
-// Import local fonts if configured
-if (shouldLoadLocalFonts()) {
-  // Import Inter font
-  if (siteConfig.fonts.families.body === 'Inter' || siteConfig.fonts.families.heading === 'Inter') {
-    import('@fontsource/inter/300.css');
-    import('@fontsource/inter/400.css');
-    import('@fontsource/inter/500.css');
-    import('@fontsource/inter/600.css');
-    import('@fontsource/inter/700.css');
-  }
-
-  // Import JetBrains Mono font
-  if (siteConfig.fonts.families.mono === 'JetBrains Mono') {
-    import('@fontsource/jetbrains-mono/300.css');
-    import('@fontsource/jetbrains-mono/400.css');
-    import('@fontsource/jetbrains-mono/500.css');
-    import('@fontsource/jetbrains-mono/600.css');
-    import('@fontsource/jetbrains-mono/700.css');
-  }
-}
+// Local font faces. These MUST be static imports.
+//
+// They were previously conditional dynamic import() calls. Vite cannot
+// statically analyse those, so it processed the same @fontsource CSS down two
+// paths: the linked stylesheet inlined each face as a base64 data URI, while a
+// second copy was emitted as 35 @font-face rules inside an inline <style> in
+// the HTML, pointing at /_assets/*.woff2 files that were never written. Every
+// one of those 404'd, so any weight not covered by the inlined copy fell back
+// to a system font.
+//
+// Static imports let Vite resolve the font assets once, consistently. Which
+// family actually renders is still config-driven, via the --font-body /
+// --font-heading / --font-mono custom properties set further down.
+import '@fontsource/inter/300.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/jetbrains-mono/300.css';
+import '@fontsource/jetbrains-mono/400.css';
+import '@fontsource/jetbrains-mono/500.css';
+import '@fontsource/jetbrains-mono/600.css';
+import '@fontsource/jetbrains-mono/700.css';
 
 export interface Props {
   seoData: SEOData;
@@ -46,7 +50,7 @@ const scrollbarClass = siteConfig.hideScrollBar ? '' : 'show-scrollbars';
 
 // Eagerly load every custom theme at build time so the inline runtime script
 // doesn't have to do a `/src/...` dynamic import (which works in dev but 404s
-// in production builds). The glob pattern is a static literal — Vite resolves
+// in production builds). The glob pattern is a static literal, so Vite resolves
 // it and bundles the matching modules during build.
 const customThemeModules = import.meta.glob('/src/themes/custom/*.ts', { eager: true }) as Record<string, Record<string, any>>;
 
@@ -1111,9 +1115,10 @@ for (const [path, mod] of Object.entries(customThemeModules)) {
 
   <!-- Category Filter -->
   <CategoryFilter />
+  <DocsCategoryCollapse />
 
 
-    <!-- Mermaid diagrams handled by client script -->
+    <!-- Mermaid diagrams render with Pele via the client script -->
     <script>
       try { await import('../scripts/base-embeds-client.ts'); } catch (_) {}
     </script>
@@ -1877,13 +1882,6 @@ for (const [path, mod] of Object.entries(customThemeModules)) {
       setTimeout(initializeGiscusTheme, 1500);
     }
 
-    // Mermaid theme change handling
-    function handleMermaidThemeChange() {
-      // Use the utility's theme change handler
-      if (typeof window.handleMermaidThemeChange === 'function') {
-        window.handleMermaidThemeChange();
-      }
-    }
 
 
     // Giscus theme change handling - use postMessage API for dynamic theme switching
@@ -1946,7 +1944,6 @@ for (const [path, mod] of Object.entries(customThemeModules)) {
 
             // Only re-render if theme actually changed
             if (isDark !== wasDark) {
-              handleMermaidThemeChange();
               handleTwitterThemeChange(isDark);
               handleGiscusThemeChange(isDark);
             }
@@ -2123,7 +2120,6 @@ for (const [path, mod] of Object.entries(customThemeModules)) {
             
             // Only re-render if theme actually changed
             if (isDark !== wasDark) {
-              handleMermaidThemeChange();
               handleTwitterThemeChange(isDark);
               handleGiscusThemeChange(isDark);
             }
