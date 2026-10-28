@@ -21,24 +21,24 @@ views:
     name: 洞察總表
     order:
       - file.name
-      - note.category
-      - note.title
-      - note.瀏覽次數
-      - note.瀏覽者
+      - category
+      - title
+      - 瀏覽次數
+      - 瀏覽者
       - formula.互動
-      - note.心情
-      - note.留言
-      - note.點擊
-      - note.分享
-      - note.追蹤者瀏覽
-      - note.非追蹤者瀏覽
+      - 心情
+      - 留言
+      - 點擊
+      - 分享
+      - 追蹤者瀏覽
+      - 非追蹤者瀏覽
       - formula.非追蹤比例
-      - note.收益
-      - note.第1天瀏覽
-      - note.第3天瀏覽
-      - note.第7天瀏覽
-      - note.第14天瀏覽
-      - note.洞察日期
+      - 收益
+      - 第1天瀏覽
+      - 第3天瀏覽
+      - 第7天瀏覽
+      - 第14天瀏覽
+      - 洞察日期
     sort:
       - property: file.name
         direction: DESC
