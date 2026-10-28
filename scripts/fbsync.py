@@ -153,6 +153,17 @@ def shared_items(name, reg, f2i):
     b = parse_lines(shared_split(name)[1], reg, f2i)
     return b[0] if b else []
 
+def render_ai(txt, reg, posts, f2i):
+    """AI 精選：保留標籤、--、空行；每行「文章｜選入理由」的文章部分照一般規則改成連結"""
+    out = []
+    for raw in txt.strip('\n').split('\n'):
+        l = raw.strip(); left, bar, why = l.partition('｜')
+        if not l or l == SEP: out.append(l); continue
+        b = parse_lines(left.strip(), reg, f2i); it = b[0][0] if b and b[0] else None
+        line = site_line(it, reg, posts) if it and it[0] in ('post', 'ext', 'embed') else raw.rstrip()
+        out.append(line + ('｜' + why.strip() if bar else ''))
+    return re.sub(r'\n{3,}', '\n\n', '\n'.join(out))
+
 def expand(block, reg, f2i):
     out = []
     for it in block:
@@ -239,6 +250,9 @@ def cmd_import(a):
     fbdate = ''
     orig = original_date(raw)
     if orig and orig != a.date: fbdate, a.date = a.date, orig  # 舊文重發：檔名與日期碼用原文日期
+    r0 = reg.get(a.fb)
+    if r0 and '已確認' in r0['備註'] and title != r0['標題'] and title in r0['舊標題'].split('／'):
+        title = r0['標題']  # 作者確認過的標題優先（臉書第一行列為舊標題）
     reg.add(a.fb, title, a.date, '本文', authoritative=True)
     taken = {v['file'] for v in posts.values()}
     old = posts.get(a.fb)  # 既有版本（先記下，最後才刪舊檔）
@@ -273,7 +287,7 @@ def cmd_import(a):
         blocks = [compress(b, reg, f2i) for b in blocks]
         if not blocks or not blocks[0] or blocks[0][0] != ('post', a.fb): blocks.insert(0, [('post', a.fb)])
         rel = render_blocks(blocks, reg, posts, a.fb)
-        reg.rows[a.fb]['留言指紋'] = fingerprint(ctext)
+        reg.rows[a.fb]['留言指紋'] = fingerprint(ctext); save_fb_comment(file, ctext)
     if not rel.strip(): rel = with_date(reg.title(a.fb), a.date)
     reg.save()
     if not imgs and old:  # 重新收錄時保留原本的圖片
@@ -314,8 +328,9 @@ def cmd_sync(quiet=False):
         p = posts[i]; new = '---\n' + p['fm'] + '\n---\n' + main + '\n\n' + HEAD + '\n\n' + render_blocks(blocks, reg, posts, i) + '\n'
         if p.get('fm_changed') or new != read(p['path']): write(p['path'], new); changed.append(p['file'])
     for name in shared_names():
-        fm, _ = shared_split(name); b = shared_items(name, reg, f2i)
-        new = ('---\n' + fm + '\n---\n' if fm else '') + '\n'.join(site_line(it, reg, posts) for it in b) + '\n'
+        fm, txt = shared_split(name)
+        if name.startswith('A'): new = ('---\n' + fm + '\n---\n' if fm else '') + render_ai(txt, reg, posts, f2i) + '\n'
+        else: b = shared_items(name, reg, f2i); new = ('---\n' + fm + '\n---\n' if fm else '') + '\n'.join(site_line(it, reg, posts) for it in b) + '\n'
         if new != read(os.path.join(SHARED, name + '.md')): write(os.path.join(SHARED, name + '.md'), new); changed.append('共用/' + name)
     reg.save()
     if not quiet: print('已更新：' + ('、'.join(changed) if changed else '（無）'))
@@ -331,17 +346,50 @@ def cmd_comment(file):
     i = f2i[file]; _, rel = split_related(posts[i]['body'])
     blocks = [expand(b, reg, f2i) for b in parse_lines(rel or '', reg, f2i)] or [[]]
     if not blocks[0] or blocks[0][0] != ('post', i): blocks[0] = [('post', i)] + blocks[0]
-    return ('\n' + SEP + '\n').join('\n'.join(fb_line(it, reg) for it in b) for b in blocks)
+    return ('\n\n' + SEP + '\n\n').join('\n\n'.join(fb_line(it, reg) for it in b) for b in blocks)
 
 def fingerprint(text):
     """臉書留言的比對碼（不計日期碼）"""
     import hashlib
-    return hashlib.sha256(strip_dates(text.strip('\n')).encode('utf-8')).hexdigest()[:10]
+    t = '\n'.join(l for l in text.replace('\u200b', '').split('\n') if l.strip())
+    return hashlib.sha256(strip_dates(t).encode('utf-8')).hexdigest()[:10]
 
 def body_fingerprint(raw):
     """內文指紋：去掉零寬空白後全文 SHA-256 的前 10 碼（和瀏覽器算的一致）"""
     import hashlib
     return hashlib.sha256(raw.replace('\u200b', '').replace('\r\n', '\n').rstrip('\n').encode('utf-8')).hexdigest()[:10]
+
+FBC = os.path.join(SYNC, '留言原文')
+def nonblank(t): return '\n'.join(l.strip() for l in t.replace('\u200b', '').split('\n') if l.strip())
+def save_fb_comment(file, text): write(os.path.join(FBC, file + '.txt'), text.strip('\n') + '\n')
+def comment_diff(file, gen, reg):
+    """比對臉書上目前的留言（留言原文）和新產生的版本，用文字說明改了什麼"""
+    p = os.path.join(FBC, file + '.txt')
+    if not os.path.exists(p): return ['（沒有臉書目前留言的紀錄，無法比對；這是第一次產生整理留言）']
+    ob, _ = parse_comment(read(p)); nb, _ = parse_comment(gen)
+    name = lambda it: reg.title(it[1]) if it[0] == 'post' else (it[1] if it[0] != 'ext' else it[1])
+    def where(blocks):
+        d = {}
+        for k, b in enumerate(blocks, 1):
+            for it in b: d.setdefault(it, k)
+        return d
+    o, n = where(ob), where(nb); out = []
+    for it in n:
+        if it not in o: out.append('新增：%s（第 %d 區塊）' % (name(it), n[it]))
+    for it in o:
+        if it not in n: out.append('刪除：%s（原第 %d 區塊）' % (name(it), o[it]))
+    for it in n:
+        if it in o and o[it] != n[it]: out.append('移動：%s（第 %d → 第 %d 區塊）' % (name(it), o[it], n[it]))
+    if not out and [list(b) for b in ob] != [list(b) for b in nb]: out.append('順序調整')
+    oldtxt = {l.strip() for l in read(p).split('\n') if l.strip() and not l.startswith('http')}
+    for l in gen.split('\n'):
+        if l.strip() and not l.startswith('http') and l.strip() not in oldtxt and split_date(l.strip())[0] in {split_date(x)[0] for x in oldtxt}:
+            out.append('補上日期：' + l.strip())
+    titles_old = {split_date(x)[0] for x in oldtxt}
+    for it in n:
+        if it in o and it[0] == 'post' and reg.title(it[1]) not in titles_old: out.append('標題修正：%s' % reg.title(it[1]))
+    if read(p).count('\n\n') == 0 and '\n\n' in gen: out.append('格式：項目之間改為空一行')
+    return out or ['只有格式差異']
 
 def today():
     import datetime
@@ -359,12 +407,15 @@ def cmd_check():
         gen = cmd_comment(p['file'])
         # 只列：內容有變（只差日期不算），而且留言裡每一篇都有日期
         dated = all(re.search(r'\d{6}$', L[k - 1]) for L in [gen.split('\n')] for k in range(1, len(L)) if fbid(L[k]))
-        if not cur or (cur != fingerprint(gen) and dated): need.append(p['file'] + ('（沒有留言紀錄）' if not cur else ''))
+        fbp = os.path.join(FBC, p['file'] + '.txt')
+        nodate = os.path.exists(fbp) and dated and nonblank(read(fbp)) != nonblank(gen)  # 只差日期也要補上
+        if not cur or (cur != fingerprint(gen) and dated) or nodate: need.append(p['file'] + ('（沒有留言紀錄）' if not cur else ''))
     print('臉書留言需要更新：' + ('、'.join(need) if need else '（無）'))
     out = ['# 待貼留言', '', '以下臉書整理留言需要更新：點開臉書原文，用程式碼區塊右上角的複製鈕複製，整則取代原本的留言。貼好後告訴 Claude，它就會從這裡移除。', '']
     for f in need:
         f = f.split('（')[0]; i = f2i[f]
-        out += ['## %s %s' % (f, reg.title(i)), '', '[臉書原文](%s%s)' % (FBU, i), '', '```', cmd_comment(f), '```', '']
+        g = cmd_comment(f)
+        out += ['## %s %s' % (f, reg.title(i)), '', '[臉書原文](%s%s)' % (FBU, i), ''] + ['- ' + x for x in comment_diff(f, g, reg)] + ['', '```', g, '```', '']
     write(os.path.join(SYNC, '待貼留言.md'), '\n'.join(out).rstrip('\n') + '\n' if need else '# 待貼留言\n\n目前沒有需要更新的臉書留言。\n')
     todo = [r for r in reg.rows.values() if '待確認' in r['備註']]
     if todo:
@@ -423,6 +474,7 @@ if __name__ == '__main__':
     elif c == 'check': cmd_check()
     elif c == 'mark-posted':
         reg, posts = Registry(), load_posts(); f2i = {v['file']: k for k, v in posts.items()}
-        for f in sys.argv[2:]: reg.rows[f2i[f]]['留言指紋'] = fingerprint(cmd_comment(f)); print('已記錄：' + f)
+        for f in sys.argv[2:]:
+            g = cmd_comment(f); reg.rows[f2i[f]]['留言指紋'] = fingerprint(g); save_fb_comment(f, g); print('已記錄：' + f)
         reg.save(); cmd_check()
     else: print(__doc__)
